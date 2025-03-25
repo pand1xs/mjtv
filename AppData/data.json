@@ -3115,6 +3115,553 @@
           "thisGlobal": []
         }
       }
+    },
+    {
+      "name": "capt",
+      "type": "action",
+      "trigger": "messageContent",
+      "actions": [
+        {
+          "name": "Defer Interaction",
+          "file": "deferInteraction.js",
+          "data": {
+            "name": "Defer Interaction",
+            "interaction": {
+              "type": "commandInteraction",
+              "value": ""
+            },
+            "replyToInteraction": false,
+            "ephemeral": false,
+            "silent": false
+          },
+          "id": 1742924783602
+        },
+        {
+          "name": "Edit Image",
+          "file": "editImage.js",
+          "data": {
+            "name": "Edit Image",
+            "image": {
+              "type": "url",
+              "value": "https://i.imgur.com/FRA88JS.png"
+            },
+            "filters": [
+              {
+                "type": "writeText",
+                "data": {
+                  "size": "100",
+                  "color": "#000000",
+                  "x": "0",
+                  "y": "0",
+                  "alignment": {
+                    "type": "center",
+                    "value": ""
+                  },
+                  "text": "${tempVars('вин')}",
+                  "font": [
+                    {
+                      "type": "font",
+                      "data": {
+                        "weight": "400"
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "store": {
+              "type": "temporary",
+              "value": "img"
+            }
+          },
+          "id": 1742924824113
+        },
+        {
+          "name": "Get Attachment Info",
+          "file": "getAttachmentInfo.js",
+          "data": {
+            "name": "Get Attachment Info",
+            "attachment": {
+              "type": "tempVar",
+              "value": ""
+            },
+            "get": {
+              "type": "url",
+              "value": ""
+            },
+            "store": {
+              "type": "temporary",
+              "value": ""
+            }
+          },
+          "id": 1742924829875
+        },
+        {
+          "name": "Send Message",
+          "file": "sendmessage.js",
+          "data": {
+            "name": "Send Message",
+            "messageContent": "Hello World!",
+            "actionRows": [],
+            "embeds": [
+              {
+                "type": "embed",
+                "data": {
+                  "title": "",
+                  "embedColor": "#FFFFFF",
+                  "footerContent": "",
+                  "imageURL": "",
+                  "footerIconURL": "",
+                  "thumbnailURL": "${tempVars('capt2')}",
+                  "authorName": "",
+                  "authorIcon": "",
+                  "description": "",
+                  "fields": [],
+                  "url": "",
+                  "timestamp": "None",
+                  "customTimestamp": ""
+                }
+              }
+            ],
+            "channel": {
+              "type": "command",
+              "value": ""
+            },
+            "replyToInteraction": false,
+            "storeAs": {
+              "value": "",
+              "type": "temporary"
+            },
+            "options": [
+              {
+                "type": "options"
+              }
+            ],
+            "attachments": [
+              {
+                "type": "attachment",
+                "data": {
+                  "name": "capt.png",
+                  "image": {
+                    "type": "tempVar",
+                    "value": "img"
+                  },
+                  "spoiler": false,
+                  "store": {
+                    "type": "temporary",
+                    "value": "capt2"
+                  }
+                }
+              }
+            ],
+            "files": [],
+            "poll": [],
+            "silent": false,
+            "mentions": false,
+            "dontSend": false,
+            "ephemeral": false,
+            "updateMessage": {
+              "type": "none",
+              "value": ""
+            },
+            "updateContent": false,
+            "updateComponents": false,
+            "updateEmbeds": false,
+            "updateAttachments": false
+          },
+          "id": 1742924937139
+        }
+      ],
+      "customId": 1742924738766,
+      "boundary": {
+        "worksIn": "guild",
+        "limits": [],
+        "botOwnerOnly": true
+      },
+      "parameters": [
+        {
+          "name": "textwin",
+          "type": "string",
+          "description": "Победивший капт",
+          "required": true,
+          "choices": [],
+          "storeAs": "вин",
+          "completion": false
+        }
+      ],
+      "description": "No Description",
+      "folder": [],
+      "goodies": {
+        "actionType": "slash",
+        "variables": {
+          "temporary": [],
+          "global": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "server": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "commandVars": [
+            "вин",
+            "img",
+            "",
+            "capt2",
+            ""
+          ],
+          "thisServer": [],
+          "thisGlobal": []
+        }
+      }
+    },
+    {
+      "name": "правила",
+      "type": "action",
+      "trigger": "textCommand",
+      "actions": [
+        {
+          "name": "Send Message",
+          "file": "sendmessage.js",
+          "data": {
+            "name": "Send Message",
+            "messageContent": "",
+            "actionRows": [],
+            "embeds": [
+              {
+                "type": "embed",
+                "data": {
+                  "title": "",
+                  "embedColor": "#313338",
+                  "footerContent": "",
+                  "imageURL": "https://media.discordapp.net/attachments/1343934615672590336/1354060680554221569/1.png?ex=67e3eac7&is=67e29947&hm=9007504b0277e77c211b32b012965409b267b0beea196e52422920435fefd6e7&=&format=webp&quality=lossless",
+                  "footerIconURL": "",
+                  "thumbnailURL": "",
+                  "authorName": "",
+                  "authorIcon": "",
+                  "description": "",
+                  "fields": [
+                    {
+                      "type": "field",
+                      "data": {
+                        "title": "",
+                        "value": "      **[Discord Guidelines](https://discord.com/guidelines)**",
+                        "inline": true
+                      }
+                    },
+                    {
+                      "type": "field",
+                      "data": {
+                        "title": "",
+                        "value": "           **[Terms Of Service](https://discord.com/terms)**",
+                        "inline": true
+                      }
+                    }
+                  ],
+                  "url": "",
+                  "timestamp": "None",
+                  "customTimestamp": ""
+                }
+              },
+              {
+                "type": "embed",
+                "data": {
+                  "title": "",
+                  "embedColor": "#313338",
+                  "footerContent": "",
+                  "imageURL": "https://media.discordapp.net/attachments/1343934615672590336/1354060700712042557/1_1.png?ex=67e3eacc&is=67e2994c&hm=d63a1b3333f8143b5fc5e4187ba091521c678310962d0ae7476deb7e002c6fca&=&format=webp&quality=lossless",
+                  "footerIconURL": "",
+                  "thumbnailURL": "",
+                  "authorName": "",
+                  "authorIcon": "",
+                  "description": "",
+                  "fields": [],
+                  "url": "",
+                  "timestamp": "None",
+                  "customTimestamp": ""
+                }
+              },
+              {
+                "type": "embed",
+                "data": {
+                  "title": "",
+                  "embedColor": "#313338",
+                  "footerContent": "",
+                  "imageURL": "https://media.discordapp.net/attachments/1343934615672590336/1354060709960487012/1_2.png?ex=67e3eace&is=67e2994e&hm=9b7119a7d326c675818f26c49f2552b122cd8b4b4f5379ecd51f9460eb8316cc&=&format=webp&quality=lossless",
+                  "footerIconURL": "",
+                  "thumbnailURL": "",
+                  "authorName": "",
+                  "authorIcon": "",
+                  "description": "",
+                  "fields": [],
+                  "url": "",
+                  "timestamp": "None",
+                  "customTimestamp": ""
+                }
+              },
+              {
+                "type": "embed",
+                "data": {
+                  "title": "",
+                  "embedColor": "#313338",
+                  "footerContent": "",
+                  "imageURL": "https://media.discordapp.net/attachments/1343934615672590336/1354060723528929290/1_3.png?ex=67e3ead1&is=67e29951&hm=b06a6ed05e03bc4f6f622238a366a780f751e9ea4653553d787b80989c6408dd&=&format=webp&quality=lossless",
+                  "footerIconURL": "",
+                  "thumbnailURL": "",
+                  "authorName": "",
+                  "authorIcon": "",
+                  "description": "",
+                  "fields": [],
+                  "url": "",
+                  "timestamp": "None",
+                  "customTimestamp": ""
+                }
+              },
+              {
+                "type": "embed",
+                "data": {
+                  "title": "",
+                  "embedColor": "#313338",
+                  "footerContent": "",
+                  "imageURL": "https://media.discordapp.net/attachments/1343934615672590336/1354060735486890067/1_4.png?ex=67e3ead4&is=67e29954&hm=f9e8180a13d7f69e3ff1a07e8cbfa54370a43bf8e64ddc2f4683cd28b9f0ad87&=&format=webp&quality=lossless",
+                  "footerIconURL": "",
+                  "thumbnailURL": "",
+                  "authorName": "",
+                  "authorIcon": "",
+                  "description": "",
+                  "fields": [],
+                  "url": "",
+                  "timestamp": "None",
+                  "customTimestamp": ""
+                }
+              },
+              {
+                "type": "embed",
+                "data": {
+                  "title": "",
+                  "embedColor": "#313338",
+                  "footerContent": "",
+                  "imageURL": "https://media.discordapp.net/attachments/1343934615672590336/1354060747084140544/1_5.png?ex=67e3ead7&is=67e29957&hm=0ad9ca5a2701a7ca094a574b3f11d795b52f1628858d5ef826771c43b9e0f5f6&=&format=webp&quality=lossless",
+                  "footerIconURL": "",
+                  "thumbnailURL": "",
+                  "authorName": "",
+                  "authorIcon": "",
+                  "description": "",
+                  "fields": [],
+                  "url": "",
+                  "timestamp": "None",
+                  "customTimestamp": ""
+                }
+              },
+              {
+                "type": "embed",
+                "data": {
+                  "title": "",
+                  "embedColor": "#313338",
+                  "footerContent": "",
+                  "imageURL": "https://media.discordapp.net/attachments/1343934615672590336/1354060784640196729/1_6.png?ex=67e3eae0&is=67e29960&hm=2a7f3d5f8c9a753d407dadf5c6d30d7385f41aaface2d3310038098f4586a398&=&format=webp&quality=lossless",
+                  "footerIconURL": "",
+                  "thumbnailURL": "",
+                  "authorName": "",
+                  "authorIcon": "",
+                  "description": "",
+                  "fields": [],
+                  "url": "",
+                  "timestamp": "None",
+                  "customTimestamp": ""
+                }
+              },
+              {
+                "type": "embed",
+                "data": {
+                  "title": "",
+                  "embedColor": "#313338",
+                  "footerContent": "",
+                  "imageURL": "https://media.discordapp.net/attachments/1343934615672590336/1354060799265603695/1_7.png?ex=67e3eae3&is=67e29963&hm=3fc3b1690d2b57d98a139635ea31f8c58178ef0766bc48046e91554faef86546&=&format=webp&quality=lossless",
+                  "footerIconURL": "",
+                  "thumbnailURL": "",
+                  "authorName": "",
+                  "authorIcon": "",
+                  "description": "",
+                  "fields": [],
+                  "url": "",
+                  "timestamp": "None",
+                  "customTimestamp": ""
+                }
+              },
+              {
+                "type": "embed",
+                "data": {
+                  "title": "",
+                  "embedColor": "#313338",
+                  "footerContent": "",
+                  "imageURL": "https://media.discordapp.net/attachments/1343934615672590336/1354060813174050847/1_8.png?ex=67e3eae7&is=67e29967&hm=41ee2fc3fdd2854cdc9a24794ed9845d6ca291cbfd49bc44e54768366d59545f&=&format=webp&quality=lossless",
+                  "footerIconURL": "",
+                  "thumbnailURL": "",
+                  "authorName": "",
+                  "authorIcon": "",
+                  "description": "",
+                  "fields": [],
+                  "url": "",
+                  "timestamp": "None",
+                  "customTimestamp": ""
+                }
+              }
+            ],
+            "channel": {
+              "type": "command",
+              "value": ""
+            },
+            "replyToInteraction": true,
+            "storeAs": {
+              "value": "",
+              "type": "temporary"
+            },
+            "options": [
+              {
+                "type": "options"
+              }
+            ]
+          },
+          "id": 1742925316942
+        },
+        {
+          "name": "Send Message",
+          "file": "sendmessage.js",
+          "data": {
+            "name": "Send Message",
+            "messageContent": "",
+            "actionRows": [],
+            "embeds": [
+              {
+                "type": "embed",
+                "data": {
+                  "title": "",
+                  "embedColor": "#313338",
+                  "footerContent": "",
+                  "imageURL": "https://media.discordapp.net/attachments/1343934615672590336/1354060827916894269/2.png?ex=67e3eaea&is=67e2996a&hm=20fc7e1c035c1a4f48072300916847e9e231266d59af17d9b707f3a9ded54654&=&format=webp&quality=lossless",
+                  "footerIconURL": "",
+                  "thumbnailURL": "",
+                  "authorName": "",
+                  "authorIcon": "",
+                  "description": "",
+                  "fields": [],
+                  "url": "",
+                  "timestamp": "None",
+                  "customTimestamp": ""
+                }
+              },
+              {
+                "type": "embed",
+                "data": {
+                  "title": "",
+                  "embedColor": "#313338",
+                  "footerContent": "",
+                  "imageURL": "https://media.discordapp.net/attachments/1343934615672590336/1354060839195246654/2_1.png?ex=67e3eaed&is=67e2996d&hm=e07ad333f521129bcc69b6e70124baa2a76352b438ecd995569046fb095a100c&=&format=webp&quality=lossless",
+                  "footerIconURL": "",
+                  "thumbnailURL": "",
+                  "authorName": "",
+                  "authorIcon": "",
+                  "description": "",
+                  "fields": [],
+                  "url": "",
+                  "timestamp": "None",
+                  "customTimestamp": ""
+                }
+              },
+              {
+                "type": "embed",
+                "data": {
+                  "title": "",
+                  "embedColor": "#313338",
+                  "footerContent": "",
+                  "imageURL": "https://media.discordapp.net/attachments/1343934615672590336/1354060848007741493/2_2.png?ex=67e3eaef&is=67e2996f&hm=7314390c0d540a8f24aa7945ec01fe69d6f9abcea948ae779d408bc09853118c&=&format=webp&quality=lossless",
+                  "footerIconURL": "",
+                  "thumbnailURL": "",
+                  "authorName": "",
+                  "authorIcon": "",
+                  "description": "",
+                  "fields": [],
+                  "url": "",
+                  "timestamp": "None",
+                  "customTimestamp": ""
+                }
+              },
+              {
+                "type": "embed",
+                "data": {
+                  "title": "",
+                  "embedColor": "#313338",
+                  "footerContent": "",
+                  "imageURL": "https://media.discordapp.net/attachments/1343934615672590336/1354060870313054239/2_3.png?ex=67e3eaf4&is=67e29974&hm=f726c9020a315fffae7b26c1c971ca741210c812ce9df47e07f7ef3c0203b7a6&=&format=webp&quality=lossless",
+                  "footerIconURL": "",
+                  "thumbnailURL": "",
+                  "authorName": "",
+                  "authorIcon": "",
+                  "description": "",
+                  "fields": [],
+                  "url": "",
+                  "timestamp": "None",
+                  "customTimestamp": ""
+                }
+              },
+              {
+                "type": "embed",
+                "data": {
+                  "title": "",
+                  "embedColor": "#313338",
+                  "footerContent": "",
+                  "imageURL": "https://media.discordapp.net/attachments/1343934615672590336/1354060880559476807/2_4.png?ex=67e3eaf7&is=67e29977&hm=67aa97cd8bb6b66fad6ad36d6d472758c001fae556ea7e11cb26a80026d409da&=&format=webp&quality=lossless",
+                  "footerIconURL": "",
+                  "thumbnailURL": "",
+                  "authorName": "",
+                  "authorIcon": "",
+                  "description": "",
+                  "fields": [],
+                  "url": "",
+                  "timestamp": "None",
+                  "customTimestamp": ""
+                }
+              }
+            ],
+            "channel": {
+              "type": "command",
+              "value": ""
+            },
+            "replyToInteraction": true,
+            "storeAs": {
+              "value": "",
+              "type": "temporary"
+            },
+            "options": [
+              {
+                "type": "options"
+              }
+            ]
+          },
+          "id": 1742925968310
+        }
+      ],
+      "customId": 1742925313592,
+      "boundary": {
+        "worksIn": "guild",
+        "limits": []
+      },
+      "parameters": [],
+      "description": "No Description",
+      "folder": []
     }
   ],
   "prjSrc": "C:\\Users\\RR\\Desktop\\Новая папка",
