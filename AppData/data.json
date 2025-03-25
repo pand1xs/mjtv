@@ -202,7 +202,7 @@
                                   "file": "sendmessage.js",
                                   "data": {
                                     "name": "Send Message",
-                                    "messageContent": "### Подал заявку - ${tempVars('подалзаявку')}\n<@&1342968470043754517>",
+                                    "messageContent": "### Подал заявку - ${serverVars('подалзаявку')}\n<@&1342968470043754517>",
                                     "actionRows": [],
                                     "embeds": [
                                       {
