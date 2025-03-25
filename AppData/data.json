@@ -210,7 +210,7 @@
                                         "data": {
                                           "title": "",
                                           "embedColor": "#1e1f22",
-                                          "footerContent": "",
+                                          "footerContent": "✅ Принята | ❌ Отклонена",
                                           "imageURL": "",
                                           "footerIconURL": "",
                                           "thumbnailURL": "",
@@ -219,14 +219,14 @@
                                           "description": "**Имя и возраст:**\n```${tempVars('имя')}```\n\n**В какой состоите фамке или фракции:**\n```${tempVars('фамка')}```\n\n**Есть ли опыт в модерации:**\n```${tempVars('мод')}```\n\n**Есть опыт работы в Photoshop или Figma:**\n```${tempVars('фотошоп')}```\n\n**Какой сервер хотите модерировать?:**\n```${tempVars('server')}```",
                                           "fields": [],
                                           "url": "",
-                                          "timestamp": "None",
+                                          "timestamp": "Current",
                                           "customTimestamp": ""
                                         }
                                       }
                                     ],
                                     "channel": {
                                       "type": "id",
-                                      "value": "1345343332347543662"
+                                      "value": "1342995933046116413"
                                     },
                                     "storeAs": {
                                       "value": "",
@@ -331,7 +331,7 @@
                 "data": {
                   "title": "<:8335developer:1202198796084465664> Открыты заявление на пост модератора!",
                   "embedColor": "#1e1f22",
-                  "footerContent": "✅ Принята | ❌ Отклонена",
+                  "footerContent": "",
                   "imageURL": "https://media.discordapp.net/attachments/1343226783763271720/1353809603317600307/Frame_3602.png?ex=67e300f1&is=67e1af71&hm=50efa095aa80daf637b8ccadefcced2958a0bee44e5b0456528950e3b40f0f69&=&format=webp&quality=lossless&width=960&height=960",
                   "footerIconURL": "",
                   "thumbnailURL": "",
@@ -340,7 +340,7 @@
                   "description": "***Модератор - человек, занимающийся публикацией новостей жизни своего сервера***\n\n**Для того, чтобы попасть на эту должность от вас требуется:**\n*Желание и активность.\nАдекватность и грамотность.\nУмение собирать информацию.*\n\n**Что тебя ждёт на данной должности:**\n*Карьерный рост.\nВайбовое общение среди коллектива.\nПочет и уважение от участников сервера.*",
                   "fields": [],
                   "url": "",
-                  "timestamp": "Current",
+                  "timestamp": "None",
                   "customTimestamp": ""
                 }
               }
