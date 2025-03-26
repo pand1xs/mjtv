@@ -126,7 +126,7 @@
                                     "max": "",
                                     "required": true,
                                     "store": {
-                                      "type": "temporary",
+                                      "type": "server",
                                       "value": "фотошоп"
                                     }
                                   }
@@ -142,7 +142,7 @@
                                     "max": "",
                                     "required": true,
                                     "store": {
-                                      "type": "temporary",
+                                      "type": "server",
                                       "value": "имя"
                                     }
                                   }
@@ -158,7 +158,7 @@
                                     "max": "",
                                     "required": true,
                                     "store": {
-                                      "type": "temporary",
+                                      "type": "server",
                                       "value": "фамка"
                                     }
                                   }
@@ -174,7 +174,7 @@
                                     "max": "",
                                     "required": true,
                                     "store": {
-                                      "type": "temporary",
+                                      "type": "server",
                                       "value": "мод"
                                     }
                                   }
@@ -190,7 +190,7 @@
                                     "max": "",
                                     "required": true,
                                     "store": {
-                                      "type": "temporary",
+                                      "type": "server",
                                       "value": "server"
                                     }
                                   }
@@ -202,21 +202,215 @@
                                   "file": "sendmessage.js",
                                   "data": {
                                     "name": "Send Message",
-                                    "messageContent": "### Подал заявку - ${tempVars('подалзаявку')}\n<@&1342968470043754517>",
-                                    "actionRows": [],
+                                    "messageContent": "### Подал заявку - ${serverVars('подалзаявку')}\n<@&1342968470043754517>",
+                                    "actionRows": [
+                                      {
+                                        "type": "buttons",
+                                        "data": {
+                                          "buttons": [
+                                            {
+                                              "type": "normal",
+                                              "data": {
+                                                "label": "Принять",
+                                                "color": "Success",
+                                                "actions": [
+                                                  {
+                                                    "name": "Send Message",
+                                                    "file": "sendmessage.js",
+                                                    "data": {
+                                                      "name": "Send Message",
+                                                      "messageContent": "### Подал заявку - ${serverVars('подалзаявку')}",
+                                                      "channel": {
+                                                        "type": "command",
+                                                        "value": ""
+                                                      },
+                                                      "actionRows": [],
+                                                      "embeds": [
+                                                        {
+                                                          "type": "embed",
+                                                          "data": {
+                                                            "title": "",
+                                                            "embedColor": "#59bf00",
+                                                            "footerContent": "",
+                                                            "imageURL": "",
+                                                            "footerIconURL": "",
+                                                            "thumbnailURL": "",
+                                                            "authorName": "",
+                                                            "authorIcon": "",
+                                                            "description": "**Имя и возраст:**\n```${serverVars('имя')}```\n\n**В какой состоите фамке или фракции:**\n```${serverVars('фамка')}```\n\n**Есть ли опыт в модерации:**\n```${serverVars('мод')}```\n\n**Есть опыт работы в Photoshop или Figma:**\n```${serverVars('фотошоп')}```\n\n**Какой сервер хотите модерировать?:**\n```${serverVars('server')}```",
+                                                            "fields": [],
+                                                            "url": "",
+                                                            "timestamp": "Current",
+                                                            "customTimestamp": ""
+                                                          }
+                                                        }
+                                                      ],
+                                                      "options": [
+                                                        {
+                                                          "type": "options"
+                                                        }
+                                                      ],
+                                                      "replyToInteraction": false,
+                                                      "storeAs": {
+                                                        "type": "temporary",
+                                                        "value": ""
+                                                      },
+                                                      "attachments": [],
+                                                      "files": [],
+                                                      "poll": [],
+                                                      "silent": false,
+                                                      "mentions": true,
+                                                      "dontSend": false,
+                                                      "ephemeral": false,
+                                                      "updateMessage": {
+                                                        "type": "tempVar",
+                                                        "value": "смс"
+                                                      },
+                                                      "updateContent": false,
+                                                      "updateComponents": false,
+                                                      "updateEmbeds": false,
+                                                      "updateAttachments": false
+                                                    },
+                                                    "id": 1743014896028
+                                                  }
+                                                ],
+                                                "disabled": false,
+                                                "emojiName": "2003on",
+                                                "emojiID": "<:2003on:1181132265405829140>",
+                                                "isEmojiAnimated": false,
+                                                "type": {
+                                                  "type": "persistent",
+                                                  "value": "60"
+                                                },
+                                                "styles_emoji": [
+                                                  {
+                                                    "type": "styles_emoji"
+                                                  }
+                                                ],
+                                                "usage": [
+                                                  {
+                                                    "type": "usage"
+                                                  }
+                                                ],
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
+                                              }
+                                            },
+                                            {
+                                              "type": "normal",
+                                              "data": {
+                                                "label": "Отклонить",
+                                                "color": "Danger",
+                                                "actions": [
+                                                  {
+                                                    "name": "Send Message",
+                                                    "file": "sendmessage.js",
+                                                    "data": {
+                                                      "name": "Send Message",
+                                                      "messageContent": "### Подал заявку - ${serverVars('подалзаявку')}",
+                                                      "channel": {
+                                                        "type": "command",
+                                                        "value": ""
+                                                      },
+                                                      "actionRows": [],
+                                                      "embeds": [
+                                                        {
+                                                          "type": "embed",
+                                                          "data": {
+                                                            "title": "",
+                                                            "embedColor": "#bf0013",
+                                                            "footerContent": "",
+                                                            "imageURL": "",
+                                                            "footerIconURL": "",
+                                                            "thumbnailURL": "",
+                                                            "authorName": "",
+                                                            "authorIcon": "",
+                                                            "description": "**Имя и возраст:**\n```${serverVars('имя')}```\n\n**В какой состоите фамке или фракции:**\n```${serverVars('фамка')}```\n\n**Есть ли опыт в модерации:**\n```${serverVars('мод')}```\n\n**Есть опыт работы в Photoshop или Figma:**\n```${serverVars('фотошоп')}```\n\n**Какой сервер хотите модерировать?:**\n```${serverVars('server')}```",
+                                                            "fields": [],
+                                                            "url": "",
+                                                            "timestamp": "Current",
+                                                            "customTimestamp": ""
+                                                          }
+                                                        }
+                                                      ],
+                                                      "options": [
+                                                        {
+                                                          "type": "options"
+                                                        }
+                                                      ],
+                                                      "replyToInteraction": false,
+                                                      "storeAs": {
+                                                        "type": "temporary",
+                                                        "value": ""
+                                                      },
+                                                      "attachments": [],
+                                                      "files": [],
+                                                      "poll": [],
+                                                      "silent": false,
+                                                      "mentions": true,
+                                                      "dontSend": false,
+                                                      "ephemeral": false,
+                                                      "updateMessage": {
+                                                        "type": "tempVar",
+                                                        "value": "смс"
+                                                      },
+                                                      "updateContent": false,
+                                                      "updateComponents": false,
+                                                      "updateEmbeds": false,
+                                                      "updateAttachments": false
+                                                    },
+                                                    "id": 1743015559289
+                                                  }
+                                                ],
+                                                "disabled": false,
+                                                "emojiName": "4247off",
+                                                "emojiID": "<:4247off:1181132285907583026>",
+                                                "isEmojiAnimated": false,
+                                                "type": {
+                                                  "type": "persistent",
+                                                  "value": "60"
+                                                },
+                                                "styles_emoji": [
+                                                  {
+                                                    "type": "styles_emoji"
+                                                  }
+                                                ],
+                                                "usage": [
+                                                  {
+                                                    "type": "usage"
+                                                  }
+                                                ],
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
+                                              }
+                                            }
+                                          ],
+                                          "storeInteractionAs": {
+                                            "type": "temporary",
+                                            "value": ""
+                                          },
+                                          "storeInteractionAuthorAs": {
+                                            "type": "temporary",
+                                            "value": "ктопринял"
+                                          }
+                                        }
+                                      }
+                                    ],
                                     "embeds": [
                                       {
                                         "type": "embed",
                                         "data": {
                                           "title": "",
                                           "embedColor": "#1e1f22",
-                                          "footerContent": "✅ Принята | ❌ Отклонена",
+                                          "footerContent": "",
                                           "imageURL": "",
                                           "footerIconURL": "",
                                           "thumbnailURL": "",
                                           "authorName": "",
                                           "authorIcon": "",
-                                          "description": "**Имя и возраст:**\n```${tempVars('имя')}```\n\n**В какой состоите фамке или фракции:**\n```${tempVars('фамка')}```\n\n**Есть ли опыт в модерации:**\n```${tempVars('мод')}```\n\n**Есть опыт работы в Photoshop или Figma:**\n```${tempVars('фотошоп')}```\n\n**Какой сервер хотите модерировать?:**\n```${tempVars('server')}```",
+                                          "description": "**Имя и возраст:**\n```${serverVars('имя')}```\n\n**В какой состоите фамке или фракции:**\n```${serverVars('фамка')}```\n\n**Есть ли опыт в модерации:**\n```${serverVars('мод')}```\n\n**Есть опыт работы в Photoshop или Figma:**\n```${serverVars('фотошоп')}```\n\n**Какой сервер хотите модерировать?:**\n```${serverVars('server')}```",
                                           "fields": [],
                                           "url": "",
                                           "timestamp": "Current",
@@ -229,7 +423,7 @@
                                       "value": "1342995933046116413"
                                     },
                                     "storeAs": {
-                                      "value": "",
+                                      "value": "смс",
                                       "type": "temporary"
                                     },
                                     "replyToInteraction": false,
@@ -334,7 +528,7 @@
                     "value": ""
                   },
                   "storeInteractionAuthorAs": {
-                    "type": "temporary",
+                    "type": "server",
                     "value": "подалзаявку"
                   }
                 }
