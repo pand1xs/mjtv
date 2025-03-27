@@ -118,22 +118,6 @@
                                 {
                                   "type": "input",
                                   "data": {
-                                    "label": "Есть опыт работы в Photoshop или Figma",
-                                    "style": "Input",
-                                    "value": "",
-                                    "placeholder": "",
-                                    "min": "",
-                                    "max": "",
-                                    "required": true,
-                                    "store": {
-                                      "type": "server",
-                                      "value": "фотошоп"
-                                    }
-                                  }
-                                },
-                                {
-                                  "type": "input",
-                                  "data": {
                                     "label": "Имя и возраст",
                                     "style": "Input",
                                     "value": "",
@@ -142,7 +126,7 @@
                                     "max": "",
                                     "required": true,
                                     "store": {
-                                      "type": "server",
+                                      "type": "temporary",
                                       "value": "имя"
                                     }
                                   }
@@ -158,7 +142,7 @@
                                     "max": "",
                                     "required": true,
                                     "store": {
-                                      "type": "server",
+                                      "type": "temporary",
                                       "value": "фамка"
                                     }
                                   }
@@ -174,8 +158,24 @@
                                     "max": "",
                                     "required": true,
                                     "store": {
-                                      "type": "server",
+                                      "type": "temporary",
                                       "value": "мод"
+                                    }
+                                  }
+                                },
+                                {
+                                  "type": "input",
+                                  "data": {
+                                    "label": "Есть опыт работы в Photoshop или Figma",
+                                    "style": "Input",
+                                    "value": "",
+                                    "placeholder": "",
+                                    "min": "",
+                                    "max": "",
+                                    "required": true,
+                                    "store": {
+                                      "type": "temporary",
+                                      "value": "фотошоп"
                                     }
                                   }
                                 },
@@ -185,12 +185,12 @@
                                     "label": "Какой сервер хотите модерировать?",
                                     "style": "Input",
                                     "value": "",
-                                    "placeholder": "",
+                                    "placeholder": "Можно указать только один сервер",
                                     "min": "",
                                     "max": "",
                                     "required": true,
                                     "store": {
-                                      "type": "server",
+                                      "type": "temporary",
                                       "value": "server"
                                     }
                                   }
@@ -202,7 +202,7 @@
                                   "file": "sendmessage.js",
                                   "data": {
                                     "name": "Send Message",
-                                    "messageContent": "### Подал заявку - ${serverVars('подалзаявку')}\n<@&1342968470043754517>",
+                                    "messageContent": "### Подал заявку - ${tempVars('подалзаявку')}\n<@&1342968470043754517>",
                                     "actionRows": [
                                       {
                                         "type": "buttons",
@@ -215,140 +215,119 @@
                                                 "color": "Success",
                                                 "actions": [
                                                   {
-                                                    "name": "Get Message Info",
-                                                    "file": "getMessageInfo.js",
+                                                    "name": "Get Message Data",
+                                                    "file": "getMessageData.js",
                                                     "data": {
-                                                      "name": "Get Message Info",
+                                                      "name": "Get Message Data",
                                                       "message": {
                                                         "type": "tempVar",
                                                         "value": "смс"
                                                       },
-                                                      "get": {
-                                                        "type": "content",
-                                                        "value": ""
-                                                      },
+                                                      "dataName": "member",
+                                                      "defaultValue": "",
                                                       "store": {
                                                         "type": "temporary",
-                                                        "value": "смс32"
+                                                        "value": "sms"
                                                       }
                                                     },
                                                     "id": 1743069435598
                                                   },
                                                   {
-                                                    "name": "Send Message",
-                                                    "file": "sendmessage.js",
+                                                    "name": "Get Message Data",
+                                                    "file": "getMessageData.js",
                                                     "data": {
-                                                      "name": "Send Message",
-                                                      "messageContent": "${tempVars('смс32')}",
-                                                      "channel": {
-                                                        "type": "command",
-                                                        "value": ""
-                                                      },
-                                                      "actionRows": [],
-                                                      "embeds": [
-                                                        {
-                                                          "type": "embed",
-                                                          "data": {
-                                                            "title": "",
-                                                            "embedColor": "#59bf00",
-                                                            "footerContent": "",
-                                                            "imageURL": "",
-                                                            "footerIconURL": "",
-                                                            "thumbnailURL": "",
-                                                            "authorName": "",
-                                                            "authorIcon": "",
-                                                            "description": "**Имя и возраст:**\n```${serverVars('имя')}```\n\n**В какой состоите фамке или фракции:**\n```${serverVars('фамка')}```\n\n**Есть ли опыт в модерации:**\n```${serverVars('мод')}```\n\n**Есть опыт работы в Photoshop или Figma:**\n```${serverVars('фотошоп')}```\n\n**Какой сервер хотите модерировать?:**\n```${serverVars('server')}```",
-                                                            "fields": [],
-                                                            "url": "",
-                                                            "timestamp": "Current",
-                                                            "customTimestamp": ""
-                                                          }
-                                                        }
-                                                      ],
-                                                      "options": [
-                                                        {
-                                                          "type": "options"
-                                                        }
-                                                      ],
-                                                      "replyToInteraction": false,
-                                                      "storeAs": {
-                                                        "type": "temporary",
-                                                        "value": ""
-                                                      },
-                                                      "attachments": [],
-                                                      "files": [],
-                                                      "poll": [],
-                                                      "silent": false,
-                                                      "mentions": true,
-                                                      "dontSend": false,
-                                                      "ephemeral": false,
-                                                      "updateMessage": {
-                                                        "type": "tempVar",
-                                                        "value": "смс"
-                                                      },
-                                                      "updateContent": false,
-                                                      "updateComponents": false,
-                                                      "updateEmbeds": false,
-                                                      "updateAttachments": false
-                                                    },
-                                                    "id": 1743069032079
-                                                  }
-                                                ],
-                                                "disabled": false,
-                                                "emojiName": "2003on",
-                                                "emojiID": "1181132265405829140",
-                                                "isEmojiAnimated": false,
-                                                "type": {
-                                                  "type": "persistent",
-                                                  "value": "60"
-                                                },
-                                                "styles_emoji": [
-                                                  {
-                                                    "type": "styles_emoji"
-                                                  }
-                                                ],
-                                                "usage": [
-                                                  {
-                                                    "type": "usage"
-                                                  }
-                                                ],
-                                                "premium_button": [],
-                                                "customID": "Auto Generated",
-                                                "id": ""
-                                              }
-                                            },
-                                            {
-                                              "type": "normal",
-                                              "data": {
-                                                "label": "Отклонить",
-                                                "color": "Danger",
-                                                "actions": [
-                                                  {
-                                                    "name": "Get Message Info",
-                                                    "file": "getMessageInfo.js",
-                                                    "data": {
-                                                      "name": "Get Message Info",
+                                                      "name": "Get Message Data",
                                                       "message": {
                                                         "type": "tempVar",
                                                         "value": "смс"
                                                       },
-                                                      "get": {
-                                                        "type": "content",
-                                                        "value": ""
-                                                      },
+                                                      "dataName": "name",
+                                                      "defaultValue": "",
                                                       "store": {
                                                         "type": "temporary",
-                                                        "value": "смс32"
+                                                        "value": "name"
                                                       }
                                                     },
-                                                    "id": 1743069671259
+                                                    "id": 1743101832463
+                                                  },
+                                                  {
+                                                    "name": "Get Message Data",
+                                                    "file": "getMessageData.js",
+                                                    "data": {
+                                                      "name": "Get Message Data",
+                                                      "message": {
+                                                        "type": "tempVar",
+                                                        "value": "смс"
+                                                      },
+                                                      "dataName": "famq",
+                                                      "defaultValue": "",
+                                                      "store": {
+                                                        "type": "temporary",
+                                                        "value": "famq"
+                                                      }
+                                                    },
+                                                    "id": 1743102522436
+                                                  },
+                                                  {
+                                                    "name": "Get Message Data",
+                                                    "file": "getMessageData.js",
+                                                    "data": {
+                                                      "name": "Get Message Data",
+                                                      "message": {
+                                                        "type": "tempVar",
+                                                        "value": "смс"
+                                                      },
+                                                      "dataName": "mod",
+                                                      "defaultValue": "",
+                                                      "store": {
+                                                        "type": "temporary",
+                                                        "value": "mod"
+                                                      }
+                                                    },
+                                                    "id": 1743102522437
+                                                  },
+                                                  {
+                                                    "name": "Get Message Data",
+                                                    "file": "getMessageData.js",
+                                                    "data": {
+                                                      "name": "Get Message Data",
+                                                      "message": {
+                                                        "type": "tempVar",
+                                                        "value": "смс"
+                                                      },
+                                                      "dataName": "server",
+                                                      "defaultValue": "",
+                                                      "store": {
+                                                        "type": "temporary",
+                                                        "value": "сервер"
+                                                      }
+                                                    },
+                                                    "id": 1743102522438
+                                                  },
+                                                  {
+                                                    "name": "Get Message Data",
+                                                    "file": "getMessageData.js",
+                                                    "data": {
+                                                      "name": "Get Message Data",
+                                                      "message": {
+                                                        "type": "tempVar",
+                                                        "value": "смс"
+                                                      },
+                                                      "dataName": "photoshop",
+                                                      "defaultValue": "",
+                                                      "store": {
+                                                        "type": "temporary",
+                                                        "value": "photoshop"
+                                                      }
+                                                    },
+                                                    "id": 1743102522439
                                                   },
                                                   {
                                                     "name": "Send Message",
                                                     "file": "sendmessage.js",
                                                     "data": {
                                                       "name": "Send Message",
-                                                      "messageContent": "${tempVars('смс32')}",
+                                                      "messageContent": "Подал завяку - <@${tempVars('sms')}>\nПринял заявку - ${tempVars('ктопринял')}",
                                                       "channel": {
                                                         "type": "command",
                                                         "value": ""
@@ -359,14 +338,14 @@
                                                           "type": "embed",
                                                           "data": {
                                                             "title": "",
-                                                            "embedColor": "#bf0013",
+                                                            "embedColor": "#06c923",
                                                             "footerContent": "",
                                                             "imageURL": "",
                                                             "footerIconURL": "",
                                                             "thumbnailURL": "",
                                                             "authorName": "",
                                                             "authorIcon": "",
-                                                            "description": "**Имя и возраст:**\n```${serverVars('имя')}```\n\n**В какой состоите фамке или фракции:**\n```${serverVars('фамка')}```\n\n**Есть ли опыт в модерации:**\n```${serverVars('мод')}```\n\n**Есть опыт работы в Photoshop или Figma:**\n```${serverVars('фотошоп')}```\n\n**Какой сервер хотите модерировать?:**\n```${serverVars('server')}```",
+                                                            "description": "**Имя и возраст:**\n```${tempVars('name')}```\n\n**В какой состоите фамке или фракции:**\n```${tempVars('famq')}```\n\n**Есть ли опыт в модерации:**\n```${tempVars('mod')}```\n\n**Есть опыт работы в Photoshop или Figma:**\n```${tempVars('photoshop')}```\n\n**Какой сервер хотите модерировать?:**\n```${tempVars('сервер')}```",
                                                             "fields": [],
                                                             "url": "",
                                                             "timestamp": "Current",
@@ -401,6 +380,343 @@
                                                       "updateAttachments": false
                                                     },
                                                     "id": 1743069032080
+                                                  },
+                                                  {
+                                                    "name": "Set Member Roles",
+                                                    "file": "setMemberRoles.js",
+                                                    "data": {
+                                                      "name": "Set Member Roles",
+                                                      "member": {
+                                                        "type": "id",
+                                                        "value": "${tempVars('sms')}"
+                                                      },
+                                                      "type": {
+                                                        "type": "add",
+                                                        "value": ""
+                                                      },
+                                                      "roles": [
+                                                        {
+                                                          "type": "role",
+                                                          "data": {
+                                                            "role": {
+                                                              "type": "id",
+                                                              "value": "1342969378517418065"
+                                                            }
+                                                          }
+                                                        }
+                                                      ]
+                                                    },
+                                                    "id": 1743102287733
+                                                  },
+                                                  {
+                                                    "name": "Send Message",
+                                                    "file": "sendmessage.js",
+                                                    "data": {
+                                                      "name": "Send Message",
+                                                      "messageContent": "Новый модератор - <@${tempVars('sms')}>\nНик по форме сервер | nick \nОзнакомиться с шаблонами https://discord.com/channels/982997343064432721/1343008687735701516\n\nНеделя на повышение\n5 постов на модератора",
+                                                      "actionRows": [],
+                                                      "embeds": [],
+                                                      "channel": {
+                                                        "type": "id",
+                                                        "value": "1343844304757723219"
+                                                      },
+                                                      "storeAs": {
+                                                        "value": "",
+                                                        "type": "temporary"
+                                                      },
+                                                      "replyToInteraction": false,
+                                                      "options": [
+                                                        {
+                                                          "type": "options"
+                                                        }
+                                                      ]
+                                                    },
+                                                    "id": 1743102356339
+                                                  },
+                                                  {
+                                                    "name": "Send Message",
+                                                    "file": "sendmessage.js",
+                                                    "data": {
+                                                      "name": "Send Message",
+                                                      "messageContent": "",
+                                                      "actionRows": [],
+                                                      "embeds": [
+                                                        {
+                                                          "type": "embed",
+                                                          "data": {
+                                                            "title": "Ваша заявка на модератора принята!",
+                                                            "embedColor": "#06c923",
+                                                            "footerContent": "",
+                                                            "imageURL": "",
+                                                            "footerIconURL": "",
+                                                            "thumbnailURL": "",
+                                                            "authorName": "",
+                                                            "authorIcon": "",
+                                                            "description": "",
+                                                            "fields": [],
+                                                            "url": "",
+                                                            "timestamp": "None",
+                                                            "customTimestamp": ""
+                                                          }
+                                                        }
+                                                      ],
+                                                      "channel": {
+                                                        "type": "userID",
+                                                        "value": "${tempVars('sms')}"
+                                                      },
+                                                      "storeAs": {
+                                                        "value": "",
+                                                        "type": "temporary"
+                                                      },
+                                                      "replyToInteraction": false,
+                                                      "options": [
+                                                        {
+                                                          "type": "options"
+                                                        }
+                                                      ]
+                                                    },
+                                                    "id": 1743102457739
+                                                  }
+                                                ],
+                                                "disabled": false,
+                                                "emojiName": "2003on",
+                                                "emojiID": "1181132265405829140",
+                                                "isEmojiAnimated": false,
+                                                "type": {
+                                                  "type": "persistent",
+                                                  "value": "60"
+                                                },
+                                                "styles_emoji": [
+                                                  {
+                                                    "type": "styles_emoji"
+                                                  }
+                                                ],
+                                                "usage": [
+                                                  {
+                                                    "type": "usage"
+                                                  }
+                                                ],
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
+                                              }
+                                            },
+                                            {
+                                              "type": "normal",
+                                              "data": {
+                                                "label": "Отклонить",
+                                                "color": "Success",
+                                                "actions": [
+                                                  {
+                                                    "name": "Get Message Data",
+                                                    "file": "getMessageData.js",
+                                                    "data": {
+                                                      "name": "Get Message Data",
+                                                      "message": {
+                                                        "type": "tempVar",
+                                                        "value": "смс"
+                                                      },
+                                                      "dataName": "member",
+                                                      "defaultValue": "",
+                                                      "store": {
+                                                        "type": "temporary",
+                                                        "value": "sms"
+                                                      }
+                                                    },
+                                                    "id": 1743102522440
+                                                  },
+                                                  {
+                                                    "name": "Get Message Data",
+                                                    "file": "getMessageData.js",
+                                                    "data": {
+                                                      "name": "Get Message Data",
+                                                      "message": {
+                                                        "type": "tempVar",
+                                                        "value": "смс"
+                                                      },
+                                                      "dataName": "name",
+                                                      "defaultValue": "",
+                                                      "store": {
+                                                        "type": "temporary",
+                                                        "value": "name"
+                                                      }
+                                                    },
+                                                    "id": 1743102522441
+                                                  },
+                                                  {
+                                                    "name": "Get Message Data",
+                                                    "file": "getMessageData.js",
+                                                    "data": {
+                                                      "name": "Get Message Data",
+                                                      "message": {
+                                                        "type": "tempVar",
+                                                        "value": "смс"
+                                                      },
+                                                      "dataName": "famq",
+                                                      "defaultValue": "",
+                                                      "store": {
+                                                        "type": "temporary",
+                                                        "value": "famq"
+                                                      }
+                                                    },
+                                                    "id": 1743102522442
+                                                  },
+                                                  {
+                                                    "name": "Get Message Data",
+                                                    "file": "getMessageData.js",
+                                                    "data": {
+                                                      "name": "Get Message Data",
+                                                      "message": {
+                                                        "type": "tempVar",
+                                                        "value": "смс"
+                                                      },
+                                                      "dataName": "mod",
+                                                      "defaultValue": "",
+                                                      "store": {
+                                                        "type": "temporary",
+                                                        "value": "mod"
+                                                      }
+                                                    },
+                                                    "id": 1743102522443
+                                                  },
+                                                  {
+                                                    "name": "Get Message Data",
+                                                    "file": "getMessageData.js",
+                                                    "data": {
+                                                      "name": "Get Message Data",
+                                                      "message": {
+                                                        "type": "tempVar",
+                                                        "value": "смс"
+                                                      },
+                                                      "dataName": "server",
+                                                      "defaultValue": "",
+                                                      "store": {
+                                                        "type": "temporary",
+                                                        "value": "сервер"
+                                                      }
+                                                    },
+                                                    "id": 1743102522444
+                                                  },
+                                                  {
+                                                    "name": "Get Message Data",
+                                                    "file": "getMessageData.js",
+                                                    "data": {
+                                                      "name": "Get Message Data",
+                                                      "message": {
+                                                        "type": "tempVar",
+                                                        "value": "смс"
+                                                      },
+                                                      "dataName": "photoshop",
+                                                      "defaultValue": "",
+                                                      "store": {
+                                                        "type": "temporary",
+                                                        "value": "photoshop"
+                                                      }
+                                                    },
+                                                    "id": 1743102522445
+                                                  },
+                                                  {
+                                                    "name": "Send Message",
+                                                    "file": "sendmessage.js",
+                                                    "data": {
+                                                      "name": "Send Message",
+                                                      "messageContent": "Подал завяку - <@${tempVars('sms')}>\nОтклонил заявку - ${tempVars('ктопринял')}",
+                                                      "channel": {
+                                                        "type": "command",
+                                                        "value": ""
+                                                      },
+                                                      "actionRows": [],
+                                                      "embeds": [
+                                                        {
+                                                          "type": "embed",
+                                                          "data": {
+                                                            "title": "",
+                                                            "embedColor": "#bf0013",
+                                                            "footerContent": "",
+                                                            "imageURL": "",
+                                                            "footerIconURL": "",
+                                                            "thumbnailURL": "",
+                                                            "authorName": "",
+                                                            "authorIcon": "",
+                                                            "description": "**Имя и возраст:**\n```${tempVars('name')}```\n\n**В какой состоите фамке или фракции:**\n```${tempVars('famq')}```\n\n**Есть ли опыт в модерации:**\n```${tempVars('mod')}```\n\n**Есть опыт работы в Photoshop или Figma:**\n```${tempVars('photoshop')}```\n\n**Какой сервер хотите модерировать?:**\n```${tempVars('сервер')}```",
+                                                            "fields": [],
+                                                            "url": "",
+                                                            "timestamp": "Current",
+                                                            "customTimestamp": ""
+                                                          }
+                                                        }
+                                                      ],
+                                                      "options": [
+                                                        {
+                                                          "type": "options"
+                                                        }
+                                                      ],
+                                                      "replyToInteraction": false,
+                                                      "storeAs": {
+                                                        "type": "temporary",
+                                                        "value": ""
+                                                      },
+                                                      "attachments": [],
+                                                      "files": [],
+                                                      "poll": [],
+                                                      "silent": false,
+                                                      "mentions": true,
+                                                      "dontSend": false,
+                                                      "ephemeral": false,
+                                                      "updateMessage": {
+                                                        "type": "tempVar",
+                                                        "value": "смс"
+                                                      },
+                                                      "updateContent": false,
+                                                      "updateComponents": false,
+                                                      "updateEmbeds": false,
+                                                      "updateAttachments": false
+                                                    },
+                                                    "id": 1743102522446
+                                                  },
+                                                  {
+                                                    "name": "Send Message",
+                                                    "file": "sendmessage.js",
+                                                    "data": {
+                                                      "name": "Send Message",
+                                                      "messageContent": "",
+                                                      "actionRows": [],
+                                                      "embeds": [
+                                                        {
+                                                          "type": "embed",
+                                                          "data": {
+                                                            "title": "Ваша заявка на модератора отклонена!",
+                                                            "embedColor": "#c90606",
+                                                            "footerContent": "",
+                                                            "imageURL": "",
+                                                            "footerIconURL": "",
+                                                            "thumbnailURL": "",
+                                                            "authorName": "",
+                                                            "authorIcon": "",
+                                                            "description": "",
+                                                            "fields": [],
+                                                            "url": "",
+                                                            "timestamp": "None",
+                                                            "customTimestamp": ""
+                                                          }
+                                                        }
+                                                      ],
+                                                      "channel": {
+                                                        "type": "userID",
+                                                        "value": "${tempVars('sms')}"
+                                                      },
+                                                      "storeAs": {
+                                                        "value": "",
+                                                        "type": "temporary"
+                                                      },
+                                                      "replyToInteraction": false,
+                                                      "options": [
+                                                        {
+                                                          "type": "options"
+                                                        }
+                                                      ]
+                                                    },
+                                                    "id": 1743102522447
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -450,7 +766,7 @@
                                           "thumbnailURL": "",
                                           "authorName": "",
                                           "authorIcon": "",
-                                          "description": "**Имя и возраст:**\n```${serverVars('имя')}```\n\n**В какой состоите фамке или фракции:**\n```${serverVars('фамка')}```\n\n**Есть ли опыт в модерации:**\n```${serverVars('мод')}```\n\n**Есть опыт работы в Photoshop или Figma:**\n```${serverVars('фотошоп')}```\n\n**Какой сервер хотите модерировать?:**\n```${serverVars('server')}```",
+                                          "description": "**Имя и возраст:**\n```${tempVars('имя')}```\n\n**В какой состоите фамке или фракции:**\n```${tempVars('фамка')}```\n\n**Есть ли опыт в модерации:**\n```${tempVars('мод')}```\n\n**Есть опыт работы в Photoshop или Figma:**\n```${tempVars('фотошоп')}```\n\n**Какой сервер хотите модерировать?:**\n```${tempVars('server')}```",
                                           "fields": [],
                                           "url": "",
                                           "timestamp": "Current",
@@ -529,6 +845,128 @@
                                     "updateAttachments": false
                                   },
                                   "id": 1742896357342
+                                },
+                                {
+                                  "name": "Get Member Info",
+                                  "file": "getMemberInfo.js",
+                                  "data": {
+                                    "name": "Get Member Info",
+                                    "member": {
+                                      "type": "tempVar",
+                                      "value": "подалзаявку"
+                                    },
+                                    "get": {
+                                      "type": "id",
+                                      "value": ""
+                                    },
+                                    "store": {
+                                      "type": "temporary",
+                                      "value": "iduser"
+                                    }
+                                  },
+                                  "id": 1743101371018
+                                },
+                                {
+                                  "name": "Store Message Data",
+                                  "file": "storeMessageData.js",
+                                  "data": {
+                                    "name": "Store Message Data",
+                                    "source": {
+                                      "type": "tempVar",
+                                      "value": "iduser"
+                                    },
+                                    "message": {
+                                      "type": "tempVar",
+                                      "value": "смс"
+                                    },
+                                    "dataName": "member"
+                                  },
+                                  "id": 1743101393341
+                                },
+                                {
+                                  "name": "Store Message Data",
+                                  "file": "storeMessageData.js",
+                                  "data": {
+                                    "name": "Store Message Data",
+                                    "source": {
+                                      "type": "tempVar",
+                                      "value": "имя"
+                                    },
+                                    "message": {
+                                      "type": "tempVar",
+                                      "value": "смс"
+                                    },
+                                    "dataName": "name"
+                                  },
+                                  "id": 1743101832464
+                                },
+                                {
+                                  "name": "Store Message Data",
+                                  "file": "storeMessageData.js",
+                                  "data": {
+                                    "name": "Store Message Data",
+                                    "source": {
+                                      "type": "tempVar",
+                                      "value": "фамка"
+                                    },
+                                    "message": {
+                                      "type": "tempVar",
+                                      "value": "смс"
+                                    },
+                                    "dataName": "famq"
+                                  },
+                                  "id": 1743102522448
+                                },
+                                {
+                                  "name": "Store Message Data",
+                                  "file": "storeMessageData.js",
+                                  "data": {
+                                    "name": "Store Message Data",
+                                    "source": {
+                                      "type": "tempVar",
+                                      "value": "фотошоп"
+                                    },
+                                    "message": {
+                                      "type": "tempVar",
+                                      "value": "смс"
+                                    },
+                                    "dataName": "photoshop"
+                                  },
+                                  "id": 1743102522449
+                                },
+                                {
+                                  "name": "Store Message Data",
+                                  "file": "storeMessageData.js",
+                                  "data": {
+                                    "name": "Store Message Data",
+                                    "source": {
+                                      "type": "tempVar",
+                                      "value": "мод"
+                                    },
+                                    "message": {
+                                      "type": "tempVar",
+                                      "value": "смс"
+                                    },
+                                    "dataName": "mod"
+                                  },
+                                  "id": 1743102522450
+                                },
+                                {
+                                  "name": "Store Message Data",
+                                  "file": "storeMessageData.js",
+                                  "data": {
+                                    "name": "Store Message Data",
+                                    "source": {
+                                      "type": "tempVar",
+                                      "value": "server"
+                                    },
+                                    "message": {
+                                      "type": "tempVar",
+                                      "value": "смс"
+                                    },
+                                    "dataName": "server"
+                                  },
+                                  "id": 1743102522451
                                 }
                               ],
                               "store": {
@@ -568,7 +1006,7 @@
                     "value": "button"
                   },
                   "storeInteractionAuthorAs": {
-                    "type": "server",
+                    "type": "temporary",
                     "value": "подалзаявку"
                   }
                 }
@@ -691,19 +1129,21 @@
       "trigger": "textCommand",
       "actions": [
         {
-          "name": "Defer Interaction",
-          "file": "deferInteraction.js",
+          "name": "Get Date Info",
+          "file": "getDateInfo.js",
           "data": {
-            "name": "Defer Interaction",
-            "interaction": {
-              "type": "commandInteraction",
+            "name": "Get Date Info",
+            "date": {
+              "type": "local",
               "value": ""
             },
-            "replyToInteraction": false,
-            "ephemeral": false,
-            "silent": false
+            "get": "ISO",
+            "store": {
+              "type": "temporary",
+              "value": "date"
+            }
           },
-          "id": 1742924783602
+          "id": 1743072099022
         },
         {
           "name": "Edit Image",
@@ -718,23 +1158,76 @@
               {
                 "type": "writeText",
                 "data": {
-                  "size": "100",
-                  "color": "#000000",
-                  "x": "0",
-                  "y": "0",
+                  "size": "81",
+                  "color": "#faf1f0",
+                  "x": "378",
+                  "y": "341",
                   "alignment": {
-                    "type": "center",
+                    "type": "left",
                     "value": ""
                   },
-                  "text": "${tempVars('вин')}",
-                  "font": [
-                    {
-                      "type": "font",
-                      "data": {
-                        "weight": "400"
-                      }
-                    }
-                  ]
+                  "text": "${tempVars('win')}",
+                  "font": []
+                }
+              },
+              {
+                "type": "writeText",
+                "data": {
+                  "size": "81",
+                  "color": "#faf1f0",
+                  "x": "1467",
+                  "y": "341",
+                  "alignment": {
+                    "type": "right",
+                    "value": ""
+                  },
+                  "text": "${tempVars('lose')}",
+                  "font": []
+                }
+              },
+              {
+                "type": "writeText",
+                "data": {
+                  "size": "57",
+                  "color": "#02991d",
+                  "x": "815",
+                  "y": "357",
+                  "alignment": {
+                    "type": "left",
+                    "value": ""
+                  },
+                  "text": "${tempVars('swin')}",
+                  "font": []
+                }
+              },
+              {
+                "type": "writeText",
+                "data": {
+                  "size": "57",
+                  "color": "#990202",
+                  "x": "1053",
+                  "y": "357",
+                  "alignment": {
+                    "type": "left",
+                    "value": ""
+                  },
+                  "text": "${tempVars('slose')}",
+                  "font": []
+                }
+              },
+              {
+                "type": "writeText",
+                "data": {
+                  "size": "52",
+                  "color": "#FFFFFF",
+                  "x": "1639",
+                  "y": "189",
+                  "alignment": {
+                    "type": "left",
+                    "value": ""
+                  },
+                  "text": "${tempVars('date')}",
+                  "font": []
                 }
               }
             ],
@@ -743,55 +1236,16 @@
               "value": "img"
             }
           },
-          "id": 1742924824113
-        },
-        {
-          "name": "Get Attachment Info",
-          "file": "getAttachmentInfo.js",
-          "data": {
-            "name": "Get Attachment Info",
-            "attachment": {
-              "type": "tempVar",
-              "value": ""
-            },
-            "get": {
-              "type": "url",
-              "value": ""
-            },
-            "store": {
-              "type": "temporary",
-              "value": ""
-            }
-          },
-          "id": 1742924829875
+          "id": 1743070466352
         },
         {
           "name": "Send Message",
           "file": "sendmessage.js",
           "data": {
             "name": "Send Message",
-            "messageContent": "Hello World!",
+            "messageContent": "Полученая картинка",
             "actionRows": [],
-            "embeds": [
-              {
-                "type": "embed",
-                "data": {
-                  "title": "",
-                  "embedColor": "#FFFFFF",
-                  "footerContent": "",
-                  "imageURL": "",
-                  "footerIconURL": "",
-                  "thumbnailURL": "${tempVars('capt2')}",
-                  "authorName": "",
-                  "authorIcon": "",
-                  "description": "",
-                  "fields": [],
-                  "url": "",
-                  "timestamp": "None",
-                  "customTimestamp": ""
-                }
-              }
-            ],
+            "embeds": [],
             "channel": {
               "type": "command",
               "value": ""
@@ -810,7 +1264,7 @@
               {
                 "type": "attachment",
                 "data": {
-                  "name": "capt.png",
+                  "name": "photo.png",
                   "image": {
                     "type": "tempVar",
                     "value": "img"
@@ -818,7 +1272,7 @@
                   "spoiler": false,
                   "store": {
                     "type": "temporary",
-                    "value": "capt2"
+                    "value": ""
                   }
                 }
               }
@@ -838,7 +1292,7 @@
             "updateEmbeds": false,
             "updateAttachments": false
           },
-          "id": 1742924937139
+          "id": 1743099121033
         }
       ],
       "customId": 1742924738766,
@@ -849,16 +1303,63 @@
       },
       "parameters": [
         {
-          "name": "textwin",
+          "name": "winfamq",
           "type": "string",
           "description": "Победивший капт",
           "required": true,
           "choices": [],
-          "storeAs": "вин",
-          "completion": false
+          "storeAs": "win",
+          "completion": false,
+          "bound": {
+            "name": "Autocompletion",
+            "storeInputAs": {
+              "type": "temporary",
+              "value": ""
+            },
+            "storeInteractionAs": {
+              "type": "temporary",
+              "value": ""
+            },
+            "actions": [],
+            "result": {
+              "type": "tempVar",
+              "value": ""
+            }
+          },
+          "max_value": "30"
+        },
+        {
+          "name": "losefamq",
+          "type": "string",
+          "description": "Проигравший капт",
+          "required": true,
+          "choices": [],
+          "storeAs": "lose",
+          "completion": false,
+          "max_value": "30"
+        },
+        {
+          "name": "scorewin",
+          "type": "number",
+          "description": "счет победителя",
+          "required": true,
+          "choices": [],
+          "storeAs": "swin",
+          "completion": false,
+          "max_value": "1"
+        },
+        {
+          "name": "scorelose",
+          "type": "number",
+          "description": "счет проигравшего",
+          "required": true,
+          "choices": [],
+          "storeAs": "slose",
+          "completion": false,
+          "max_value": "1"
         }
       ],
-      "description": "No Description",
+      "description": "Сделать капт картинку",
       "folder": [
         1742889041669
       ],
@@ -4648,7 +5149,7 @@
       }
     }
   ],
-  "prjSrc": "C:\\Users\\RR\\Desktop\\Новая папка",
+  "prjSrc": "C:\\Users\\RR\\Desktop\\bot",
   "btk": "MTM0NTMxNjQxODUwNTQwODU3NA.GMVutT.42EaoidQtAi2KS6ah1o8AjEp7lqp_DdEOtKw1A",
   "prefix": "!",
   "name": "MJTV",
