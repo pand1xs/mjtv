@@ -4201,7 +4201,7 @@
                                     "placeholder": "",
                                     "min": "",
                                     "max": "",
-                                    "required": false,
+                                    "required": true,
                                     "store": {
                                       "type": "temporary",
                                       "value": "откат"
@@ -4358,26 +4358,6 @@
                                           "updateAttachments": false
                                         },
                                         "id": 1743061157011
-                                      },
-                                      {
-                                        "name": "Send Message",
-                                        "file": "sendmessage.js",
-                                        "data": {
-                                          "name": "Send Message",
-                                          "messageContent": "Hello World!",
-                                          "actionRows": [],
-                                          "embeds": [],
-                                          "channel": {
-                                            "type": "command",
-                                            "value": ""
-                                          },
-                                          "storeAs": {
-                                            "value": "",
-                                            "type": "temporary"
-                                          },
-                                          "replyToInteraction": true
-                                        },
-                                        "id": 1743061696843
                                       }
                                     ],
                                     "false": {
