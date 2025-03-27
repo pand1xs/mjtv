@@ -198,6 +198,43 @@
                               ],
                               "actions": [
                                 {
+                                  "name": "Get Member Info",
+                                  "file": "getMemberInfo.js",
+                                  "data": {
+                                    "name": "Get Member Info",
+                                    "member": {
+                                      "type": "serverVar",
+                                      "value": "подалзаявку"
+                                    },
+                                    "get": {
+                                      "type": "id",
+                                      "value": ""
+                                    },
+                                    "store": {
+                                      "type": "temporary",
+                                      "value": "iduser"
+                                    }
+                                  },
+                                  "id": 1743062701873
+                                },
+                                {
+                                  "name": "Store Message Data",
+                                  "file": "storeMessageData.js",
+                                  "data": {
+                                    "name": "Store Message Data",
+                                    "source": {
+                                      "type": "string",
+                                      "value": "member"
+                                    },
+                                    "message": {
+                                      "type": "tempVar",
+                                      "value": "button"
+                                    },
+                                    "dataName": "${tempVars('iduser')}"
+                                  },
+                                  "id": 1743062696021
+                                },
+                                {
                                   "name": "Send Message",
                                   "file": "sendmessage.js",
                                   "data": {
@@ -272,26 +309,6 @@
                                                       "updateAttachments": false
                                                     },
                                                     "id": 1743014896028
-                                                  },
-                                                  {
-                                                    "name": "Send Message",
-                                                    "file": "sendmessage.js",
-                                                    "data": {
-                                                      "name": "Send Message",
-                                                      "messageContent": "Hello World!",
-                                                      "actionRows": [],
-                                                      "embeds": [],
-                                                      "channel": {
-                                                        "type": "command",
-                                                        "value": ""
-                                                      },
-                                                      "storeAs": {
-                                                        "value": "",
-                                                        "type": "temporary"
-                                                      },
-                                                      "replyToInteraction": true
-                                                    },
-                                                    "id": 1743059247332
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -545,7 +562,7 @@
                   ],
                   "storeInteractionAs": {
                     "type": "temporary",
-                    "value": ""
+                    "value": "button"
                   },
                   "storeInteractionAuthorAs": {
                     "type": "server",
@@ -587,7 +604,22 @@
               {
                 "type": "options"
               }
-            ]
+            ],
+            "attachments": [],
+            "files": [],
+            "poll": [],
+            "silent": false,
+            "mentions": false,
+            "dontSend": false,
+            "ephemeral": false,
+            "updateMessage": {
+              "type": "none",
+              "value": ""
+            },
+            "updateContent": false,
+            "updateComponents": false,
+            "updateEmbeds": false,
+            "updateAttachments": false
           },
           "id": 1742889252019
         }
@@ -4305,7 +4337,7 @@
                                         "file": "sendmessage.js",
                                         "data": {
                                           "name": "Send Message",
-                                          "messageContent": "",
+                                          "messageContent": "<@&1095062933668642967> <@&1327161121110491156> <@&1095065468705964034> <@&1327012395771625624>",
                                           "actionRows": [],
                                           "embeds": [
                                             {
@@ -4345,7 +4377,7 @@
                                           "files": [],
                                           "poll": [],
                                           "silent": false,
-                                          "mentions": false,
+                                          "mentions": true,
                                           "dontSend": false,
                                           "ephemeral": false,
                                           "updateMessage": {
@@ -4431,7 +4463,7 @@
                                   "file": "sendmessage.js",
                                   "data": {
                                     "name": "Send Message",
-                                    "messageContent": "",
+                                    "messageContent": "<@&1095062933668642967> <@&1327161121110491156> <@&1095065468705964034> <@&1327012395771625624>",
                                     "actionRows": [],
                                     "embeds": [
                                       {
@@ -4471,7 +4503,7 @@
                                     "files": [],
                                     "poll": [],
                                     "silent": false,
-                                    "mentions": false,
+                                    "mentions": true,
                                     "dontSend": false,
                                     "ephemeral": false,
                                     "updateMessage": {
@@ -4553,7 +4585,7 @@
               "type": "command",
               "value": ""
             },
-            "replyToInteraction": true,
+            "replyToInteraction": false,
             "storeAs": {
               "value": "",
               "type": "temporary"
@@ -4599,6 +4631,53 @@
           "thisGlobal": []
         }
       }
+    },
+    {
+      "name": "restart",
+      "type": "action",
+      "trigger": "textCommand",
+      "actions": [
+        {
+          "name": "Restart Bot",
+          "file": "restartBot.js",
+          "data": {
+            "name": "Restart Bot"
+          },
+          "id": 1743068034304
+        }
+      ],
+      "customId": 1743068026815,
+      "boundary": {
+        "worksIn": "guild",
+        "limits": [],
+        "botOwnerOnly": true
+      },
+      "parameters": [],
+      "description": "No Description",
+      "folder": [],
+      "goodies": {
+        "actionType": "text",
+        "variables": {
+          "temporary": [],
+          "global": [
+            []
+          ],
+          "server": [
+            [
+              "подалзаявку",
+              "фотошоп",
+              "имя",
+              "фамка",
+              "мод",
+              "server"
+            ],
+            []
+          ],
+          "commandVars": [],
+          "thisServer": [],
+          "thisGlobal": []
+        }
+      }
     }
   ],
   "prjSrc": "C:\\Users\\RR\\Desktop\\Новая папка",
@@ -4612,7 +4691,7 @@
     "1742889041669": {
       "name": "mjtv",
       "color": null,
-      "closed": false
+      "closed": true
     }
   },
   "intents": {
