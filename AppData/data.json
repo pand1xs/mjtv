@@ -4519,7 +4519,7 @@
                         "emojiID": "",
                         "isEmojiAnimated": false,
                         "type": {
-                          "type": "temporary",
+                          "type": "persistent",
                           "value": "60"
                         },
                         "styles_emoji": [
@@ -4532,7 +4532,9 @@
                             "type": "usage"
                           }
                         ],
-                        "premium_button": []
+                        "premium_button": [],
+                        "customID": "Auto Generated",
+                        "id": ""
                       }
                     }
                   ],
