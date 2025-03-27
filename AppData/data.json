@@ -198,43 +198,6 @@
                               ],
                               "actions": [
                                 {
-                                  "name": "Get Member Info",
-                                  "file": "getMemberInfo.js",
-                                  "data": {
-                                    "name": "Get Member Info",
-                                    "member": {
-                                      "type": "serverVar",
-                                      "value": "подалзаявку"
-                                    },
-                                    "get": {
-                                      "type": "id",
-                                      "value": ""
-                                    },
-                                    "store": {
-                                      "type": "temporary",
-                                      "value": "iduser"
-                                    }
-                                  },
-                                  "id": 1743062701873
-                                },
-                                {
-                                  "name": "Store Message Data",
-                                  "file": "storeMessageData.js",
-                                  "data": {
-                                    "name": "Store Message Data",
-                                    "source": {
-                                      "type": "string",
-                                      "value": "member"
-                                    },
-                                    "message": {
-                                      "type": "tempVar",
-                                      "value": "button"
-                                    },
-                                    "dataName": "${tempVars('iduser')}"
-                                  },
-                                  "id": 1743062696021
-                                },
-                                {
                                   "name": "Send Message",
                                   "file": "sendmessage.js",
                                   "data": {
@@ -252,11 +215,31 @@
                                                 "color": "Success",
                                                 "actions": [
                                                   {
+                                                    "name": "Get Message Info",
+                                                    "file": "getMessageInfo.js",
+                                                    "data": {
+                                                      "name": "Get Message Info",
+                                                      "message": {
+                                                        "type": "tempVar",
+                                                        "value": "смс"
+                                                      },
+                                                      "get": {
+                                                        "type": "content",
+                                                        "value": ""
+                                                      },
+                                                      "store": {
+                                                        "type": "temporary",
+                                                        "value": "смс32"
+                                                      }
+                                                    },
+                                                    "id": 1743069435598
+                                                  },
+                                                  {
                                                     "name": "Send Message",
                                                     "file": "sendmessage.js",
                                                     "data": {
                                                       "name": "Send Message",
-                                                      "messageContent": "### Подал заявку - ${serverVars('подалзаявку')}",
+                                                      "messageContent": "${tempVars('смс32')}",
                                                       "channel": {
                                                         "type": "command",
                                                         "value": ""
@@ -308,7 +291,7 @@
                                                       "updateEmbeds": false,
                                                       "updateAttachments": false
                                                     },
-                                                    "id": 1743014896028
+                                                    "id": 1743069032079
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -341,11 +324,31 @@
                                                 "color": "Danger",
                                                 "actions": [
                                                   {
+                                                    "name": "Get Message Info",
+                                                    "file": "getMessageInfo.js",
+                                                    "data": {
+                                                      "name": "Get Message Info",
+                                                      "message": {
+                                                        "type": "tempVar",
+                                                        "value": "смс"
+                                                      },
+                                                      "get": {
+                                                        "type": "content",
+                                                        "value": ""
+                                                      },
+                                                      "store": {
+                                                        "type": "temporary",
+                                                        "value": "смс32"
+                                                      }
+                                                    },
+                                                    "id": 1743069671259
+                                                  },
+                                                  {
                                                     "name": "Send Message",
                                                     "file": "sendmessage.js",
                                                     "data": {
                                                       "name": "Send Message",
-                                                      "messageContent": "### Подал заявку - ${serverVars('подалзаявку')}",
+                                                      "messageContent": "${tempVars('смс32')}",
                                                       "channel": {
                                                         "type": "command",
                                                         "value": ""
@@ -397,7 +400,7 @@
                                                       "updateEmbeds": false,
                                                       "updateAttachments": false
                                                     },
-                                                    "id": 1743015559289
+                                                    "id": 1743069032080
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -485,7 +488,7 @@
                                     "updateEmbeds": false,
                                     "updateAttachments": false
                                   },
-                                  "id": 1742889790632
+                                  "id": 1743069032077
                                 },
                                 {
                                   "name": "Send Message",
@@ -4656,7 +4659,7 @@
     "1742889041669": {
       "name": "mjtv",
       "color": null,
-      "closed": true
+      "closed": false
     }
   },
   "intents": {
