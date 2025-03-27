@@ -413,7 +413,7 @@
                                                     "file": "sendmessage.js",
                                                     "data": {
                                                       "name": "Send Message",
-                                                      "messageContent": "Новый модератор - <@${tempVars('sms')}>\nНик по форме сервер | nick \nОзнакомиться с шаблонами https://discord.com/channels/982997343064432721/1343008687735701516\n\nНеделя на повышение\n5 постов на модератора",
+                                                      "messageContent": "**Новый модератор - <@${tempVars('sms')}>\nНик по форме сервер | nick \nОзнакомиться с шаблонами https://discord.com/channels/982997343064432721/1343008687735701516\n\nНеделя на повышение\n5 постов на модератора**",
                                                       "actionRows": [],
                                                       "embeds": [],
                                                       "channel": {
@@ -429,7 +429,22 @@
                                                         {
                                                           "type": "options"
                                                         }
-                                                      ]
+                                                      ],
+                                                      "attachments": [],
+                                                      "files": [],
+                                                      "poll": [],
+                                                      "silent": false,
+                                                      "mentions": true,
+                                                      "dontSend": false,
+                                                      "ephemeral": false,
+                                                      "updateMessage": {
+                                                        "type": "none",
+                                                        "value": ""
+                                                      },
+                                                      "updateContent": false,
+                                                      "updateComponents": false,
+                                                      "updateEmbeds": false,
+                                                      "updateAttachments": false
                                                     },
                                                     "id": 1743102356339
                                                   },
