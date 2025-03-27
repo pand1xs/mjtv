@@ -4211,6 +4211,46 @@
                               ],
                               "actions": [
                                 {
+                                  "name": "Send Message",
+                                  "file": "sendmessage.js",
+                                  "data": {
+                                    "name": "Send Message",
+                                    "messageContent": "✅ Откат отправлен успешно",
+                                    "actionRows": [],
+                                    "embeds": [],
+                                    "channel": {
+                                      "type": "command",
+                                      "value": ""
+                                    },
+                                    "storeAs": {
+                                      "value": "",
+                                      "type": "temporary"
+                                    },
+                                    "replyToInteraction": true,
+                                    "options": [
+                                      {
+                                        "type": "options"
+                                      }
+                                    ],
+                                    "attachments": [],
+                                    "files": [],
+                                    "poll": [],
+                                    "silent": false,
+                                    "mentions": false,
+                                    "dontSend": false,
+                                    "ephemeral": true,
+                                    "updateMessage": {
+                                      "type": "none",
+                                      "value": ""
+                                    },
+                                    "updateContent": false,
+                                    "updateComponents": false,
+                                    "updateEmbeds": false,
+                                    "updateAttachments": false
+                                  },
+                                  "id": 1743061526144
+                                },
+                                {
                                   "name": "Get Member Info",
                                   "file": "getMemberInfo.js",
                                   "data": {
