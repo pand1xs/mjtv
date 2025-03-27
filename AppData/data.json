@@ -505,7 +505,7 @@
                                               "type": "normal",
                                               "data": {
                                                 "label": "Отклонить",
-                                                "color": "Success",
+                                                "color": "Danger",
                                                 "actions": [
                                                   {
                                                     "name": "Get Message Data",
@@ -1126,7 +1126,7 @@
     {
       "name": "capt",
       "type": "action",
-      "trigger": "textCommand",
+      "trigger": "slashCommand",
       "actions": [
         {
           "name": "Get Date Info",
@@ -1237,6 +1237,26 @@
             }
           },
           "id": 1743070466352
+        },
+        {
+          "name": "Send Message",
+          "file": "sendmessage.js",
+          "data": {
+            "name": "Send Message",
+            "messageContent": "Hello World!",
+            "actionRows": [],
+            "embeds": [],
+            "channel": {
+              "type": "command",
+              "value": ""
+            },
+            "replyToInteraction": true,
+            "storeAs": {
+              "value": "",
+              "type": "temporary"
+            }
+          },
+          "id": 1743103032277
         },
         {
           "name": "Send Message",
@@ -5150,7 +5170,7 @@
     }
   ],
   "prjSrc": "C:\\Users\\RR\\Desktop\\bot",
-  "btk": "MTM0NTMxNjQxODUwNTQwODU3NA.GMVutT.42EaoidQtAi2KS6ah1o8AjEp7lqp_DdEOtKw1A",
+  "btk": "MTExNzczMDQyMjQ5NTkwMzc2NA.G6OUhR.WAFoNpD6ayWpwuF7BlwTLZWN9UoXvMby3DcD94",
   "prefix": "!",
   "name": "MJTV",
   "color": "rgb(0,0,0)",
