@@ -640,27 +640,39 @@
         "actionType": "text",
         "variables": {
           "temporary": [],
-          "global": [
-            [],
-            []
-          ],
+          "global": [],
           "server": [
-            [],
-            [],
-            [],
-            [],
-            [],
-            []
-          ],
-          "commandVars": [
-            "",
+            [
+              "подалзаявку",
+              "фотошоп",
+              "имя",
+              "фамка",
+              "мод",
+              "server"
+            ],
+            [
+              "подалзаявку",
+              "фотошоп",
+              "имя",
+              "фамка",
+              "мод",
+              "server"
+            ],
             "подалзаявку",
             "фотошоп",
             "имя",
             "фамка",
             "мод",
-            "server",
+            "server"
+          ],
+          "commandVars": [
+            "button",
+            "iduser",
             "",
+            "ктопринял",
+            "",
+            "",
+            "смс",
             "",
             "",
             ""
@@ -4337,7 +4349,7 @@
                                         "file": "sendmessage.js",
                                         "data": {
                                           "name": "Send Message",
-                                          "messageContent": "<@&1095062933668642967> <@&1327161121110491156> <@&1095065468705964034> <@&1327012395771625624>",
+                                          "messageContent": "",
                                           "actionRows": [],
                                           "embeds": [
                                             {
@@ -4463,7 +4475,7 @@
                                   "file": "sendmessage.js",
                                   "data": {
                                     "name": "Send Message",
-                                    "messageContent": "<@&1095062933668642967> <@&1327161121110491156> <@&1095065468705964034> <@&1327012395771625624>",
+                                    "messageContent": "",
                                     "actionRows": [],
                                     "embeds": [
                                       {
@@ -4625,53 +4637,6 @@
               "мод",
               "server"
             ]
-          ],
-          "commandVars": [],
-          "thisServer": [],
-          "thisGlobal": []
-        }
-      }
-    },
-    {
-      "name": "restart",
-      "type": "action",
-      "trigger": "textCommand",
-      "actions": [
-        {
-          "name": "Restart Bot",
-          "file": "restartBot.js",
-          "data": {
-            "name": "Restart Bot"
-          },
-          "id": 1743068034304
-        }
-      ],
-      "customId": 1743068026815,
-      "boundary": {
-        "worksIn": "guild",
-        "limits": [],
-        "botOwnerOnly": true
-      },
-      "parameters": [],
-      "description": "No Description",
-      "folder": [],
-      "goodies": {
-        "actionType": "text",
-        "variables": {
-          "temporary": [],
-          "global": [
-            []
-          ],
-          "server": [
-            [
-              "подалзаявку",
-              "фотошоп",
-              "имя",
-              "фамка",
-              "мод",
-              "server"
-            ],
-            []
           ],
           "commandVars": [],
           "thisServer": [],
