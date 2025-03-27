@@ -4358,15 +4358,43 @@
                                           "updateAttachments": false
                                         },
                                         "id": 1743061157011
+                                      },
+                                      {
+                                        "name": "Send Message",
+                                        "file": "sendmessage.js",
+                                        "data": {
+                                          "name": "Send Message",
+                                          "messageContent": "Hello World!",
+                                          "actionRows": [],
+                                          "embeds": [],
+                                          "channel": {
+                                            "type": "command",
+                                            "value": ""
+                                          },
+                                          "storeAs": {
+                                            "value": "",
+                                            "type": "temporary"
+                                          },
+                                          "replyToInteraction": true
+                                        },
+                                        "id": 1743061696843
                                       }
                                     ],
                                     "false": {
-                                      "type": "continue",
-                                      "value": ""
+                                      "type": "jump",
+                                      "value": "6"
                                     },
                                     "falseActions": []
                                   },
                                   "id": 1743060865742
+                                },
+                                {
+                                  "name": "Stop Actions",
+                                  "file": "stopRunningActions.js",
+                                  "data": {
+                                    "name": "Stop Actions"
+                                  },
+                                  "id": 1743061816621
                                 },
                                 {
                                   "name": "Create Text Channel",
