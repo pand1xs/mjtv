@@ -2638,7 +2638,7 @@
                   "title": "",
                   "embedColor": "#FFFFFF",
                   "footerContent": "",
-                  "imageURL": "",
+                  "imageURL": "https://media.discordapp.net/attachments/1355126673972002816/1355211472656924835/21.png?ex=67e81a89&is=67e6c909&hm=985fe0a6a27e16657e1694ad92a007b907f31dc4dfa87268cf15307c05122909&=&format=webp&quality=lossless&width=1712&height=856",
                   "footerIconURL": "",
                   "thumbnailURL": "",
                   "authorName": "",
@@ -2656,7 +2656,7 @@
                   "title": "",
                   "embedColor": "#313338",
                   "footerContent": "",
-                  "imageURL": "https://media.discordapp.net/attachments/1355126673972002816/1355211472656924835/21.png?ex=67e81a89&is=67e6c909&hm=985fe0a6a27e16657e1694ad92a007b907f31dc4dfa87268cf15307c05122909&=&format=webp&quality=lossless&width=1712&height=856",
+                  "imageURL": "https://media.discordapp.net/attachments/1355126673972002816/1355211496543621331/22.png?ex=67e81a8f&is=67e6c90f&hm=79ec1e88caee1422ba35a49783a2da2ca00618b374018ac4f2396fdd192f2956&=&format=webp&quality=lossless&width=1712&height=856",
                   "footerIconURL": "",
                   "thumbnailURL": "",
                   "authorName": "",
@@ -2727,7 +2727,7 @@
               "type": "command",
               "value": ""
             },
-            "replyToInteraction": true,
+            "replyToInteraction": false,
             "storeAs": {
               "value": "",
               "type": "temporary"
