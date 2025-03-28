@@ -1194,8 +1194,8 @@
                   "style": "Input",
                   "value": "",
                   "placeholder": "Если 1:0, то пишем просто 1",
-                  "min": "",
-                  "max": "",
+                  "min": "1",
+                  "max": "1",
                   "required": true,
                   "store": {
                     "type": "temporary",
@@ -1210,8 +1210,8 @@
                   "style": "Input",
                   "value": "",
                   "placeholder": "Если 1:0, то пишем просто 0",
-                  "min": "",
-                  "max": "",
+                  "min": "1",
+                  "max": "1",
                   "required": true,
                   "store": {
                     "type": "temporary",
@@ -1226,8 +1226,8 @@
                   "style": "Input",
                   "value": "",
                   "placeholder": "21.03.2025 (чекни дату)",
-                  "min": "",
-                  "max": "",
+                  "min": "10",
+                  "max": "10",
                   "required": true,
                   "store": {
                     "type": "temporary",
@@ -1639,8 +1639,8 @@
                   "style": "Input",
                   "value": "",
                   "placeholder": "Если 1:0, то пишем просто 1",
-                  "min": "",
-                  "max": "",
+                  "min": "1",
+                  "max": "1",
                   "required": true,
                   "store": {
                     "type": "temporary",
@@ -1655,8 +1655,8 @@
                   "style": "Input",
                   "value": "",
                   "placeholder": "Если 1:0, то пишем просто 0",
-                  "min": "",
-                  "max": "",
+                  "min": "1",
+                  "max": "1",
                   "required": true,
                   "store": {
                     "type": "temporary",
@@ -1671,8 +1671,8 @@
                   "style": "Input",
                   "value": "",
                   "placeholder": "21.03.2025 (чекни дату)",
-                  "min": "",
-                  "max": "",
+                  "min": "10",
+                  "max": "10",
                   "required": true,
                   "store": {
                     "type": "temporary",
@@ -1784,7 +1784,7 @@
                       "type": "writeText",
                       "data": {
                         "size": "57",
-                        "color": "#02991d",
+                        "color": "#990202",
                         "x": "825",
                         "y": "375",
                         "alignment": {
@@ -1808,7 +1808,7 @@
                       "type": "writeText",
                       "data": {
                         "size": "57",
-                        "color": "#990202",
+                        "color": "#02991d",
                         "x": "1045",
                         "y": "375",
                         "alignment": {
