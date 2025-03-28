@@ -1720,7 +1720,7 @@
                   "updateEmbeds": false,
                   "updateAttachments": false
                 },
-                "id": 1743150316365
+                "id": 1743186131755
               },
               {
                 "name": "Edit Image",
@@ -1914,7 +1914,7 @@
                   "updateEmbeds": false,
                   "updateAttachments": false
                 },
-                "id": 1743099121033
+                "id": 1743186131756
               }
             ],
             "store": {
@@ -1922,7 +1922,7 @@
               "value": ""
             }
           },
-          "id": 1743152649709
+          "id": 1743186131754
         }
       ],
       "customId": 1743151032592,
@@ -2618,6 +2618,152 @@
       "folder": [
         1742889041669
       ]
+    },
+    {
+      "name": "буклит",
+      "type": "action",
+      "trigger": "textCommand",
+      "actions": [
+        {
+          "name": "Send Message",
+          "file": "sendmessage.js",
+          "data": {
+            "name": "Send Message",
+            "messageContent": "",
+            "actionRows": [],
+            "embeds": [
+              {
+                "type": "embed",
+                "data": {
+                  "title": "",
+                  "embedColor": "#FFFFFF",
+                  "footerContent": "",
+                  "imageURL": "",
+                  "footerIconURL": "",
+                  "thumbnailURL": "",
+                  "authorName": "",
+                  "authorIcon": "",
+                  "description": "",
+                  "fields": [],
+                  "url": "",
+                  "timestamp": "None",
+                  "customTimestamp": ""
+                }
+              },
+              {
+                "type": "embed",
+                "data": {
+                  "title": "",
+                  "embedColor": "#313338",
+                  "footerContent": "",
+                  "imageURL": "https://media.discordapp.net/attachments/1355126673972002816/1355211472656924835/21.png?ex=67e81a89&is=67e6c909&hm=985fe0a6a27e16657e1694ad92a007b907f31dc4dfa87268cf15307c05122909&=&format=webp&quality=lossless&width=1712&height=856",
+                  "footerIconURL": "",
+                  "thumbnailURL": "",
+                  "authorName": "",
+                  "authorIcon": "",
+                  "description": "",
+                  "fields": [],
+                  "url": "",
+                  "timestamp": "None",
+                  "customTimestamp": ""
+                }
+              },
+              {
+                "type": "embed",
+                "data": {
+                  "title": "",
+                  "embedColor": "#313338",
+                  "footerContent": "",
+                  "imageURL": "",
+                  "footerIconURL": "",
+                  "thumbnailURL": "",
+                  "authorName": "",
+                  "authorIcon": "",
+                  "description": "<#1355127052143038685>  - канал с информацией о сервере.\n<#1342961782213443716>  - канал с правилами сервера.\n<#1342961835996876844>  - канал для запроса ролей.\n<#1342961872097513542> - канал для получения роли вашего сервера.\n--      --      --      --      --      --      --      --      --      --      --      --      --      --      --      --\n<#1355139885769560154>  - канал с основной информацией проекте.\n<#1342961949717168158>  -  новостной канал сервера.\n<#1343981485186748506>  - новостной канал проекта.\n<#1353805176036786308>  - канал для набора в наш персонал.\n<#1343160058573230120>  - канал для предложения ваших новостей.\n<#1353777782743634062>  - канал для проведения голосований.\n<#1342962100624162908> - наши партнеры.\n<#1342962032021864529> - видео/стримы наших медиа партнеров.\n<#1342984124075475015> - основной чат для общения.\n<#1342962173143416902> - трансферы игроков в другие составы. \n<#1342962209550106624> - трансферы составов на другие сервера.",
+                  "fields": [],
+                  "url": "",
+                  "timestamp": "None",
+                  "customTimestamp": ""
+                }
+              },
+              {
+                "type": "embed",
+                "data": {
+                  "title": "",
+                  "embedColor": "#313338",
+                  "footerContent": "",
+                  "imageURL": "https://media.discordapp.net/attachments/1355126673972002816/1355225546602188852/23.png?ex=67e827a5&is=67e6d625&hm=43a41c08e09bb14d7815ed3bd8a75a99b88183997eb39a0e9dc4e47ef73c87d2&=&format=webp&quality=lossless&width=1712&height=856",
+                  "footerIconURL": "",
+                  "thumbnailURL": "",
+                  "authorName": "",
+                  "authorIcon": "",
+                  "description": "",
+                  "fields": [],
+                  "url": "",
+                  "timestamp": "None",
+                  "customTimestamp": ""
+                }
+              },
+              {
+                "type": "embed",
+                "data": {
+                  "title": "",
+                  "embedColor": "#313338",
+                  "footerContent": "",
+                  "imageURL": "",
+                  "footerIconURL": "",
+                  "thumbnailURL": "",
+                  "authorName": "",
+                  "authorIcon": "",
+                  "description": "<@&1342967238222811187> \n- <@294780193401339904>   - Ответственный за Пиар компанию.\n- <@562574001743069195>  - Ответственный за Дизайн Проекта.\n\n<@&1353801995894653099> \n- <@1051902154836824084>  - Ответственный за всю модерацию Discord'a.\n- <@310472438439870464>  - Ответственный за Медиа проекта.\n\n<@&1351647407644999790> \n- <@707998397583327273>  - Ответственный за Техническую составляющую сервера.\n\n<@&1342968470043754517> \n- <@220241210424557569>  - Server New York\n- <@683389261407322169> - Server Detroit\n- <@361144839762477056> - Server Chicago\n- <@772489328567779370> - Server San Francisco\n- <@310349742456438784> - Server Atlanta\n- <@358565904851795969> - Server San Diego\n- <@853705538252570635> - Server Los Angeles\n- свободно - Server Miami\n- свободно - Server Las Vegas\n- свободно - Server Washington\n- <@1040259346560450581>  - Server Dallas\n- <@989105816202256385> - Server Boston\n- <@724291004022390908>  - Server Houston\n- <@513369926023643138>  - Server Seatle\n\n<@&1355213612129456181> \n- <@&1342968584963358852> - Server New York\n- <@&1342968634678575144> - Server Detroit\n- <@&1342968681394737223> - Server Chicago\n- <@&1342968724122112002> - Server San Francisco\n- <@&1342968764513255454> - Server Atlanta\n- <@&1342968801498763386> - Server San Diego\n- <@&1342968840216379412> - Server Los Angeles\n- <@&1342968884998701129> - Server Miami\n- <@&1342968953676501085>- Server Las Vegas\n- <@&1342969003857150113> - Server Washington\n- <@&1342979303608029204> - Server Dallas\n- <@&1342969080704925798> - Server Boston\n- <@&1342969149617606838> - Server Houston\n- <@&1342969190566330550> - Server Seatle\n\n<@&1342969378517418065> \n- <@&1342969378517418065>  - Новый человек в составе модерации.",
+                  "fields": [],
+                  "url": "",
+                  "timestamp": "None",
+                  "customTimestamp": ""
+                }
+              }
+            ],
+            "channel": {
+              "type": "command",
+              "value": ""
+            },
+            "replyToInteraction": true,
+            "storeAs": {
+              "value": "",
+              "type": "temporary"
+            },
+            "options": [
+              {
+                "type": "options"
+              }
+            ]
+          },
+          "id": 1743186187528
+        }
+      ],
+      "customId": 1743186161450,
+      "boundary": {
+        "worksIn": "guild",
+        "limits": [
+          "ADMINISTRATOR"
+        ]
+      },
+      "parameters": [],
+      "description": "No Description",
+      "folder": [
+        1742889041669
+      ],
+      "goodies": {
+        "actionType": "text",
+        "variables": {
+          "temporary": [],
+          "global": [],
+          "server": [],
+          "commandVars": [],
+          "thisServer": [],
+          "thisGlobal": []
+        }
+      }
     },
     {
       "name": "предложка",
