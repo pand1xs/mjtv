@@ -96,6 +96,18 @@ module.exports = {
                     storeAs: "file",
                     placeholder: "font.ttf"
                   },
+                  {
+                    element: "input",
+                    name: "Family Name",
+                    storeAs: "family",
+                    placeholder: "Calibri"
+                  },
+                  {
+                    element: "text",
+                    text: `
+                    Make sure the file name is identical to the font's name. You can double click a font to check.
+                    `
+                  },
                   "-",
                   {
                     element: "input",
@@ -337,21 +349,21 @@ module.exports = {
         switch (type) {
           case 'writeText':
             const { createCanvas, loadImage, registerFont } = require('canvas')
-            const canvas = createCanvas(image.width, image.height);
-            const ctx = canvas.getContext('2d');
-            let fontFamily = `${filter.size}px Calibri`;
-            var tempImage = await image.getBuffer(JimpMime.png);
-            tempImage = await loadImage(tempImage);
-            ctx.drawImage(tempImage, 0, 0);
+            let fontFamily = `Calibri`;
             if (filter.font[0]) {
-              fontFamily = `${bridge.data.id}font`;
+              fontFamily = t(filter.font[0].data.family);
               await registerFont(bridge.file(filter.font[0].data.file), {
                 family: fontFamily,
                 weight: Number(bridge.transf(filter.font[0].data.weight))
               });
             }
-            ctx.font = fontFamily;
-            ctx.fillStyle = parseInt(bridge.transf(filter.color).replace("#", ""), 16);
+            const canvas = createCanvas(image.width, image.height);
+            const ctx = canvas.getContext('2d');
+            var tempImage = await image.getBuffer(JimpMime.png);
+            tempImage = await loadImage(tempImage);
+            ctx.drawImage(tempImage, 0, 0);
+            ctx.font = `${t(filter.size)}px ${fontFamily}`;
+            ctx.fillStyle = bridge.transf(filter.color);
             ctx.textAlign = filter.alignment.type;
 
             ctx.fillText(bridge.transf(filter.text), Number(t(filter.x)), Number(t(filter.y)));

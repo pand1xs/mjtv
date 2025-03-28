@@ -1139,65 +1139,66 @@
       }
     },
     {
-      "name": "capt",
+      "name": "capt_attack",
       "type": "action",
       "trigger": "slashCommand",
       "actions": [
-        {
-          "name": "Get Date Info",
-          "file": "getDateInfo.js",
-          "data": {
-            "name": "Get Date Info",
-            "date": {
-              "type": "local",
-              "value": ""
-            },
-            "get": "ISO",
-            "store": {
-              "type": "temporary",
-              "value": "date"
-            }
-          },
-          "id": 1743072099022
-        },
         {
           "name": "Edit Image",
           "file": "editImage.js",
           "data": {
             "name": "Edit Image",
             "image": {
-              "type": "url",
-              "value": "https://i.imgur.com/FRA88JS.png"
+              "type": "file",
+              "value": "atac.png"
             },
             "filters": [
               {
                 "type": "writeText",
                 "data": {
                   "size": "81",
-                  "color": "#faf1f0",
-                  "x": "378",
-                  "y": "341",
+                  "color": "#FFFFFF",
+                  "x": "248",
+                  "y": "371",
                   "alignment": {
                     "type": "left",
                     "value": ""
                   },
                   "text": "${tempVars('win')}",
-                  "font": []
+                  "font": [
+                    {
+                      "type": "font",
+                      "data": {
+                        "weight": "400",
+                        "file": "Montserrat-ExtraBold.ttf",
+                        "family": "Montserrat ExtraBold"
+                      }
+                    }
+                  ]
                 }
               },
               {
                 "type": "writeText",
                 "data": {
                   "size": "81",
-                  "color": "#faf1f0",
-                  "x": "1467",
-                  "y": "341",
+                  "color": "#FFFFFF",
+                  "x": "1643",
+                  "y": "371",
                   "alignment": {
                     "type": "right",
                     "value": ""
                   },
                   "text": "${tempVars('lose')}",
-                  "font": []
+                  "font": [
+                    {
+                      "type": "font",
+                      "data": {
+                        "weight": "400",
+                        "file": "Montserrat-ExtraBold.ttf",
+                        "family": "Montserrat ExtraBold"
+                      }
+                    }
+                  ]
                 }
               },
               {
@@ -1205,14 +1206,23 @@
                 "data": {
                   "size": "57",
                   "color": "#02991d",
-                  "x": "815",
-                  "y": "357",
+                  "x": "825",
+                  "y": "375",
                   "alignment": {
-                    "type": "left",
+                    "type": "center",
                     "value": ""
                   },
                   "text": "${tempVars('swin')}",
-                  "font": []
+                  "font": [
+                    {
+                      "type": "font",
+                      "data": {
+                        "weight": "400",
+                        "file": "Montserrat-ExtraBold.ttf",
+                        "family": "Montserrat ExtraBold"
+                      }
+                    }
+                  ]
                 }
               },
               {
@@ -1220,14 +1230,23 @@
                 "data": {
                   "size": "57",
                   "color": "#990202",
-                  "x": "1053",
-                  "y": "357",
+                  "x": "1045",
+                  "y": "375",
                   "alignment": {
-                    "type": "left",
+                    "type": "center",
                     "value": ""
                   },
                   "text": "${tempVars('slose')}",
-                  "font": []
+                  "font": [
+                    {
+                      "type": "font",
+                      "data": {
+                        "weight": "400",
+                        "file": "Montserrat-ExtraBold.ttf",
+                        "family": "Montserrat ExtraBold"
+                      }
+                    }
+                  ]
                 }
               },
               {
@@ -1235,14 +1254,23 @@
                 "data": {
                   "size": "52",
                   "color": "#FFFFFF",
-                  "x": "1639",
+                  "x": "1538",
                   "y": "189",
                   "alignment": {
                     "type": "left",
                     "value": ""
                   },
-                  "text": "${tempVars('date')}",
-                  "font": []
+                  "text": "${tempVars('datee')}",
+                  "font": [
+                    {
+                      "type": "font",
+                      "data": {
+                        "weight": "400",
+                        "file": "Montserrat-ExtraBold.ttf",
+                        "family": "Montserrat ExtraBold"
+                      }
+                    }
+                  ]
                 }
               }
             ],
@@ -1258,7 +1286,7 @@
           "file": "sendmessage.js",
           "data": {
             "name": "Send Message",
-            "messageContent": "Hello World!",
+            "messageContent": "<a:4704loadingicon:1184411024787517451> **Картинка создается**",
             "actionRows": [],
             "embeds": [],
             "channel": {
@@ -1269,9 +1297,29 @@
             "storeAs": {
               "value": "",
               "type": "temporary"
-            }
+            },
+            "options": [
+              {
+                "type": "options"
+              }
+            ],
+            "attachments": [],
+            "files": [],
+            "poll": [],
+            "silent": false,
+            "mentions": false,
+            "dontSend": false,
+            "ephemeral": true,
+            "updateMessage": {
+              "type": "none",
+              "value": ""
+            },
+            "updateContent": false,
+            "updateComponents": false,
+            "updateEmbeds": false,
+            "updateAttachments": false
           },
-          "id": 1743103032277
+          "id": 1743150316365
         },
         {
           "name": "Send Message",
@@ -1392,9 +1440,372 @@
           "storeAs": "slose",
           "completion": false,
           "max_value": "1"
+        },
+        {
+          "name": "date",
+          "type": "string",
+          "description": "Дата - 28.03.2025",
+          "required": true,
+          "choices": [],
+          "storeAs": "datee",
+          "completion": false
         }
       ],
-      "description": "Сделать капт картинку",
+      "description": "Сделать капт картинку (вин атака)",
+      "folder": [
+        1742889041669
+      ],
+      "goodies": {
+        "actionType": "slash",
+        "variables": {
+          "temporary": [],
+          "global": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "server": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "commandVars": [
+            "вин",
+            "img",
+            "",
+            "capt2",
+            ""
+          ],
+          "thisServer": [],
+          "thisGlobal": []
+        }
+      },
+      "aliases": []
+    },
+    {
+      "name": "capt_def",
+      "type": "action",
+      "trigger": "slashCommand",
+      "actions": [
+        {
+          "name": "Edit Image",
+          "file": "editImage.js",
+          "data": {
+            "name": "Edit Image",
+            "image": {
+              "type": "file",
+              "value": "def.png"
+            },
+            "filters": [
+              {
+                "type": "writeText",
+                "data": {
+                  "size": "81",
+                  "color": "#FFFFFF",
+                  "x": "248",
+                  "y": "371",
+                  "alignment": {
+                    "type": "left",
+                    "value": ""
+                  },
+                  "text": "${tempVars('lose')}",
+                  "font": [
+                    {
+                      "type": "font",
+                      "data": {
+                        "weight": "400",
+                        "file": "Montserrat-ExtraBold.ttf",
+                        "family": "Montserrat ExtraBold"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "writeText",
+                "data": {
+                  "size": "81",
+                  "color": "#FFFFFF",
+                  "x": "1643",
+                  "y": "371",
+                  "alignment": {
+                    "type": "right",
+                    "value": ""
+                  },
+                  "text": "${tempVars('win')}",
+                  "font": [
+                    {
+                      "type": "font",
+                      "data": {
+                        "weight": "400",
+                        "file": "Montserrat-ExtraBold.ttf",
+                        "family": "Montserrat ExtraBold"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "writeText",
+                "data": {
+                  "size": "57",
+                  "color": "#02991d",
+                  "x": "825",
+                  "y": "375",
+                  "alignment": {
+                    "type": "center",
+                    "value": ""
+                  },
+                  "text": "${tempVars('slose')}",
+                  "font": [
+                    {
+                      "type": "font",
+                      "data": {
+                        "weight": "400",
+                        "file": "Montserrat-ExtraBold.ttf",
+                        "family": "Montserrat ExtraBold"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "writeText",
+                "data": {
+                  "size": "57",
+                  "color": "#990202",
+                  "x": "1045",
+                  "y": "375",
+                  "alignment": {
+                    "type": "center",
+                    "value": ""
+                  },
+                  "text": "${tempVars('swin')}",
+                  "font": [
+                    {
+                      "type": "font",
+                      "data": {
+                        "weight": "400",
+                        "file": "Montserrat-ExtraBold.ttf",
+                        "family": "Montserrat ExtraBold"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "writeText",
+                "data": {
+                  "size": "52",
+                  "color": "#FFFFFF",
+                  "x": "1538",
+                  "y": "189",
+                  "alignment": {
+                    "type": "left",
+                    "value": ""
+                  },
+                  "text": "${tempVars('datee')}",
+                  "font": [
+                    {
+                      "type": "font",
+                      "data": {
+                        "weight": "400",
+                        "file": "Montserrat-ExtraBold.ttf",
+                        "family": "Montserrat ExtraBold"
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "store": {
+              "type": "temporary",
+              "value": "img"
+            }
+          },
+          "id": 1743070466352
+        },
+        {
+          "name": "Send Message",
+          "file": "sendmessage.js",
+          "data": {
+            "name": "Send Message",
+            "messageContent": "<a:4704loadingicon:1184411024787517451> **Картинка создается**",
+            "actionRows": [],
+            "embeds": [],
+            "channel": {
+              "type": "command",
+              "value": ""
+            },
+            "replyToInteraction": true,
+            "storeAs": {
+              "value": "",
+              "type": "temporary"
+            },
+            "options": [
+              {
+                "type": "options"
+              }
+            ],
+            "attachments": [],
+            "files": [],
+            "poll": [],
+            "silent": false,
+            "mentions": false,
+            "dontSend": false,
+            "ephemeral": true,
+            "updateMessage": {
+              "type": "none",
+              "value": ""
+            },
+            "updateContent": false,
+            "updateComponents": false,
+            "updateEmbeds": false,
+            "updateAttachments": false
+          },
+          "id": 1743150316365
+        },
+        {
+          "name": "Send Message",
+          "file": "sendmessage.js",
+          "data": {
+            "name": "Send Message",
+            "messageContent": "Полученая картинка",
+            "actionRows": [],
+            "embeds": [],
+            "channel": {
+              "type": "command",
+              "value": ""
+            },
+            "replyToInteraction": false,
+            "storeAs": {
+              "value": "",
+              "type": "temporary"
+            },
+            "options": [
+              {
+                "type": "options"
+              }
+            ],
+            "attachments": [
+              {
+                "type": "attachment",
+                "data": {
+                  "name": "photo.png",
+                  "image": {
+                    "type": "tempVar",
+                    "value": "img"
+                  },
+                  "spoiler": false,
+                  "store": {
+                    "type": "temporary",
+                    "value": ""
+                  }
+                }
+              }
+            ],
+            "files": [],
+            "poll": [],
+            "silent": false,
+            "mentions": false,
+            "dontSend": false,
+            "ephemeral": false,
+            "updateMessage": {
+              "type": "none",
+              "value": ""
+            },
+            "updateContent": false,
+            "updateComponents": false,
+            "updateEmbeds": false,
+            "updateAttachments": false
+          },
+          "id": 1743099121033
+        }
+      ],
+      "customId": 1743151032592,
+      "boundary": {
+        "worksIn": "guild",
+        "limits": [],
+        "botOwnerOnly": true
+      },
+      "parameters": [
+        {
+          "name": "winfamq",
+          "type": "string",
+          "description": "Победивший капт",
+          "required": true,
+          "choices": [],
+          "storeAs": "win",
+          "completion": false,
+          "bound": {
+            "name": "Autocompletion",
+            "storeInputAs": {
+              "type": "temporary",
+              "value": ""
+            },
+            "storeInteractionAs": {
+              "type": "temporary",
+              "value": ""
+            },
+            "actions": [],
+            "result": {
+              "type": "tempVar",
+              "value": ""
+            }
+          },
+          "max_value": "30"
+        },
+        {
+          "name": "losefamq",
+          "type": "string",
+          "description": "Проигравший капт",
+          "required": true,
+          "choices": [],
+          "storeAs": "lose",
+          "completion": false,
+          "max_value": "30"
+        },
+        {
+          "name": "scorewin",
+          "type": "number",
+          "description": "счет победителя",
+          "required": true,
+          "choices": [],
+          "storeAs": "swin",
+          "completion": false,
+          "max_value": "1"
+        },
+        {
+          "name": "scorelose",
+          "type": "number",
+          "description": "счет проигравшего",
+          "required": true,
+          "choices": [],
+          "storeAs": "slose",
+          "completion": false,
+          "max_value": "1"
+        },
+        {
+          "name": "date",
+          "type": "string",
+          "description": "Дата - 28.03.2025",
+          "required": true,
+          "choices": [],
+          "storeAs": "datee",
+          "completion": false
+        }
+      ],
+      "description": "Сделать капт картинку (вин деф)",
       "folder": [
         1742889041669
       ],
