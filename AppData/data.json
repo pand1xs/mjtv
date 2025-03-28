@@ -1144,6 +1144,46 @@
       "trigger": "slashCommand",
       "actions": [
         {
+          "name": "Send Message",
+          "file": "sendmessage.js",
+          "data": {
+            "name": "Send Message",
+            "messageContent": "<a:4704loadingicon:1184411024787517451> **Картинка создается**",
+            "actionRows": [],
+            "embeds": [],
+            "channel": {
+              "type": "command",
+              "value": ""
+            },
+            "replyToInteraction": true,
+            "storeAs": {
+              "value": "",
+              "type": "temporary"
+            },
+            "options": [
+              {
+                "type": "options"
+              }
+            ],
+            "attachments": [],
+            "files": [],
+            "poll": [],
+            "silent": false,
+            "mentions": false,
+            "dontSend": false,
+            "ephemeral": true,
+            "updateMessage": {
+              "type": "none",
+              "value": ""
+            },
+            "updateContent": false,
+            "updateComponents": false,
+            "updateEmbeds": false,
+            "updateAttachments": false
+          },
+          "id": 1743150316365
+        },
+        {
           "name": "Edit Image",
           "file": "editImage.js",
           "data": {
@@ -1280,46 +1320,6 @@
             }
           },
           "id": 1743070466352
-        },
-        {
-          "name": "Send Message",
-          "file": "sendmessage.js",
-          "data": {
-            "name": "Send Message",
-            "messageContent": "<a:4704loadingicon:1184411024787517451> **Картинка создается**",
-            "actionRows": [],
-            "embeds": [],
-            "channel": {
-              "type": "command",
-              "value": ""
-            },
-            "replyToInteraction": true,
-            "storeAs": {
-              "value": "",
-              "type": "temporary"
-            },
-            "options": [
-              {
-                "type": "options"
-              }
-            ],
-            "attachments": [],
-            "files": [],
-            "poll": [],
-            "silent": false,
-            "mentions": false,
-            "dontSend": false,
-            "ephemeral": true,
-            "updateMessage": {
-              "type": "none",
-              "value": ""
-            },
-            "updateContent": false,
-            "updateComponents": false,
-            "updateEmbeds": false,
-            "updateAttachments": false
-          },
-          "id": 1743150316365
         },
         {
           "name": "Send Message",
@@ -1498,6 +1498,46 @@
       "trigger": "slashCommand",
       "actions": [
         {
+          "name": "Send Message",
+          "file": "sendmessage.js",
+          "data": {
+            "name": "Send Message",
+            "messageContent": "<a:4704loadingicon:1184411024787517451> **Картинка создается**",
+            "actionRows": [],
+            "embeds": [],
+            "channel": {
+              "type": "command",
+              "value": ""
+            },
+            "replyToInteraction": true,
+            "storeAs": {
+              "value": "",
+              "type": "temporary"
+            },
+            "options": [
+              {
+                "type": "options"
+              }
+            ],
+            "attachments": [],
+            "files": [],
+            "poll": [],
+            "silent": false,
+            "mentions": false,
+            "dontSend": false,
+            "ephemeral": true,
+            "updateMessage": {
+              "type": "none",
+              "value": ""
+            },
+            "updateContent": false,
+            "updateComponents": false,
+            "updateEmbeds": false,
+            "updateAttachments": false
+          },
+          "id": 1743151537700
+        },
+        {
           "name": "Edit Image",
           "file": "editImage.js",
           "data": {
@@ -1633,47 +1673,7 @@
               "value": "img"
             }
           },
-          "id": 1743070466352
-        },
-        {
-          "name": "Send Message",
-          "file": "sendmessage.js",
-          "data": {
-            "name": "Send Message",
-            "messageContent": "<a:4704loadingicon:1184411024787517451> **Картинка создается**",
-            "actionRows": [],
-            "embeds": [],
-            "channel": {
-              "type": "command",
-              "value": ""
-            },
-            "replyToInteraction": true,
-            "storeAs": {
-              "value": "",
-              "type": "temporary"
-            },
-            "options": [
-              {
-                "type": "options"
-              }
-            ],
-            "attachments": [],
-            "files": [],
-            "poll": [],
-            "silent": false,
-            "mentions": false,
-            "dontSend": false,
-            "ephemeral": true,
-            "updateMessage": {
-              "type": "none",
-              "value": ""
-            },
-            "updateContent": false,
-            "updateComponents": false,
-            "updateEmbeds": false,
-            "updateAttachments": false
-          },
-          "id": 1743150316365
+          "id": 1743151537699
         },
         {
           "name": "Send Message",
@@ -1729,7 +1729,7 @@
             "updateEmbeds": false,
             "updateAttachments": false
           },
-          "id": 1743099121033
+          "id": 1743151537701
         }
       ],
       "customId": 1743151032592,
