@@ -382,33 +382,6 @@
                                                     "id": 1743069032080
                                                   },
                                                   {
-                                                    "name": "Set Member Roles",
-                                                    "file": "setMemberRoles.js",
-                                                    "data": {
-                                                      "name": "Set Member Roles",
-                                                      "member": {
-                                                        "type": "id",
-                                                        "value": "${tempVars('sms')}"
-                                                      },
-                                                      "type": {
-                                                        "type": "add",
-                                                        "value": ""
-                                                      },
-                                                      "roles": [
-                                                        {
-                                                          "type": "role",
-                                                          "data": {
-                                                            "role": {
-                                                              "type": "id",
-                                                              "value": "1342969378517418065"
-                                                            }
-                                                          }
-                                                        }
-                                                      ]
-                                                    },
-                                                    "id": 1743102287733
-                                                  },
-                                                  {
                                                     "name": "Send Message",
                                                     "file": "sendmessage.js",
                                                     "data": {
@@ -2930,7 +2903,7 @@
                                                           "type": "embed",
                                                           "data": {
                                                             "title": "",
-                                                            "embedColor": "#FFFFFF",
+                                                            "embedColor": "#49eb34",
                                                             "footerContent": "",
                                                             "imageURL": "",
                                                             "footerIconURL": "",
@@ -2983,7 +2956,7 @@
                                                 "emojiID": "1181132265405829140",
                                                 "isEmojiAnimated": false,
                                                 "type": {
-                                                  "type": "temporary",
+                                                  "type": "persistent",
                                                   "value": "60"
                                                 },
                                                 "styles_emoji": [
@@ -2996,7 +2969,9 @@
                                                     "type": "usage"
                                                   }
                                                 ],
-                                                "premium_button": []
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
                                               }
                                             },
                                             {
@@ -3071,7 +3046,7 @@
                                                           "type": "embed",
                                                           "data": {
                                                             "title": "",
-                                                            "embedColor": "#FFFFFF",
+                                                            "embedColor": "#eb3434",
                                                             "footerContent": "",
                                                             "imageURL": "",
                                                             "footerIconURL": "",
@@ -3124,7 +3099,7 @@
                                                 "emojiID": "1181132285907583026",
                                                 "isEmojiAnimated": false,
                                                 "type": {
-                                                  "type": "temporary",
+                                                  "type": "persistent",
                                                   "value": "60"
                                                 },
                                                 "styles_emoji": [
@@ -3137,7 +3112,9 @@
                                                     "type": "usage"
                                                   }
                                                 ],
-                                                "premium_button": []
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
                                               }
                                             }
                                           ],
@@ -3422,7 +3399,7 @@
                                                         "value": "member"
                                                       }
                                                     },
-                                                    "id": 1743156336799
+                                                    "id": 1743188688713
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -3440,7 +3417,7 @@
                                                         "value": "rez"
                                                       }
                                                     },
-                                                    "id": 1743156336800
+                                                    "id": 1743188688714
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -3458,7 +3435,7 @@
                                                         "value": "proof"
                                                       }
                                                     },
-                                                    "id": 1743156336801
+                                                    "id": 1743188688715
                                                   },
                                                   {
                                                     "name": "Send Message",
@@ -3472,7 +3449,7 @@
                                                           "type": "embed",
                                                           "data": {
                                                             "title": "",
-                                                            "embedColor": "#FFFFFF",
+                                                            "embedColor": "#49eb34",
                                                             "footerContent": "",
                                                             "imageURL": "",
                                                             "footerIconURL": "",
@@ -3517,7 +3494,7 @@
                                                       "updateEmbeds": false,
                                                       "updateAttachments": false
                                                     },
-                                                    "id": 1743156336802
+                                                    "id": 1743188688716
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -3525,7 +3502,7 @@
                                                 "emojiID": "1181132265405829140",
                                                 "isEmojiAnimated": false,
                                                 "type": {
-                                                  "type": "temporary",
+                                                  "type": "persistent",
                                                   "value": "60"
                                                 },
                                                 "styles_emoji": [
@@ -3538,7 +3515,9 @@
                                                     "type": "usage"
                                                   }
                                                 ],
-                                                "premium_button": []
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
                                               }
                                             },
                                             {
@@ -3563,7 +3542,7 @@
                                                         "value": "member"
                                                       }
                                                     },
-                                                    "id": 1743156336803
+                                                    "id": 1743188688717
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -3581,7 +3560,7 @@
                                                         "value": "rez"
                                                       }
                                                     },
-                                                    "id": 1743156336804
+                                                    "id": 1743188688718
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -3599,7 +3578,7 @@
                                                         "value": "proof"
                                                       }
                                                     },
-                                                    "id": 1743156336805
+                                                    "id": 1743188688719
                                                   },
                                                   {
                                                     "name": "Send Message",
@@ -3613,7 +3592,7 @@
                                                           "type": "embed",
                                                           "data": {
                                                             "title": "",
-                                                            "embedColor": "#FFFFFF",
+                                                            "embedColor": "#eb3434",
                                                             "footerContent": "",
                                                             "imageURL": "",
                                                             "footerIconURL": "",
@@ -3658,7 +3637,7 @@
                                                       "updateEmbeds": false,
                                                       "updateAttachments": false
                                                     },
-                                                    "id": 1743156336806
+                                                    "id": 1743188688720
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -3666,7 +3645,7 @@
                                                 "emojiID": "1181132285907583026",
                                                 "isEmojiAnimated": false,
                                                 "type": {
-                                                  "type": "temporary",
+                                                  "type": "persistent",
                                                   "value": "60"
                                                 },
                                                 "styles_emoji": [
@@ -3679,7 +3658,9 @@
                                                     "type": "usage"
                                                   }
                                                 ],
-                                                "premium_button": []
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
                                               }
                                             }
                                           ],
@@ -3744,7 +3725,7 @@
                                     "updateEmbeds": false,
                                     "updateAttachments": false
                                   },
-                                  "id": 1743156336798
+                                  "id": 1743188688712
                                 },
                                 {
                                   "name": "Send Message",
@@ -3784,7 +3765,7 @@
                                     "updateEmbeds": false,
                                     "updateAttachments": false
                                   },
-                                  "id": 1743156336807
+                                  "id": 1743188688721
                                 },
                                 {
                                   "name": "Get Member Info",
@@ -3804,7 +3785,7 @@
                                       "value": "userid"
                                     }
                                   },
-                                  "id": 1743156336808
+                                  "id": 1743188688722
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -3821,7 +3802,7 @@
                                     },
                                     "dataName": "member"
                                   },
-                                  "id": 1743156336809
+                                  "id": 1743188688723
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -3838,7 +3819,7 @@
                                     },
                                     "dataName": "rez"
                                   },
-                                  "id": 1743156336810
+                                  "id": 1743188688724
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -3855,7 +3836,7 @@
                                     },
                                     "dataName": "proof"
                                   },
-                                  "id": 1743156336811
+                                  "id": 1743188688725
                                 }
                               ],
                               "store": {
@@ -3863,7 +3844,7 @@
                                 "value": ""
                               }
                             },
-                            "id": 1743156336797
+                            "id": 1743188688711
                           }
                         ],
                         "label": "Detroit",
@@ -3964,7 +3945,7 @@
                                                         "value": "member"
                                                       }
                                                     },
-                                                    "id": 1743156336814
+                                                    "id": 1743188688728
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -3982,7 +3963,7 @@
                                                         "value": "rez"
                                                       }
                                                     },
-                                                    "id": 1743156336815
+                                                    "id": 1743188688729
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -4000,7 +3981,7 @@
                                                         "value": "proof"
                                                       }
                                                     },
-                                                    "id": 1743156336816
+                                                    "id": 1743188688730
                                                   },
                                                   {
                                                     "name": "Send Message",
@@ -4014,7 +3995,7 @@
                                                           "type": "embed",
                                                           "data": {
                                                             "title": "",
-                                                            "embedColor": "#FFFFFF",
+                                                            "embedColor": "#49eb34",
                                                             "footerContent": "",
                                                             "imageURL": "",
                                                             "footerIconURL": "",
@@ -4059,7 +4040,7 @@
                                                       "updateEmbeds": false,
                                                       "updateAttachments": false
                                                     },
-                                                    "id": 1743156336817
+                                                    "id": 1743188688731
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -4067,7 +4048,7 @@
                                                 "emojiID": "1181132265405829140",
                                                 "isEmojiAnimated": false,
                                                 "type": {
-                                                  "type": "temporary",
+                                                  "type": "persistent",
                                                   "value": "60"
                                                 },
                                                 "styles_emoji": [
@@ -4080,7 +4061,9 @@
                                                     "type": "usage"
                                                   }
                                                 ],
-                                                "premium_button": []
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
                                               }
                                             },
                                             {
@@ -4105,7 +4088,7 @@
                                                         "value": "member"
                                                       }
                                                     },
-                                                    "id": 1743156336818
+                                                    "id": 1743188688732
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -4123,7 +4106,7 @@
                                                         "value": "rez"
                                                       }
                                                     },
-                                                    "id": 1743156336819
+                                                    "id": 1743188688733
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -4141,7 +4124,7 @@
                                                         "value": "proof"
                                                       }
                                                     },
-                                                    "id": 1743156336820
+                                                    "id": 1743188688734
                                                   },
                                                   {
                                                     "name": "Send Message",
@@ -4155,7 +4138,7 @@
                                                           "type": "embed",
                                                           "data": {
                                                             "title": "",
-                                                            "embedColor": "#FFFFFF",
+                                                            "embedColor": "#eb3434",
                                                             "footerContent": "",
                                                             "imageURL": "",
                                                             "footerIconURL": "",
@@ -4200,7 +4183,7 @@
                                                       "updateEmbeds": false,
                                                       "updateAttachments": false
                                                     },
-                                                    "id": 1743156336821
+                                                    "id": 1743188688735
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -4208,7 +4191,7 @@
                                                 "emojiID": "1181132285907583026",
                                                 "isEmojiAnimated": false,
                                                 "type": {
-                                                  "type": "temporary",
+                                                  "type": "persistent",
                                                   "value": "60"
                                                 },
                                                 "styles_emoji": [
@@ -4221,7 +4204,9 @@
                                                     "type": "usage"
                                                   }
                                                 ],
-                                                "premium_button": []
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
                                               }
                                             }
                                           ],
@@ -4286,7 +4271,7 @@
                                     "updateEmbeds": false,
                                     "updateAttachments": false
                                   },
-                                  "id": 1743156336813
+                                  "id": 1743188688727
                                 },
                                 {
                                   "name": "Send Message",
@@ -4326,7 +4311,7 @@
                                     "updateEmbeds": false,
                                     "updateAttachments": false
                                   },
-                                  "id": 1743156336822
+                                  "id": 1743188688736
                                 },
                                 {
                                   "name": "Get Member Info",
@@ -4346,7 +4331,7 @@
                                       "value": "userid"
                                     }
                                   },
-                                  "id": 1743156336823
+                                  "id": 1743188688737
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -4363,7 +4348,7 @@
                                     },
                                     "dataName": "member"
                                   },
-                                  "id": 1743156336824
+                                  "id": 1743188688738
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -4380,7 +4365,7 @@
                                     },
                                     "dataName": "rez"
                                   },
-                                  "id": 1743156336825
+                                  "id": 1743188688739
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -4397,7 +4382,7 @@
                                     },
                                     "dataName": "proof"
                                   },
-                                  "id": 1743156336826
+                                  "id": 1743188688740
                                 }
                               ],
                               "store": {
@@ -4405,7 +4390,7 @@
                                 "value": ""
                               }
                             },
-                            "id": 1743156336812
+                            "id": 1743188688726
                           }
                         ],
                         "label": "Chicago",
@@ -4506,7 +4491,7 @@
                                                         "value": "member"
                                                       }
                                                     },
-                                                    "id": 1743156336829
+                                                    "id": 1743188688743
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -4524,7 +4509,7 @@
                                                         "value": "rez"
                                                       }
                                                     },
-                                                    "id": 1743156336830
+                                                    "id": 1743188688744
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -4542,7 +4527,7 @@
                                                         "value": "proof"
                                                       }
                                                     },
-                                                    "id": 1743156336831
+                                                    "id": 1743188688745
                                                   },
                                                   {
                                                     "name": "Send Message",
@@ -4556,7 +4541,7 @@
                                                           "type": "embed",
                                                           "data": {
                                                             "title": "",
-                                                            "embedColor": "#FFFFFF",
+                                                            "embedColor": "#49eb34",
                                                             "footerContent": "",
                                                             "imageURL": "",
                                                             "footerIconURL": "",
@@ -4601,7 +4586,7 @@
                                                       "updateEmbeds": false,
                                                       "updateAttachments": false
                                                     },
-                                                    "id": 1743156336832
+                                                    "id": 1743188688746
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -4609,7 +4594,7 @@
                                                 "emojiID": "1181132265405829140",
                                                 "isEmojiAnimated": false,
                                                 "type": {
-                                                  "type": "temporary",
+                                                  "type": "persistent",
                                                   "value": "60"
                                                 },
                                                 "styles_emoji": [
@@ -4622,7 +4607,9 @@
                                                     "type": "usage"
                                                   }
                                                 ],
-                                                "premium_button": []
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
                                               }
                                             },
                                             {
@@ -4647,7 +4634,7 @@
                                                         "value": "member"
                                                       }
                                                     },
-                                                    "id": 1743156336833
+                                                    "id": 1743188688747
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -4665,7 +4652,7 @@
                                                         "value": "rez"
                                                       }
                                                     },
-                                                    "id": 1743156336834
+                                                    "id": 1743188688748
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -4683,7 +4670,7 @@
                                                         "value": "proof"
                                                       }
                                                     },
-                                                    "id": 1743156336835
+                                                    "id": 1743188688749
                                                   },
                                                   {
                                                     "name": "Send Message",
@@ -4697,7 +4684,7 @@
                                                           "type": "embed",
                                                           "data": {
                                                             "title": "",
-                                                            "embedColor": "#FFFFFF",
+                                                            "embedColor": "#eb3434",
                                                             "footerContent": "",
                                                             "imageURL": "",
                                                             "footerIconURL": "",
@@ -4742,7 +4729,7 @@
                                                       "updateEmbeds": false,
                                                       "updateAttachments": false
                                                     },
-                                                    "id": 1743156336836
+                                                    "id": 1743188688750
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -4750,7 +4737,7 @@
                                                 "emojiID": "1181132285907583026",
                                                 "isEmojiAnimated": false,
                                                 "type": {
-                                                  "type": "temporary",
+                                                  "type": "persistent",
                                                   "value": "60"
                                                 },
                                                 "styles_emoji": [
@@ -4763,7 +4750,9 @@
                                                     "type": "usage"
                                                   }
                                                 ],
-                                                "premium_button": []
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
                                               }
                                             }
                                           ],
@@ -4828,7 +4817,7 @@
                                     "updateEmbeds": false,
                                     "updateAttachments": false
                                   },
-                                  "id": 1743156336828
+                                  "id": 1743188688742
                                 },
                                 {
                                   "name": "Send Message",
@@ -4868,7 +4857,7 @@
                                     "updateEmbeds": false,
                                     "updateAttachments": false
                                   },
-                                  "id": 1743156336837
+                                  "id": 1743188688751
                                 },
                                 {
                                   "name": "Get Member Info",
@@ -4888,7 +4877,7 @@
                                       "value": "userid"
                                     }
                                   },
-                                  "id": 1743156336838
+                                  "id": 1743188688752
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -4905,7 +4894,7 @@
                                     },
                                     "dataName": "member"
                                   },
-                                  "id": 1743156336839
+                                  "id": 1743188688753
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -4922,7 +4911,7 @@
                                     },
                                     "dataName": "rez"
                                   },
-                                  "id": 1743156336840
+                                  "id": 1743188688754
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -4939,7 +4928,7 @@
                                     },
                                     "dataName": "proof"
                                   },
-                                  "id": 1743156336841
+                                  "id": 1743188688755
                                 }
                               ],
                               "store": {
@@ -4947,7 +4936,7 @@
                                 "value": ""
                               }
                             },
-                            "id": 1743156336827
+                            "id": 1743188688741
                           }
                         ],
                         "label": "San Francisco",
@@ -5048,7 +5037,7 @@
                                                         "value": "member"
                                                       }
                                                     },
-                                                    "id": 1743156336844
+                                                    "id": 1743188688758
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -5066,7 +5055,7 @@
                                                         "value": "rez"
                                                       }
                                                     },
-                                                    "id": 1743156336845
+                                                    "id": 1743188688759
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -5084,7 +5073,7 @@
                                                         "value": "proof"
                                                       }
                                                     },
-                                                    "id": 1743156336846
+                                                    "id": 1743188688760
                                                   },
                                                   {
                                                     "name": "Send Message",
@@ -5098,7 +5087,7 @@
                                                           "type": "embed",
                                                           "data": {
                                                             "title": "",
-                                                            "embedColor": "#FFFFFF",
+                                                            "embedColor": "#49eb34",
                                                             "footerContent": "",
                                                             "imageURL": "",
                                                             "footerIconURL": "",
@@ -5143,7 +5132,7 @@
                                                       "updateEmbeds": false,
                                                       "updateAttachments": false
                                                     },
-                                                    "id": 1743156336847
+                                                    "id": 1743188688761
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -5151,7 +5140,7 @@
                                                 "emojiID": "1181132265405829140",
                                                 "isEmojiAnimated": false,
                                                 "type": {
-                                                  "type": "temporary",
+                                                  "type": "persistent",
                                                   "value": "60"
                                                 },
                                                 "styles_emoji": [
@@ -5164,7 +5153,9 @@
                                                     "type": "usage"
                                                   }
                                                 ],
-                                                "premium_button": []
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
                                               }
                                             },
                                             {
@@ -5189,7 +5180,7 @@
                                                         "value": "member"
                                                       }
                                                     },
-                                                    "id": 1743156336848
+                                                    "id": 1743188688762
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -5207,7 +5198,7 @@
                                                         "value": "rez"
                                                       }
                                                     },
-                                                    "id": 1743156336849
+                                                    "id": 1743188688763
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -5225,7 +5216,7 @@
                                                         "value": "proof"
                                                       }
                                                     },
-                                                    "id": 1743156336850
+                                                    "id": 1743188688764
                                                   },
                                                   {
                                                     "name": "Send Message",
@@ -5239,7 +5230,7 @@
                                                           "type": "embed",
                                                           "data": {
                                                             "title": "",
-                                                            "embedColor": "#FFFFFF",
+                                                            "embedColor": "#eb3434",
                                                             "footerContent": "",
                                                             "imageURL": "",
                                                             "footerIconURL": "",
@@ -5284,7 +5275,7 @@
                                                       "updateEmbeds": false,
                                                       "updateAttachments": false
                                                     },
-                                                    "id": 1743156336851
+                                                    "id": 1743188688765
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -5292,7 +5283,7 @@
                                                 "emojiID": "1181132285907583026",
                                                 "isEmojiAnimated": false,
                                                 "type": {
-                                                  "type": "temporary",
+                                                  "type": "persistent",
                                                   "value": "60"
                                                 },
                                                 "styles_emoji": [
@@ -5305,7 +5296,9 @@
                                                     "type": "usage"
                                                   }
                                                 ],
-                                                "premium_button": []
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
                                               }
                                             }
                                           ],
@@ -5370,7 +5363,7 @@
                                     "updateEmbeds": false,
                                     "updateAttachments": false
                                   },
-                                  "id": 1743156336843
+                                  "id": 1743188688757
                                 },
                                 {
                                   "name": "Send Message",
@@ -5410,7 +5403,7 @@
                                     "updateEmbeds": false,
                                     "updateAttachments": false
                                   },
-                                  "id": 1743156336852
+                                  "id": 1743188688766
                                 },
                                 {
                                   "name": "Get Member Info",
@@ -5430,7 +5423,7 @@
                                       "value": "userid"
                                     }
                                   },
-                                  "id": 1743156336853
+                                  "id": 1743188688767
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -5447,7 +5440,7 @@
                                     },
                                     "dataName": "member"
                                   },
-                                  "id": 1743156336854
+                                  "id": 1743188688768
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -5464,7 +5457,7 @@
                                     },
                                     "dataName": "rez"
                                   },
-                                  "id": 1743156336855
+                                  "id": 1743188688769
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -5481,7 +5474,7 @@
                                     },
                                     "dataName": "proof"
                                   },
-                                  "id": 1743156336856
+                                  "id": 1743188688770
                                 }
                               ],
                               "store": {
@@ -5489,7 +5482,7 @@
                                 "value": ""
                               }
                             },
-                            "id": 1743156336842
+                            "id": 1743188688756
                           }
                         ],
                         "label": "Atlanta",
@@ -5590,7 +5583,7 @@
                                                         "value": "member"
                                                       }
                                                     },
-                                                    "id": 1743156336859
+                                                    "id": 1743188688773
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -5608,7 +5601,7 @@
                                                         "value": "rez"
                                                       }
                                                     },
-                                                    "id": 1743156336860
+                                                    "id": 1743188688774
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -5626,7 +5619,7 @@
                                                         "value": "proof"
                                                       }
                                                     },
-                                                    "id": 1743156336861
+                                                    "id": 1743188688775
                                                   },
                                                   {
                                                     "name": "Send Message",
@@ -5640,7 +5633,7 @@
                                                           "type": "embed",
                                                           "data": {
                                                             "title": "",
-                                                            "embedColor": "#FFFFFF",
+                                                            "embedColor": "#49eb34",
                                                             "footerContent": "",
                                                             "imageURL": "",
                                                             "footerIconURL": "",
@@ -5685,7 +5678,7 @@
                                                       "updateEmbeds": false,
                                                       "updateAttachments": false
                                                     },
-                                                    "id": 1743156336862
+                                                    "id": 1743188688776
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -5693,7 +5686,7 @@
                                                 "emojiID": "1181132265405829140",
                                                 "isEmojiAnimated": false,
                                                 "type": {
-                                                  "type": "temporary",
+                                                  "type": "persistent",
                                                   "value": "60"
                                                 },
                                                 "styles_emoji": [
@@ -5706,7 +5699,9 @@
                                                     "type": "usage"
                                                   }
                                                 ],
-                                                "premium_button": []
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
                                               }
                                             },
                                             {
@@ -5731,7 +5726,7 @@
                                                         "value": "member"
                                                       }
                                                     },
-                                                    "id": 1743156336863
+                                                    "id": 1743188688777
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -5749,7 +5744,7 @@
                                                         "value": "rez"
                                                       }
                                                     },
-                                                    "id": 1743156336864
+                                                    "id": 1743188688779
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -5767,7 +5762,7 @@
                                                         "value": "proof"
                                                       }
                                                     },
-                                                    "id": 1743156336865
+                                                    "id": 1743188688780
                                                   },
                                                   {
                                                     "name": "Send Message",
@@ -5781,7 +5776,7 @@
                                                           "type": "embed",
                                                           "data": {
                                                             "title": "",
-                                                            "embedColor": "#FFFFFF",
+                                                            "embedColor": "#eb3434",
                                                             "footerContent": "",
                                                             "imageURL": "",
                                                             "footerIconURL": "",
@@ -5826,7 +5821,7 @@
                                                       "updateEmbeds": false,
                                                       "updateAttachments": false
                                                     },
-                                                    "id": 1743156336866
+                                                    "id": 1743188688781
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -5834,7 +5829,7 @@
                                                 "emojiID": "1181132285907583026",
                                                 "isEmojiAnimated": false,
                                                 "type": {
-                                                  "type": "temporary",
+                                                  "type": "persistent",
                                                   "value": "60"
                                                 },
                                                 "styles_emoji": [
@@ -5847,7 +5842,9 @@
                                                     "type": "usage"
                                                   }
                                                 ],
-                                                "premium_button": []
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
                                               }
                                             }
                                           ],
@@ -5912,7 +5909,7 @@
                                     "updateEmbeds": false,
                                     "updateAttachments": false
                                   },
-                                  "id": 1743156336858
+                                  "id": 1743188688772
                                 },
                                 {
                                   "name": "Send Message",
@@ -5952,7 +5949,7 @@
                                     "updateEmbeds": false,
                                     "updateAttachments": false
                                   },
-                                  "id": 1743156336867
+                                  "id": 1743188688782
                                 },
                                 {
                                   "name": "Get Member Info",
@@ -5972,7 +5969,7 @@
                                       "value": "userid"
                                     }
                                   },
-                                  "id": 1743156336868
+                                  "id": 1743188688783
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -5989,7 +5986,7 @@
                                     },
                                     "dataName": "member"
                                   },
-                                  "id": 1743156336869
+                                  "id": 1743188688784
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -6006,7 +6003,7 @@
                                     },
                                     "dataName": "rez"
                                   },
-                                  "id": 1743156336870
+                                  "id": 1743188688785
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -6023,7 +6020,7 @@
                                     },
                                     "dataName": "proof"
                                   },
-                                  "id": 1743156336871
+                                  "id": 1743188688786
                                 }
                               ],
                               "store": {
@@ -6031,7 +6028,7 @@
                                 "value": ""
                               }
                             },
-                            "id": 1743156336857
+                            "id": 1743188688771
                           }
                         ],
                         "label": "San Diego",
@@ -6132,7 +6129,7 @@
                                                         "value": "member"
                                                       }
                                                     },
-                                                    "id": 1743156336874
+                                                    "id": 1743188688789
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -6150,7 +6147,7 @@
                                                         "value": "rez"
                                                       }
                                                     },
-                                                    "id": 1743156336875
+                                                    "id": 1743188688790
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -6168,7 +6165,7 @@
                                                         "value": "proof"
                                                       }
                                                     },
-                                                    "id": 1743156336876
+                                                    "id": 1743188688791
                                                   },
                                                   {
                                                     "name": "Send Message",
@@ -6182,7 +6179,7 @@
                                                           "type": "embed",
                                                           "data": {
                                                             "title": "",
-                                                            "embedColor": "#FFFFFF",
+                                                            "embedColor": "#49eb34",
                                                             "footerContent": "",
                                                             "imageURL": "",
                                                             "footerIconURL": "",
@@ -6227,7 +6224,7 @@
                                                       "updateEmbeds": false,
                                                       "updateAttachments": false
                                                     },
-                                                    "id": 1743156336877
+                                                    "id": 1743188688792
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -6235,7 +6232,7 @@
                                                 "emojiID": "1181132265405829140",
                                                 "isEmojiAnimated": false,
                                                 "type": {
-                                                  "type": "temporary",
+                                                  "type": "persistent",
                                                   "value": "60"
                                                 },
                                                 "styles_emoji": [
@@ -6248,7 +6245,9 @@
                                                     "type": "usage"
                                                   }
                                                 ],
-                                                "premium_button": []
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
                                               }
                                             },
                                             {
@@ -6273,7 +6272,7 @@
                                                         "value": "member"
                                                       }
                                                     },
-                                                    "id": 1743156336878
+                                                    "id": 1743188688793
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -6291,7 +6290,7 @@
                                                         "value": "rez"
                                                       }
                                                     },
-                                                    "id": 1743156336879
+                                                    "id": 1743188688794
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -6309,7 +6308,7 @@
                                                         "value": "proof"
                                                       }
                                                     },
-                                                    "id": 1743156336880
+                                                    "id": 1743188688795
                                                   },
                                                   {
                                                     "name": "Send Message",
@@ -6323,7 +6322,7 @@
                                                           "type": "embed",
                                                           "data": {
                                                             "title": "",
-                                                            "embedColor": "#FFFFFF",
+                                                            "embedColor": "#eb3434",
                                                             "footerContent": "",
                                                             "imageURL": "",
                                                             "footerIconURL": "",
@@ -6368,7 +6367,7 @@
                                                       "updateEmbeds": false,
                                                       "updateAttachments": false
                                                     },
-                                                    "id": 1743156336881
+                                                    "id": 1743188688796
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -6376,7 +6375,7 @@
                                                 "emojiID": "1181132285907583026",
                                                 "isEmojiAnimated": false,
                                                 "type": {
-                                                  "type": "temporary",
+                                                  "type": "persistent",
                                                   "value": "60"
                                                 },
                                                 "styles_emoji": [
@@ -6389,7 +6388,9 @@
                                                     "type": "usage"
                                                   }
                                                 ],
-                                                "premium_button": []
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
                                               }
                                             }
                                           ],
@@ -6454,7 +6455,7 @@
                                     "updateEmbeds": false,
                                     "updateAttachments": false
                                   },
-                                  "id": 1743156336873
+                                  "id": 1743188688788
                                 },
                                 {
                                   "name": "Send Message",
@@ -6494,7 +6495,7 @@
                                     "updateEmbeds": false,
                                     "updateAttachments": false
                                   },
-                                  "id": 1743156336882
+                                  "id": 1743188688797
                                 },
                                 {
                                   "name": "Get Member Info",
@@ -6514,7 +6515,7 @@
                                       "value": "userid"
                                     }
                                   },
-                                  "id": 1743156336883
+                                  "id": 1743188688798
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -6531,7 +6532,7 @@
                                     },
                                     "dataName": "member"
                                   },
-                                  "id": 1743156336884
+                                  "id": 1743188688799
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -6548,7 +6549,7 @@
                                     },
                                     "dataName": "rez"
                                   },
-                                  "id": 1743156336885
+                                  "id": 1743188688800
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -6565,7 +6566,7 @@
                                     },
                                     "dataName": "proof"
                                   },
-                                  "id": 1743156336886
+                                  "id": 1743188688801
                                 }
                               ],
                               "store": {
@@ -6573,7 +6574,7 @@
                                 "value": ""
                               }
                             },
-                            "id": 1743156336872
+                            "id": 1743188688787
                           }
                         ],
                         "label": "Los Angeles",
@@ -6674,7 +6675,7 @@
                                                         "value": "member"
                                                       }
                                                     },
-                                                    "id": 1743156336889
+                                                    "id": 1743188688804
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -6692,7 +6693,7 @@
                                                         "value": "rez"
                                                       }
                                                     },
-                                                    "id": 1743156336890
+                                                    "id": 1743188688805
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -6710,7 +6711,7 @@
                                                         "value": "proof"
                                                       }
                                                     },
-                                                    "id": 1743156336891
+                                                    "id": 1743188688806
                                                   },
                                                   {
                                                     "name": "Send Message",
@@ -6724,7 +6725,7 @@
                                                           "type": "embed",
                                                           "data": {
                                                             "title": "",
-                                                            "embedColor": "#FFFFFF",
+                                                            "embedColor": "#49eb34",
                                                             "footerContent": "",
                                                             "imageURL": "",
                                                             "footerIconURL": "",
@@ -6769,7 +6770,7 @@
                                                       "updateEmbeds": false,
                                                       "updateAttachments": false
                                                     },
-                                                    "id": 1743156336892
+                                                    "id": 1743188688807
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -6777,7 +6778,7 @@
                                                 "emojiID": "1181132265405829140",
                                                 "isEmojiAnimated": false,
                                                 "type": {
-                                                  "type": "temporary",
+                                                  "type": "persistent",
                                                   "value": "60"
                                                 },
                                                 "styles_emoji": [
@@ -6790,7 +6791,9 @@
                                                     "type": "usage"
                                                   }
                                                 ],
-                                                "premium_button": []
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
                                               }
                                             },
                                             {
@@ -6815,7 +6818,7 @@
                                                         "value": "member"
                                                       }
                                                     },
-                                                    "id": 1743156336893
+                                                    "id": 1743188688808
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -6833,7 +6836,7 @@
                                                         "value": "rez"
                                                       }
                                                     },
-                                                    "id": 1743156336894
+                                                    "id": 1743188688809
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -6851,7 +6854,7 @@
                                                         "value": "proof"
                                                       }
                                                     },
-                                                    "id": 1743156336895
+                                                    "id": 1743188688810
                                                   },
                                                   {
                                                     "name": "Send Message",
@@ -6865,7 +6868,7 @@
                                                           "type": "embed",
                                                           "data": {
                                                             "title": "",
-                                                            "embedColor": "#FFFFFF",
+                                                            "embedColor": "#eb3434",
                                                             "footerContent": "",
                                                             "imageURL": "",
                                                             "footerIconURL": "",
@@ -6910,7 +6913,7 @@
                                                       "updateEmbeds": false,
                                                       "updateAttachments": false
                                                     },
-                                                    "id": 1743156336896
+                                                    "id": 1743188688811
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -6918,7 +6921,7 @@
                                                 "emojiID": "1181132285907583026",
                                                 "isEmojiAnimated": false,
                                                 "type": {
-                                                  "type": "temporary",
+                                                  "type": "persistent",
                                                   "value": "60"
                                                 },
                                                 "styles_emoji": [
@@ -6931,7 +6934,9 @@
                                                     "type": "usage"
                                                   }
                                                 ],
-                                                "premium_button": []
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
                                               }
                                             }
                                           ],
@@ -6996,7 +7001,7 @@
                                     "updateEmbeds": false,
                                     "updateAttachments": false
                                   },
-                                  "id": 1743156336888
+                                  "id": 1743188688803
                                 },
                                 {
                                   "name": "Send Message",
@@ -7036,7 +7041,7 @@
                                     "updateEmbeds": false,
                                     "updateAttachments": false
                                   },
-                                  "id": 1743156336897
+                                  "id": 1743188688812
                                 },
                                 {
                                   "name": "Get Member Info",
@@ -7056,7 +7061,7 @@
                                       "value": "userid"
                                     }
                                   },
-                                  "id": 1743156336898
+                                  "id": 1743188688813
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -7073,7 +7078,7 @@
                                     },
                                     "dataName": "member"
                                   },
-                                  "id": 1743156336899
+                                  "id": 1743188688814
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -7090,7 +7095,7 @@
                                     },
                                     "dataName": "rez"
                                   },
-                                  "id": 1743156336900
+                                  "id": 1743188688815
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -7107,7 +7112,7 @@
                                     },
                                     "dataName": "proof"
                                   },
-                                  "id": 1743156336901
+                                  "id": 1743188688816
                                 }
                               ],
                               "store": {
@@ -7115,7 +7120,7 @@
                                 "value": ""
                               }
                             },
-                            "id": 1743156336887
+                            "id": 1743188688802
                           }
                         ],
                         "label": "Miami",
@@ -7216,7 +7221,7 @@
                                                         "value": "member"
                                                       }
                                                     },
-                                                    "id": 1743156336904
+                                                    "id": 1743188688819
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -7234,7 +7239,7 @@
                                                         "value": "rez"
                                                       }
                                                     },
-                                                    "id": 1743156336905
+                                                    "id": 1743188688820
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -7252,7 +7257,7 @@
                                                         "value": "proof"
                                                       }
                                                     },
-                                                    "id": 1743156336906
+                                                    "id": 1743188688821
                                                   },
                                                   {
                                                     "name": "Send Message",
@@ -7266,7 +7271,7 @@
                                                           "type": "embed",
                                                           "data": {
                                                             "title": "",
-                                                            "embedColor": "#FFFFFF",
+                                                            "embedColor": "#49eb34",
                                                             "footerContent": "",
                                                             "imageURL": "",
                                                             "footerIconURL": "",
@@ -7311,7 +7316,7 @@
                                                       "updateEmbeds": false,
                                                       "updateAttachments": false
                                                     },
-                                                    "id": 1743156336907
+                                                    "id": 1743188688822
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -7319,7 +7324,7 @@
                                                 "emojiID": "1181132265405829140",
                                                 "isEmojiAnimated": false,
                                                 "type": {
-                                                  "type": "temporary",
+                                                  "type": "persistent",
                                                   "value": "60"
                                                 },
                                                 "styles_emoji": [
@@ -7332,7 +7337,9 @@
                                                     "type": "usage"
                                                   }
                                                 ],
-                                                "premium_button": []
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
                                               }
                                             },
                                             {
@@ -7357,7 +7364,7 @@
                                                         "value": "member"
                                                       }
                                                     },
-                                                    "id": 1743156336908
+                                                    "id": 1743188688823
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -7375,7 +7382,7 @@
                                                         "value": "rez"
                                                       }
                                                     },
-                                                    "id": 1743156336909
+                                                    "id": 1743188688824
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -7393,7 +7400,7 @@
                                                         "value": "proof"
                                                       }
                                                     },
-                                                    "id": 1743156336910
+                                                    "id": 1743188688825
                                                   },
                                                   {
                                                     "name": "Send Message",
@@ -7407,7 +7414,7 @@
                                                           "type": "embed",
                                                           "data": {
                                                             "title": "",
-                                                            "embedColor": "#FFFFFF",
+                                                            "embedColor": "#eb3434",
                                                             "footerContent": "",
                                                             "imageURL": "",
                                                             "footerIconURL": "",
@@ -7452,7 +7459,7 @@
                                                       "updateEmbeds": false,
                                                       "updateAttachments": false
                                                     },
-                                                    "id": 1743156336911
+                                                    "id": 1743188688826
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -7460,7 +7467,7 @@
                                                 "emojiID": "1181132285907583026",
                                                 "isEmojiAnimated": false,
                                                 "type": {
-                                                  "type": "temporary",
+                                                  "type": "persistent",
                                                   "value": "60"
                                                 },
                                                 "styles_emoji": [
@@ -7473,7 +7480,9 @@
                                                     "type": "usage"
                                                   }
                                                 ],
-                                                "premium_button": []
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
                                               }
                                             }
                                           ],
@@ -7538,7 +7547,7 @@
                                     "updateEmbeds": false,
                                     "updateAttachments": false
                                   },
-                                  "id": 1743156336903
+                                  "id": 1743188688818
                                 },
                                 {
                                   "name": "Send Message",
@@ -7578,7 +7587,7 @@
                                     "updateEmbeds": false,
                                     "updateAttachments": false
                                   },
-                                  "id": 1743156336912
+                                  "id": 1743188688827
                                 },
                                 {
                                   "name": "Get Member Info",
@@ -7598,7 +7607,7 @@
                                       "value": "userid"
                                     }
                                   },
-                                  "id": 1743156336913
+                                  "id": 1743188688828
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -7615,7 +7624,7 @@
                                     },
                                     "dataName": "member"
                                   },
-                                  "id": 1743156336914
+                                  "id": 1743188688829
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -7632,7 +7641,7 @@
                                     },
                                     "dataName": "rez"
                                   },
-                                  "id": 1743156336915
+                                  "id": 1743188688830
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -7649,7 +7658,7 @@
                                     },
                                     "dataName": "proof"
                                   },
-                                  "id": 1743156336916
+                                  "id": 1743188688831
                                 }
                               ],
                               "store": {
@@ -7657,7 +7666,7 @@
                                 "value": ""
                               }
                             },
-                            "id": 1743156336902
+                            "id": 1743188688817
                           }
                         ],
                         "label": "Las Vegas",
@@ -7758,7 +7767,7 @@
                                                         "value": "member"
                                                       }
                                                     },
-                                                    "id": 1743156336919
+                                                    "id": 1743188688834
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -7776,7 +7785,7 @@
                                                         "value": "rez"
                                                       }
                                                     },
-                                                    "id": 1743156336920
+                                                    "id": 1743188688835
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -7794,7 +7803,7 @@
                                                         "value": "proof"
                                                       }
                                                     },
-                                                    "id": 1743156336921
+                                                    "id": 1743188688836
                                                   },
                                                   {
                                                     "name": "Send Message",
@@ -7808,7 +7817,7 @@
                                                           "type": "embed",
                                                           "data": {
                                                             "title": "",
-                                                            "embedColor": "#FFFFFF",
+                                                            "embedColor": "#49eb34",
                                                             "footerContent": "",
                                                             "imageURL": "",
                                                             "footerIconURL": "",
@@ -7853,7 +7862,7 @@
                                                       "updateEmbeds": false,
                                                       "updateAttachments": false
                                                     },
-                                                    "id": 1743156336922
+                                                    "id": 1743188688837
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -7861,7 +7870,7 @@
                                                 "emojiID": "1181132265405829140",
                                                 "isEmojiAnimated": false,
                                                 "type": {
-                                                  "type": "temporary",
+                                                  "type": "persistent",
                                                   "value": "60"
                                                 },
                                                 "styles_emoji": [
@@ -7874,7 +7883,9 @@
                                                     "type": "usage"
                                                   }
                                                 ],
-                                                "premium_button": []
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
                                               }
                                             },
                                             {
@@ -7899,7 +7910,7 @@
                                                         "value": "member"
                                                       }
                                                     },
-                                                    "id": 1743156336923
+                                                    "id": 1743188688838
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -7917,7 +7928,7 @@
                                                         "value": "rez"
                                                       }
                                                     },
-                                                    "id": 1743156336924
+                                                    "id": 1743188688839
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -7935,7 +7946,7 @@
                                                         "value": "proof"
                                                       }
                                                     },
-                                                    "id": 1743156336925
+                                                    "id": 1743188688840
                                                   },
                                                   {
                                                     "name": "Send Message",
@@ -7949,7 +7960,7 @@
                                                           "type": "embed",
                                                           "data": {
                                                             "title": "",
-                                                            "embedColor": "#FFFFFF",
+                                                            "embedColor": "#eb3434",
                                                             "footerContent": "",
                                                             "imageURL": "",
                                                             "footerIconURL": "",
@@ -7994,7 +8005,7 @@
                                                       "updateEmbeds": false,
                                                       "updateAttachments": false
                                                     },
-                                                    "id": 1743156336926
+                                                    "id": 1743188688841
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -8002,7 +8013,7 @@
                                                 "emojiID": "1181132285907583026",
                                                 "isEmojiAnimated": false,
                                                 "type": {
-                                                  "type": "temporary",
+                                                  "type": "persistent",
                                                   "value": "60"
                                                 },
                                                 "styles_emoji": [
@@ -8015,7 +8026,9 @@
                                                     "type": "usage"
                                                   }
                                                 ],
-                                                "premium_button": []
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
                                               }
                                             }
                                           ],
@@ -8080,7 +8093,7 @@
                                     "updateEmbeds": false,
                                     "updateAttachments": false
                                   },
-                                  "id": 1743156336918
+                                  "id": 1743188688833
                                 },
                                 {
                                   "name": "Send Message",
@@ -8120,7 +8133,7 @@
                                     "updateEmbeds": false,
                                     "updateAttachments": false
                                   },
-                                  "id": 1743156336928
+                                  "id": 1743188688842
                                 },
                                 {
                                   "name": "Get Member Info",
@@ -8140,7 +8153,7 @@
                                       "value": "userid"
                                     }
                                   },
-                                  "id": 1743156336929
+                                  "id": 1743188688843
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -8157,7 +8170,7 @@
                                     },
                                     "dataName": "member"
                                   },
-                                  "id": 1743156336930
+                                  "id": 1743188688844
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -8174,7 +8187,7 @@
                                     },
                                     "dataName": "rez"
                                   },
-                                  "id": 1743156336931
+                                  "id": 1743188688845
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -8191,7 +8204,7 @@
                                     },
                                     "dataName": "proof"
                                   },
-                                  "id": 1743156336932
+                                  "id": 1743188688846
                                 }
                               ],
                               "store": {
@@ -8199,7 +8212,7 @@
                                 "value": ""
                               }
                             },
-                            "id": 1743156336917
+                            "id": 1743188688832
                           }
                         ],
                         "label": "Washington",
@@ -8300,7 +8313,7 @@
                                                         "value": "member"
                                                       }
                                                     },
-                                                    "id": 1743156336935
+                                                    "id": 1743188688849
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -8318,7 +8331,7 @@
                                                         "value": "rez"
                                                       }
                                                     },
-                                                    "id": 1743156336936
+                                                    "id": 1743188688850
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -8336,7 +8349,7 @@
                                                         "value": "proof"
                                                       }
                                                     },
-                                                    "id": 1743156336937
+                                                    "id": 1743188688851
                                                   },
                                                   {
                                                     "name": "Send Message",
@@ -8350,7 +8363,7 @@
                                                           "type": "embed",
                                                           "data": {
                                                             "title": "",
-                                                            "embedColor": "#FFFFFF",
+                                                            "embedColor": "#49eb34",
                                                             "footerContent": "",
                                                             "imageURL": "",
                                                             "footerIconURL": "",
@@ -8395,7 +8408,7 @@
                                                       "updateEmbeds": false,
                                                       "updateAttachments": false
                                                     },
-                                                    "id": 1743156336938
+                                                    "id": 1743188688852
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -8403,7 +8416,7 @@
                                                 "emojiID": "1181132265405829140",
                                                 "isEmojiAnimated": false,
                                                 "type": {
-                                                  "type": "temporary",
+                                                  "type": "persistent",
                                                   "value": "60"
                                                 },
                                                 "styles_emoji": [
@@ -8416,7 +8429,9 @@
                                                     "type": "usage"
                                                   }
                                                 ],
-                                                "premium_button": []
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
                                               }
                                             },
                                             {
@@ -8441,7 +8456,7 @@
                                                         "value": "member"
                                                       }
                                                     },
-                                                    "id": 1743156336939
+                                                    "id": 1743188688853
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -8459,7 +8474,7 @@
                                                         "value": "rez"
                                                       }
                                                     },
-                                                    "id": 1743156336940
+                                                    "id": 1743188688854
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -8477,7 +8492,7 @@
                                                         "value": "proof"
                                                       }
                                                     },
-                                                    "id": 1743156336941
+                                                    "id": 1743188688855
                                                   },
                                                   {
                                                     "name": "Send Message",
@@ -8491,7 +8506,7 @@
                                                           "type": "embed",
                                                           "data": {
                                                             "title": "",
-                                                            "embedColor": "#FFFFFF",
+                                                            "embedColor": "#eb3434",
                                                             "footerContent": "",
                                                             "imageURL": "",
                                                             "footerIconURL": "",
@@ -8536,7 +8551,7 @@
                                                       "updateEmbeds": false,
                                                       "updateAttachments": false
                                                     },
-                                                    "id": 1743156336942
+                                                    "id": 1743188688856
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -8544,7 +8559,7 @@
                                                 "emojiID": "1181132285907583026",
                                                 "isEmojiAnimated": false,
                                                 "type": {
-                                                  "type": "temporary",
+                                                  "type": "persistent",
                                                   "value": "60"
                                                 },
                                                 "styles_emoji": [
@@ -8557,7 +8572,9 @@
                                                     "type": "usage"
                                                   }
                                                 ],
-                                                "premium_button": []
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
                                               }
                                             }
                                           ],
@@ -8622,7 +8639,7 @@
                                     "updateEmbeds": false,
                                     "updateAttachments": false
                                   },
-                                  "id": 1743156336934
+                                  "id": 1743188688848
                                 },
                                 {
                                   "name": "Send Message",
@@ -8662,7 +8679,7 @@
                                     "updateEmbeds": false,
                                     "updateAttachments": false
                                   },
-                                  "id": 1743156336943
+                                  "id": 1743188688857
                                 },
                                 {
                                   "name": "Get Member Info",
@@ -8682,7 +8699,7 @@
                                       "value": "userid"
                                     }
                                   },
-                                  "id": 1743156336944
+                                  "id": 1743188688858
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -8699,7 +8716,7 @@
                                     },
                                     "dataName": "member"
                                   },
-                                  "id": 1743156336945
+                                  "id": 1743188688859
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -8716,7 +8733,7 @@
                                     },
                                     "dataName": "rez"
                                   },
-                                  "id": 1743156336946
+                                  "id": 1743188688860
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -8733,7 +8750,7 @@
                                     },
                                     "dataName": "proof"
                                   },
-                                  "id": 1743156336947
+                                  "id": 1743188688861
                                 }
                               ],
                               "store": {
@@ -8741,7 +8758,7 @@
                                 "value": ""
                               }
                             },
-                            "id": 1743156336933
+                            "id": 1743188688847
                           }
                         ],
                         "label": "Dallas",
@@ -8842,7 +8859,7 @@
                                                         "value": "member"
                                                       }
                                                     },
-                                                    "id": 1743156336950
+                                                    "id": 1743188688864
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -8860,7 +8877,7 @@
                                                         "value": "rez"
                                                       }
                                                     },
-                                                    "id": 1743156336951
+                                                    "id": 1743188688865
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -8878,7 +8895,7 @@
                                                         "value": "proof"
                                                       }
                                                     },
-                                                    "id": 1743156336952
+                                                    "id": 1743188688866
                                                   },
                                                   {
                                                     "name": "Send Message",
@@ -8892,7 +8909,7 @@
                                                           "type": "embed",
                                                           "data": {
                                                             "title": "",
-                                                            "embedColor": "#FFFFFF",
+                                                            "embedColor": "#49eb34",
                                                             "footerContent": "",
                                                             "imageURL": "",
                                                             "footerIconURL": "",
@@ -8937,7 +8954,7 @@
                                                       "updateEmbeds": false,
                                                       "updateAttachments": false
                                                     },
-                                                    "id": 1743156336953
+                                                    "id": 1743188688867
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -8945,7 +8962,7 @@
                                                 "emojiID": "1181132265405829140",
                                                 "isEmojiAnimated": false,
                                                 "type": {
-                                                  "type": "temporary",
+                                                  "type": "persistent",
                                                   "value": "60"
                                                 },
                                                 "styles_emoji": [
@@ -8958,7 +8975,9 @@
                                                     "type": "usage"
                                                   }
                                                 ],
-                                                "premium_button": []
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
                                               }
                                             },
                                             {
@@ -8983,7 +9002,7 @@
                                                         "value": "member"
                                                       }
                                                     },
-                                                    "id": 1743156336954
+                                                    "id": 1743188688868
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -9001,7 +9020,7 @@
                                                         "value": "rez"
                                                       }
                                                     },
-                                                    "id": 1743156336955
+                                                    "id": 1743188688869
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -9019,7 +9038,7 @@
                                                         "value": "proof"
                                                       }
                                                     },
-                                                    "id": 1743156336956
+                                                    "id": 1743188688870
                                                   },
                                                   {
                                                     "name": "Send Message",
@@ -9033,7 +9052,7 @@
                                                           "type": "embed",
                                                           "data": {
                                                             "title": "",
-                                                            "embedColor": "#FFFFFF",
+                                                            "embedColor": "#eb3434",
                                                             "footerContent": "",
                                                             "imageURL": "",
                                                             "footerIconURL": "",
@@ -9078,7 +9097,7 @@
                                                       "updateEmbeds": false,
                                                       "updateAttachments": false
                                                     },
-                                                    "id": 1743156336957
+                                                    "id": 1743188688871
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -9086,7 +9105,7 @@
                                                 "emojiID": "1181132285907583026",
                                                 "isEmojiAnimated": false,
                                                 "type": {
-                                                  "type": "temporary",
+                                                  "type": "persistent",
                                                   "value": "60"
                                                 },
                                                 "styles_emoji": [
@@ -9099,7 +9118,9 @@
                                                     "type": "usage"
                                                   }
                                                 ],
-                                                "premium_button": []
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
                                               }
                                             }
                                           ],
@@ -9164,7 +9185,7 @@
                                     "updateEmbeds": false,
                                     "updateAttachments": false
                                   },
-                                  "id": 1743156336949
+                                  "id": 1743188688863
                                 },
                                 {
                                   "name": "Send Message",
@@ -9204,7 +9225,7 @@
                                     "updateEmbeds": false,
                                     "updateAttachments": false
                                   },
-                                  "id": 1743156336958
+                                  "id": 1743188688872
                                 },
                                 {
                                   "name": "Get Member Info",
@@ -9224,7 +9245,7 @@
                                       "value": "userid"
                                     }
                                   },
-                                  "id": 1743156336959
+                                  "id": 1743188688873
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -9241,7 +9262,7 @@
                                     },
                                     "dataName": "member"
                                   },
-                                  "id": 1743156336960
+                                  "id": 1743188688874
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -9258,7 +9279,7 @@
                                     },
                                     "dataName": "rez"
                                   },
-                                  "id": 1743156336961
+                                  "id": 1743188688875
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -9275,7 +9296,7 @@
                                     },
                                     "dataName": "proof"
                                   },
-                                  "id": 1743156336962
+                                  "id": 1743188688876
                                 }
                               ],
                               "store": {
@@ -9283,7 +9304,7 @@
                                 "value": ""
                               }
                             },
-                            "id": 1743156336948
+                            "id": 1743188688862
                           }
                         ],
                         "label": "Boston",
@@ -9384,7 +9405,7 @@
                                                         "value": "member"
                                                       }
                                                     },
-                                                    "id": 1743156336965
+                                                    "id": 1743188688879
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -9402,7 +9423,7 @@
                                                         "value": "rez"
                                                       }
                                                     },
-                                                    "id": 1743156336966
+                                                    "id": 1743188688880
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -9420,7 +9441,7 @@
                                                         "value": "proof"
                                                       }
                                                     },
-                                                    "id": 1743156336967
+                                                    "id": 1743188688881
                                                   },
                                                   {
                                                     "name": "Send Message",
@@ -9434,7 +9455,7 @@
                                                           "type": "embed",
                                                           "data": {
                                                             "title": "",
-                                                            "embedColor": "#FFFFFF",
+                                                            "embedColor": "#49eb34",
                                                             "footerContent": "",
                                                             "imageURL": "",
                                                             "footerIconURL": "",
@@ -9479,7 +9500,7 @@
                                                       "updateEmbeds": false,
                                                       "updateAttachments": false
                                                     },
-                                                    "id": 1743156336968
+                                                    "id": 1743188688882
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -9487,7 +9508,7 @@
                                                 "emojiID": "1181132265405829140",
                                                 "isEmojiAnimated": false,
                                                 "type": {
-                                                  "type": "temporary",
+                                                  "type": "persistent",
                                                   "value": "60"
                                                 },
                                                 "styles_emoji": [
@@ -9500,7 +9521,9 @@
                                                     "type": "usage"
                                                   }
                                                 ],
-                                                "premium_button": []
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
                                               }
                                             },
                                             {
@@ -9525,7 +9548,7 @@
                                                         "value": "member"
                                                       }
                                                     },
-                                                    "id": 1743156336969
+                                                    "id": 1743188688883
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -9543,7 +9566,7 @@
                                                         "value": "rez"
                                                       }
                                                     },
-                                                    "id": 1743156336970
+                                                    "id": 1743188688884
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -9561,7 +9584,7 @@
                                                         "value": "proof"
                                                       }
                                                     },
-                                                    "id": 1743156336971
+                                                    "id": 1743188688885
                                                   },
                                                   {
                                                     "name": "Send Message",
@@ -9575,7 +9598,7 @@
                                                           "type": "embed",
                                                           "data": {
                                                             "title": "",
-                                                            "embedColor": "#FFFFFF",
+                                                            "embedColor": "#eb3434",
                                                             "footerContent": "",
                                                             "imageURL": "",
                                                             "footerIconURL": "",
@@ -9620,7 +9643,7 @@
                                                       "updateEmbeds": false,
                                                       "updateAttachments": false
                                                     },
-                                                    "id": 1743156336972
+                                                    "id": 1743188688886
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -9628,7 +9651,7 @@
                                                 "emojiID": "1181132285907583026",
                                                 "isEmojiAnimated": false,
                                                 "type": {
-                                                  "type": "temporary",
+                                                  "type": "persistent",
                                                   "value": "60"
                                                 },
                                                 "styles_emoji": [
@@ -9641,7 +9664,9 @@
                                                     "type": "usage"
                                                   }
                                                 ],
-                                                "premium_button": []
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
                                               }
                                             }
                                           ],
@@ -9706,7 +9731,7 @@
                                     "updateEmbeds": false,
                                     "updateAttachments": false
                                   },
-                                  "id": 1743156336964
+                                  "id": 1743188688878
                                 },
                                 {
                                   "name": "Send Message",
@@ -9746,7 +9771,7 @@
                                     "updateEmbeds": false,
                                     "updateAttachments": false
                                   },
-                                  "id": 1743156336973
+                                  "id": 1743188688887
                                 },
                                 {
                                   "name": "Get Member Info",
@@ -9766,7 +9791,7 @@
                                       "value": "userid"
                                     }
                                   },
-                                  "id": 1743156336974
+                                  "id": 1743188688888
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -9783,7 +9808,7 @@
                                     },
                                     "dataName": "member"
                                   },
-                                  "id": 1743156336975
+                                  "id": 1743188688889
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -9800,7 +9825,7 @@
                                     },
                                     "dataName": "rez"
                                   },
-                                  "id": 1743156336976
+                                  "id": 1743188688890
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -9817,7 +9842,7 @@
                                     },
                                     "dataName": "proof"
                                   },
-                                  "id": 1743156336977
+                                  "id": 1743188688891
                                 }
                               ],
                               "store": {
@@ -9825,7 +9850,7 @@
                                 "value": ""
                               }
                             },
-                            "id": 1743156336963
+                            "id": 1743188688877
                           }
                         ],
                         "label": "Houston",
@@ -9926,7 +9951,7 @@
                                                         "value": "member"
                                                       }
                                                     },
-                                                    "id": 1743156336980
+                                                    "id": 1743188688894
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -9944,7 +9969,7 @@
                                                         "value": "rez"
                                                       }
                                                     },
-                                                    "id": 1743156336981
+                                                    "id": 1743188688895
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -9962,7 +9987,7 @@
                                                         "value": "proof"
                                                       }
                                                     },
-                                                    "id": 1743156336982
+                                                    "id": 1743188688896
                                                   },
                                                   {
                                                     "name": "Send Message",
@@ -9976,7 +10001,7 @@
                                                           "type": "embed",
                                                           "data": {
                                                             "title": "",
-                                                            "embedColor": "#FFFFFF",
+                                                            "embedColor": "#49eb34",
                                                             "footerContent": "",
                                                             "imageURL": "",
                                                             "footerIconURL": "",
@@ -10021,7 +10046,7 @@
                                                       "updateEmbeds": false,
                                                       "updateAttachments": false
                                                     },
-                                                    "id": 1743156336983
+                                                    "id": 1743188688897
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -10029,7 +10054,7 @@
                                                 "emojiID": "1181132265405829140",
                                                 "isEmojiAnimated": false,
                                                 "type": {
-                                                  "type": "temporary",
+                                                  "type": "persistent",
                                                   "value": "60"
                                                 },
                                                 "styles_emoji": [
@@ -10042,7 +10067,9 @@
                                                     "type": "usage"
                                                   }
                                                 ],
-                                                "premium_button": []
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
                                               }
                                             },
                                             {
@@ -10067,7 +10094,7 @@
                                                         "value": "member"
                                                       }
                                                     },
-                                                    "id": 1743156336984
+                                                    "id": 1743188688898
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -10085,7 +10112,7 @@
                                                         "value": "rez"
                                                       }
                                                     },
-                                                    "id": 1743156336985
+                                                    "id": 1743188688899
                                                   },
                                                   {
                                                     "name": "Get Message Data",
@@ -10103,7 +10130,7 @@
                                                         "value": "proof"
                                                       }
                                                     },
-                                                    "id": 1743156336986
+                                                    "id": 1743188688900
                                                   },
                                                   {
                                                     "name": "Send Message",
@@ -10117,7 +10144,7 @@
                                                           "type": "embed",
                                                           "data": {
                                                             "title": "",
-                                                            "embedColor": "#FFFFFF",
+                                                            "embedColor": "#eb3434",
                                                             "footerContent": "",
                                                             "imageURL": "",
                                                             "footerIconURL": "",
@@ -10162,7 +10189,7 @@
                                                       "updateEmbeds": false,
                                                       "updateAttachments": false
                                                     },
-                                                    "id": 1743156336987
+                                                    "id": 1743188688901
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -10170,7 +10197,7 @@
                                                 "emojiID": "1181132285907583026",
                                                 "isEmojiAnimated": false,
                                                 "type": {
-                                                  "type": "temporary",
+                                                  "type": "persistent",
                                                   "value": "60"
                                                 },
                                                 "styles_emoji": [
@@ -10183,7 +10210,9 @@
                                                     "type": "usage"
                                                   }
                                                 ],
-                                                "premium_button": []
+                                                "premium_button": [],
+                                                "customID": "Auto Generated",
+                                                "id": ""
                                               }
                                             }
                                           ],
@@ -10248,7 +10277,7 @@
                                     "updateEmbeds": false,
                                     "updateAttachments": false
                                   },
-                                  "id": 1743156336979
+                                  "id": 1743188688893
                                 },
                                 {
                                   "name": "Send Message",
@@ -10288,7 +10317,7 @@
                                     "updateEmbeds": false,
                                     "updateAttachments": false
                                   },
-                                  "id": 1743156336988
+                                  "id": 1743188688902
                                 },
                                 {
                                   "name": "Get Member Info",
@@ -10308,7 +10337,7 @@
                                       "value": "userid"
                                     }
                                   },
-                                  "id": 1743156336989
+                                  "id": 1743188688903
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -10325,7 +10354,7 @@
                                     },
                                     "dataName": "member"
                                   },
-                                  "id": 1743156336990
+                                  "id": 1743188688904
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -10342,7 +10371,7 @@
                                     },
                                     "dataName": "rez"
                                   },
-                                  "id": 1743156336991
+                                  "id": 1743188688905
                                 },
                                 {
                                   "name": "Store Message Data",
@@ -10359,7 +10388,7 @@
                                     },
                                     "dataName": "proof"
                                   },
-                                  "id": 1743156336992
+                                  "id": 1743188688906
                                 }
                               ],
                               "store": {
@@ -10367,7 +10396,7 @@
                                 "value": ""
                               }
                             },
-                            "id": 1743156336978
+                            "id": 1743188688892
                           }
                         ],
                         "label": "Seattle",
