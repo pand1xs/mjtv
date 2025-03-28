@@ -187,7 +187,7 @@
                                     "value": "",
                                     "placeholder": "Можно указать только один сервер",
                                     "min": "",
-                                    "max": "",
+                                    "max": "2",
                                     "required": true,
                                     "store": {
                                       "type": "temporary",
