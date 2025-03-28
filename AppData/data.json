@@ -1144,313 +1144,351 @@
       "trigger": "slashCommand",
       "actions": [
         {
-          "name": "Send Message",
-          "file": "sendmessage.js",
+          "name": "Show Modal",
+          "file": "showModal.js",
           "data": {
-            "name": "Send Message",
-            "messageContent": "<a:4704loadingicon:1184411024787517451> **Картинка создается**",
-            "actionRows": [],
-            "embeds": [],
-            "channel": {
-              "type": "command",
+            "name": "Show Modal",
+            "interaction": {
+              "type": "commandInteraction",
               "value": ""
             },
             "replyToInteraction": true,
-            "storeAs": {
-              "value": "",
-              "type": "temporary"
-            },
-            "options": [
+            "title": "Создать картинку капт (вин атака)",
+            "modalComponents": [
               {
-                "type": "options"
-              }
-            ],
-            "attachments": [],
-            "files": [],
-            "poll": [],
-            "silent": false,
-            "mentions": false,
-            "dontSend": false,
-            "ephemeral": true,
-            "updateMessage": {
-              "type": "none",
-              "value": ""
-            },
-            "updateContent": false,
-            "updateComponents": false,
-            "updateEmbeds": false,
-            "updateAttachments": false
-          },
-          "id": 1743150316365
-        },
-        {
-          "name": "Edit Image",
-          "file": "editImage.js",
-          "data": {
-            "name": "Edit Image",
-            "image": {
-              "type": "file",
-              "value": "atac.png"
-            },
-            "filters": [
-              {
-                "type": "writeText",
+                "type": "input",
                 "data": {
-                  "size": "81",
-                  "color": "#FFFFFF",
-                  "x": "248",
-                  "y": "371",
-                  "alignment": {
-                    "type": "left",
-                    "value": ""
-                  },
-                  "text": "${tempVars('win')}",
-                  "font": [
-                    {
-                      "type": "font",
-                      "data": {
-                        "weight": "400",
-                        "file": "Montserrat-ExtraBold.ttf",
-                        "family": "Montserrat ExtraBold"
-                      }
-                    }
-                  ]
-                }
-              },
-              {
-                "type": "writeText",
-                "data": {
-                  "size": "81",
-                  "color": "#FFFFFF",
-                  "x": "1643",
-                  "y": "371",
-                  "alignment": {
-                    "type": "right",
-                    "value": ""
-                  },
-                  "text": "${tempVars('lose')}",
-                  "font": [
-                    {
-                      "type": "font",
-                      "data": {
-                        "weight": "400",
-                        "file": "Montserrat-ExtraBold.ttf",
-                        "family": "Montserrat ExtraBold"
-                      }
-                    }
-                  ]
-                }
-              },
-              {
-                "type": "writeText",
-                "data": {
-                  "size": "57",
-                  "color": "#02991d",
-                  "x": "825",
-                  "y": "375",
-                  "alignment": {
-                    "type": "center",
-                    "value": ""
-                  },
-                  "text": "${tempVars('swin')}",
-                  "font": [
-                    {
-                      "type": "font",
-                      "data": {
-                        "weight": "400",
-                        "file": "Montserrat-ExtraBold.ttf",
-                        "family": "Montserrat ExtraBold"
-                      }
-                    }
-                  ]
-                }
-              },
-              {
-                "type": "writeText",
-                "data": {
-                  "size": "57",
-                  "color": "#990202",
-                  "x": "1045",
-                  "y": "375",
-                  "alignment": {
-                    "type": "center",
-                    "value": ""
-                  },
-                  "text": "${tempVars('slose')}",
-                  "font": [
-                    {
-                      "type": "font",
-                      "data": {
-                        "weight": "400",
-                        "file": "Montserrat-ExtraBold.ttf",
-                        "family": "Montserrat ExtraBold"
-                      }
-                    }
-                  ]
-                }
-              },
-              {
-                "type": "writeText",
-                "data": {
-                  "size": "52",
-                  "color": "#FFFFFF",
-                  "x": "1538",
-                  "y": "189",
-                  "alignment": {
-                    "type": "left",
-                    "value": ""
-                  },
-                  "text": "${tempVars('datee')}",
-                  "font": [
-                    {
-                      "type": "font",
-                      "data": {
-                        "weight": "400",
-                        "file": "Montserrat-ExtraBold.ttf",
-                        "family": "Montserrat ExtraBold"
-                      }
-                    }
-                  ]
-                }
-              }
-            ],
-            "store": {
-              "type": "temporary",
-              "value": "img"
-            }
-          },
-          "id": 1743070466352
-        },
-        {
-          "name": "Send Message",
-          "file": "sendmessage.js",
-          "data": {
-            "name": "Send Message",
-            "messageContent": "Полученая картинка",
-            "actionRows": [],
-            "embeds": [],
-            "channel": {
-              "type": "command",
-              "value": ""
-            },
-            "replyToInteraction": false,
-            "storeAs": {
-              "value": "",
-              "type": "temporary"
-            },
-            "options": [
-              {
-                "type": "options"
-              }
-            ],
-            "attachments": [
-              {
-                "type": "attachment",
-                "data": {
-                  "name": "photo.png",
-                  "image": {
-                    "type": "tempVar",
-                    "value": "img"
-                  },
-                  "spoiler": false,
+                  "label": "Победивший капт",
+                  "style": "Input",
+                  "value": "",
+                  "placeholder": "ALLEGRI (писать капсом)",
+                  "min": "",
+                  "max": "",
+                  "required": true,
                   "store": {
                     "type": "temporary",
-                    "value": ""
+                    "value": "win"
+                  }
+                }
+              },
+              {
+                "type": "input",
+                "data": {
+                  "label": "Проигравший капт",
+                  "style": "Input",
+                  "value": "",
+                  "placeholder": "UZI (писать капсом)",
+                  "min": "",
+                  "max": "",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "lose"
+                  }
+                }
+              },
+              {
+                "type": "input",
+                "data": {
+                  "label": "Счёт победителя",
+                  "style": "Input",
+                  "value": "",
+                  "placeholder": "Если 1:0, то пишем просто 1",
+                  "min": "",
+                  "max": "",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "swin"
+                  }
+                }
+              },
+              {
+                "type": "input",
+                "data": {
+                  "label": "Счёт проигравшего",
+                  "style": "Input",
+                  "value": "",
+                  "placeholder": "Если 1:0, то пишем просто 0",
+                  "min": "",
+                  "max": "",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "slose"
+                  }
+                }
+              },
+              {
+                "type": "input",
+                "data": {
+                  "label": "Дата",
+                  "style": "Input",
+                  "value": "",
+                  "placeholder": "Чекни какая дата сегодня",
+                  "min": "",
+                  "max": "",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "datee"
                   }
                 }
               }
             ],
-            "files": [],
-            "poll": [],
-            "silent": false,
-            "mentions": false,
-            "dontSend": false,
-            "ephemeral": false,
-            "updateMessage": {
-              "type": "none",
+            "actions": [
+              {
+                "name": "Send Message",
+                "file": "sendmessage.js",
+                "data": {
+                  "name": "Send Message",
+                  "messageContent": "<a:4704loadingicon:1184411024787517451> **Картинка создается**",
+                  "actionRows": [],
+                  "embeds": [],
+                  "channel": {
+                    "type": "command",
+                    "value": ""
+                  },
+                  "replyToInteraction": true,
+                  "storeAs": {
+                    "value": "",
+                    "type": "temporary"
+                  },
+                  "options": [
+                    {
+                      "type": "options"
+                    }
+                  ],
+                  "attachments": [],
+                  "files": [],
+                  "poll": [],
+                  "silent": false,
+                  "mentions": false,
+                  "dontSend": false,
+                  "ephemeral": true,
+                  "updateMessage": {
+                    "type": "none",
+                    "value": ""
+                  },
+                  "updateContent": false,
+                  "updateComponents": false,
+                  "updateEmbeds": false,
+                  "updateAttachments": false
+                },
+                "id": 1743150316365
+              },
+              {
+                "name": "Edit Image",
+                "file": "editImage.js",
+                "data": {
+                  "name": "Edit Image",
+                  "image": {
+                    "type": "file",
+                    "value": "atac.png"
+                  },
+                  "filters": [
+                    {
+                      "type": "writeText",
+                      "data": {
+                        "size": "81",
+                        "color": "#FFFFFF",
+                        "x": "248",
+                        "y": "371",
+                        "alignment": {
+                          "type": "left",
+                          "value": ""
+                        },
+                        "text": "${tempVars('win')}",
+                        "font": [
+                          {
+                            "type": "font",
+                            "data": {
+                              "weight": "400",
+                              "file": "Montserrat-ExtraBold.ttf",
+                              "family": "Montserrat ExtraBold"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "writeText",
+                      "data": {
+                        "size": "81",
+                        "color": "#FFFFFF",
+                        "x": "1643",
+                        "y": "371",
+                        "alignment": {
+                          "type": "right",
+                          "value": ""
+                        },
+                        "text": "${tempVars('lose')}",
+                        "font": [
+                          {
+                            "type": "font",
+                            "data": {
+                              "weight": "400",
+                              "file": "Montserrat-ExtraBold.ttf",
+                              "family": "Montserrat ExtraBold"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "writeText",
+                      "data": {
+                        "size": "57",
+                        "color": "#02991d",
+                        "x": "825",
+                        "y": "375",
+                        "alignment": {
+                          "type": "center",
+                          "value": ""
+                        },
+                        "text": "${tempVars('swin')}",
+                        "font": [
+                          {
+                            "type": "font",
+                            "data": {
+                              "weight": "400",
+                              "file": "Montserrat-ExtraBold.ttf",
+                              "family": "Montserrat ExtraBold"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "writeText",
+                      "data": {
+                        "size": "57",
+                        "color": "#990202",
+                        "x": "1045",
+                        "y": "375",
+                        "alignment": {
+                          "type": "center",
+                          "value": ""
+                        },
+                        "text": "${tempVars('slose')}",
+                        "font": [
+                          {
+                            "type": "font",
+                            "data": {
+                              "weight": "400",
+                              "file": "Montserrat-ExtraBold.ttf",
+                              "family": "Montserrat ExtraBold"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "writeText",
+                      "data": {
+                        "size": "52",
+                        "color": "#FFFFFF",
+                        "x": "1538",
+                        "y": "189",
+                        "alignment": {
+                          "type": "left",
+                          "value": ""
+                        },
+                        "text": "${tempVars('datee')}",
+                        "font": [
+                          {
+                            "type": "font",
+                            "data": {
+                              "weight": "400",
+                              "file": "Montserrat-ExtraBold.ttf",
+                              "family": "Montserrat ExtraBold"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "store": {
+                    "type": "temporary",
+                    "value": "img"
+                  }
+                },
+                "id": 1743070466352
+              },
+              {
+                "name": "Send Message",
+                "file": "sendmessage.js",
+                "data": {
+                  "name": "Send Message",
+                  "messageContent": "**Полученная картинка**\nЗапрос от <@${command.author.id}>",
+                  "actionRows": [],
+                  "embeds": [],
+                  "channel": {
+                    "type": "id",
+                    "value": "1355102880595443712"
+                  },
+                  "replyToInteraction": false,
+                  "storeAs": {
+                    "value": "",
+                    "type": "temporary"
+                  },
+                  "options": [
+                    {
+                      "type": "options"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "type": "attachment",
+                      "data": {
+                        "name": "MJTV.png",
+                        "image": {
+                          "type": "tempVar",
+                          "value": "img"
+                        },
+                        "spoiler": false,
+                        "store": {
+                          "type": "temporary",
+                          "value": ""
+                        }
+                      }
+                    }
+                  ],
+                  "files": [],
+                  "poll": [],
+                  "silent": false,
+                  "mentions": true,
+                  "dontSend": false,
+                  "ephemeral": false,
+                  "updateMessage": {
+                    "type": "none",
+                    "value": ""
+                  },
+                  "updateContent": false,
+                  "updateComponents": false,
+                  "updateEmbeds": false,
+                  "updateAttachments": false
+                },
+                "id": 1743099121033
+              }
+            ],
+            "store": {
+              "type": "temporary",
               "value": ""
-            },
-            "updateContent": false,
-            "updateComponents": false,
-            "updateEmbeds": false,
-            "updateAttachments": false
+            }
           },
-          "id": 1743099121033
+          "id": 1743152649709
         }
       ],
       "customId": 1742924738766,
       "boundary": {
         "worksIn": "guild",
-        "limits": [],
+        "limits": [
+          "MOVE_MEMBERS"
+        ],
         "botOwnerOnly": true
       },
-      "parameters": [
-        {
-          "name": "winfamq",
-          "type": "string",
-          "description": "Победивший капт",
-          "required": true,
-          "choices": [],
-          "storeAs": "win",
-          "completion": false,
-          "bound": {
-            "name": "Autocompletion",
-            "storeInputAs": {
-              "type": "temporary",
-              "value": ""
-            },
-            "storeInteractionAs": {
-              "type": "temporary",
-              "value": ""
-            },
-            "actions": [],
-            "result": {
-              "type": "tempVar",
-              "value": ""
-            }
-          },
-          "max_value": "30"
-        },
-        {
-          "name": "losefamq",
-          "type": "string",
-          "description": "Проигравший капт",
-          "required": true,
-          "choices": [],
-          "storeAs": "lose",
-          "completion": false,
-          "max_value": "30"
-        },
-        {
-          "name": "scorewin",
-          "type": "number",
-          "description": "счет победителя",
-          "required": true,
-          "choices": [],
-          "storeAs": "swin",
-          "completion": false,
-          "max_value": "1"
-        },
-        {
-          "name": "scorelose",
-          "type": "number",
-          "description": "счет проигравшего",
-          "required": true,
-          "choices": [],
-          "storeAs": "slose",
-          "completion": false,
-          "max_value": "1"
-        },
-        {
-          "name": "date",
-          "type": "string",
-          "description": "Дата - 28.03.2025",
-          "required": true,
-          "choices": [],
-          "storeAs": "datee",
-          "completion": false
-        }
-      ],
+      "parameters": [],
       "description": "Сделать капт картинку (вин атака)",
       "folder": [
         1742889041669
@@ -1458,8 +1496,12 @@
       "goodies": {
         "actionType": "slash",
         "variables": {
-          "temporary": [],
+          "temporary": [
+            "",
+            ""
+          ],
           "global": [
+            [],
             [],
             [],
             [],
@@ -1477,20 +1519,69 @@
             [],
             [],
             [],
+            [],
             []
           ],
           "commandVars": [
-            "вин",
-            "img",
+            "win",
+            "lose",
+            "swin",
+            "slose",
+            "datee",
             "",
-            "capt2",
-            ""
+            "img"
           ],
           "thisServer": [],
           "thisGlobal": []
         }
       },
-      "aliases": []
+      "aliases": [],
+      "rejectionScenario": {
+        "name": "Scenario",
+        "notWithin": [],
+        "missingPermissions": [
+          {
+            "name": "Send Message",
+            "file": "sendmessage.js",
+            "data": {
+              "name": "Send Message",
+              "messageContent": "Недостаточно прав для использования команды",
+              "actionRows": [],
+              "embeds": [],
+              "channel": {
+                "type": "command",
+                "value": ""
+              },
+              "storeAs": {
+                "value": "",
+                "type": "temporary"
+              },
+              "replyToInteraction": true,
+              "options": [
+                {
+                  "type": "options"
+                }
+              ],
+              "attachments": [],
+              "files": [],
+              "poll": [],
+              "silent": false,
+              "mentions": true,
+              "dontSend": false,
+              "ephemeral": false,
+              "updateMessage": {
+                "type": "none",
+                "value": ""
+              },
+              "updateContent": false,
+              "updateComponents": false,
+              "updateEmbeds": false,
+              "updateAttachments": false
+            },
+            "id": 1743152571398
+          }
+        ]
+      }
     },
     {
       "name": "capt_def",
@@ -1680,12 +1771,12 @@
           "file": "sendmessage.js",
           "data": {
             "name": "Send Message",
-            "messageContent": "Полученая картинка",
+            "messageContent": "**Полученная картинка**\nЗапрос от <@${command.author.id}>",
             "actionRows": [],
             "embeds": [],
             "channel": {
-              "type": "command",
-              "value": ""
+              "type": "id",
+              "value": "1355102880595443712"
             },
             "replyToInteraction": false,
             "storeAs": {
@@ -1701,7 +1792,7 @@
               {
                 "type": "attachment",
                 "data": {
-                  "name": "photo.png",
+                  "name": "MJTV.png",
                   "image": {
                     "type": "tempVar",
                     "value": "img"
@@ -1717,7 +1808,7 @@
             "files": [],
             "poll": [],
             "silent": false,
-            "mentions": false,
+            "mentions": true,
             "dontSend": false,
             "ephemeral": false,
             "updateMessage": {
@@ -1735,7 +1826,9 @@
       "customId": 1743151032592,
       "boundary": {
         "worksIn": "guild",
-        "limits": [],
+        "limits": [
+          "MOVE_MEMBERS"
+        ],
         "botOwnerOnly": true
       },
       "parameters": [
@@ -1812,8 +1905,12 @@
       "goodies": {
         "actionType": "slash",
         "variables": {
-          "temporary": [],
+          "temporary": [
+            "",
+            ""
+          ],
           "global": [
+            [],
             [],
             [],
             [],
@@ -1831,20 +1928,28 @@
             [],
             [],
             [],
+            [],
             []
           ],
           "commandVars": [
-            "вин",
-            "img",
+            "win",
+            "lose",
+            "swin",
+            "slose",
+            "datee",
             "",
-            "capt2",
-            ""
+            "img"
           ],
           "thisServer": [],
           "thisGlobal": []
         }
       },
-      "aliases": []
+      "aliases": [],
+      "rejectionScenario": {
+        "name": "Scenario",
+        "notWithin": [],
+        "missingPermissions": []
+      }
     },
     {
       "name": "баллы",
