@@ -387,8 +387,8 @@
                                                     "data": {
                                                       "name": "Set Member Roles",
                                                       "member": {
-                                                        "type": "id",
-                                                        "value": "${tempVars('sms')}"
+                                                        "type": "tempVar",
+                                                        "value": "sms"
                                                       },
                                                       "type": {
                                                         "type": "add",
@@ -2019,7 +2019,7 @@
                       "type": "normal",
                       "data": {
                         "label": "Отправить",
-                        "color": "Default",
+                        "color": "Neutral",
                         "actions": [
                           {
                             "name": "Show Modal",
@@ -2086,7 +2086,7 @@
                                           "thumbnailURL": "",
                                           "authorName": "",
                                           "authorIcon": "",
-                                          "description": "**Вид поста:**\n```${tempVars('post')}```\n\n**Ссылка на сообщение:**\n```${tempVars('link')}```",
+                                          "description": "**Вид поста:**\n```${tempVars('post')}```\n\n**Ссылка на сообщение:**\n${tempVars('link')}",
                                           "fields": [],
                                           "url": "",
                                           "timestamp": "None",
@@ -2180,7 +2180,7 @@
                         "emojiID": "",
                         "isEmojiAnimated": false,
                         "type": {
-                          "type": "temporary",
+                          "type": "persistent",
                           "value": "60"
                         },
                         "styles_emoji": [
@@ -2192,7 +2192,10 @@
                           {
                             "type": "usage"
                           }
-                        ]
+                        ],
+                        "premium_button": [],
+                        "customID": "Auto Generated",
+                        "id": ""
                       }
                     }
                   ],
