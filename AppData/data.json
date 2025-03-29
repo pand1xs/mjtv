@@ -2185,7 +2185,7 @@
                       "type": "writeText",
                       "data": {
                         "size": "36",
-                        "color": "#000000",
+                        "color": "#FFFFFF",
                         "x": "316",
                         "y": "855",
                         "alignment": {
