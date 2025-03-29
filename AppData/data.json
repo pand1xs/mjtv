@@ -11862,6 +11862,223 @@
           "thisGlobal": []
         }
       }
+    },
+    {
+      "name": "points",
+      "type": "action",
+      "trigger": "slashCommand",
+      "actions": [
+        {
+          "name": "Get Member Data",
+          "file": "getMemberData.js",
+          "data": {
+            "name": "Get Member Data",
+            "user": {
+              "type": "author",
+              "value": "${tempVars('uid')}"
+            },
+            "dataName": "points",
+            "defaultValue": "0",
+            "store": {
+              "type": "temporary",
+              "value": "points"
+            }
+          },
+          "id": 1743271847817
+        },
+        {
+          "name": "Send Message",
+          "file": "sendmessage.js",
+          "data": {
+            "name": "Send Message",
+            "messageContent": "",
+            "actionRows": [],
+            "embeds": [
+              {
+                "type": "embed",
+                "data": {
+                  "title": "",
+                  "embedColor": "#FFFFFF",
+                  "footerContent": "",
+                  "imageURL": "",
+                  "footerIconURL": "",
+                  "thumbnailURL": "",
+                  "authorName": "",
+                  "authorIcon": "",
+                  "description": "You had ${tempVars('points')} points.",
+                  "fields": [],
+                  "url": "",
+                  "timestamp": "None",
+                  "customTimestamp": ""
+                }
+              }
+            ],
+            "channel": {
+              "type": "command",
+              "value": ""
+            },
+            "replyToInteraction": true,
+            "storeAs": {
+              "value": "",
+              "type": "temporary"
+            },
+            "options": [
+              {
+                "type": "options"
+              }
+            ],
+            "attachments": [],
+            "files": [],
+            "poll": [],
+            "silent": false,
+            "mentions": false,
+            "dontSend": false,
+            "ephemeral": true,
+            "updateMessage": {
+              "type": "none",
+              "value": ""
+            },
+            "updateContent": false,
+            "updateComponents": false,
+            "updateEmbeds": false,
+            "updateAttachments": false
+          },
+          "id": 1743271866872
+        }
+      ],
+      "customId": 1743272993296,
+      "boundary": {
+        "worksIn": "guild",
+        "limits": []
+      },
+      "parameters": [],
+      "description": "Check your points :",
+      "folder": [],
+      "goodies": {
+        "actionType": "slash",
+        "variables": {
+          "temporary": [
+            "points"
+          ],
+          "global": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "server": [
+            [
+              "logs",
+              "report-channel",
+              "report-mention",
+              "mod-log",
+              "logs-ticket"
+            ],
+            [],
+            [],
+            [],
+            [
+              "logs",
+              "report-channel",
+              "report-mention",
+              "mod-log",
+              "logs-ticket"
+            ],
+            [],
+            [],
+            [],
+            [
+              "logs",
+              "report-channel",
+              "report-mention",
+              "mod-log",
+              "logs-ticket"
+            ],
+            [],
+            [],
+            []
+          ],
+          "commandVars": [
+            "uid",
+            ""
+          ],
+          "thisServer": [],
+          "thisGlobal": []
+        }
+      }
+    },
+    {
+      "name": "thread",
+      "type": "event",
+      "trigger": "event",
+      "actions": [
+        {
+          "name": "Get Message Info",
+          "file": "getMessageInfo.js",
+          "data": {
+            "name": "Get Message Info",
+            "message": {
+              "type": "tempVar",
+              "value": "sms"
+            },
+            "get": {
+              "type": "type",
+              "value": ""
+            },
+            "store": {
+              "type": "temporary",
+              "value": "type"
+            }
+          },
+          "id": 1743273028837
+        },
+        {
+          "name": "Check Variable",
+          "file": "checkVariable.js",
+          "data": {
+            "name": "Check Variable",
+            "variable": {
+              "type": "tempVar",
+              "value": "type"
+            },
+            "comparator": "Equals",
+            "compareValue": "18",
+            "true": {
+              "type": "runActions",
+              "value": ""
+            },
+            "trueActions": [
+              {
+                "name": "Delete Message",
+                "file": "deleteMessage.js",
+                "data": {
+                  "name": "Delete Message",
+                  "message": {
+                    "type": "tempVar",
+                    "value": "sms"
+                  }
+                },
+                "id": 1743273619273
+              }
+            ],
+            "false": {
+              "type": "continue",
+              "value": ""
+            },
+            "falseActions": []
+          },
+          "id": 1743273587553
+        }
+      ],
+      "customId": 1743273018250,
+      "eventFile": "message_create.js",
+      "eventData": [
+        "sms",
+        "t2"
+      ],
+      "folder": []
     }
   ],
   "prjSrc": "C:\\Users\\RR\\Desktop\\bot",
