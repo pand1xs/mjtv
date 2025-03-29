@@ -1571,7 +1571,7 @@
               "value": ""
             },
             "replyToInteraction": true,
-            "title": "Создать картинку капт (вин атака)",
+            "title": "Создать картинку капт (вин защита)",
             "modalComponents": [
               {
                 "type": "input",
@@ -1958,6 +1958,417 @@
         "name": "Scenario",
         "notWithin": [],
         "missingPermissions": []
+      }
+    },
+    {
+      "name": "mcl",
+      "type": "action",
+      "trigger": "slashCommand",
+      "actions": [
+        {
+          "name": "Show Modal",
+          "file": "showModal.js",
+          "data": {
+            "name": "Show Modal",
+            "interaction": {
+              "type": "tempVar",
+              "value": ""
+            },
+            "replyToInteraction": true,
+            "title": "Создать картинку MCL",
+            "modalComponents": [
+              {
+                "type": "input",
+                "data": {
+                  "label": "Победившая семья",
+                  "style": "Input",
+                  "value": "",
+                  "placeholder": "UZI (капсом обязательно)",
+                  "min": "",
+                  "max": "",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "win"
+                  }
+                }
+              },
+              {
+                "type": "input",
+                "data": {
+                  "label": "Участники",
+                  "style": "Paragraph",
+                  "value": "",
+                  "placeholder": "UZI ALLEGRI LORD (Перечисляем через пробел без запятых)",
+                  "min": "",
+                  "max": "",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "member"
+                  }
+                }
+              },
+              {
+                "type": "input",
+                "data": {
+                  "label": "Скриншот",
+                  "style": "Input",
+                  "value": "Пример ссылки - https://i.imgur.com/UARdPee.png",
+                  "placeholder": "Обязательно imgur.png",
+                  "min": "",
+                  "max": "",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "scr"
+                  }
+                }
+              },
+              {
+                "type": "input",
+                "data": {
+                  "label": "Дата",
+                  "style": "Input",
+                  "value": "",
+                  "placeholder": "21.03.2025 (чекни дату)",
+                  "min": "10",
+                  "max": "10",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "date"
+                  }
+                }
+              },
+              {
+                "type": "input",
+                "data": {
+                  "label": "Сервер",
+                  "style": "Input",
+                  "value": "",
+                  "placeholder": "SEATTLE (обязательно капсом)",
+                  "min": "",
+                  "max": "",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "server"
+                  }
+                }
+              }
+            ],
+            "actions": [
+              {
+                "name": "Send Message",
+                "file": "sendmessage.js",
+                "data": {
+                  "name": "Send Message",
+                  "messageContent": "<a:4704loadingicon:1184411024787517451> **Картинка создается**",
+                  "actionRows": [],
+                  "embeds": [],
+                  "channel": {
+                    "type": "command",
+                    "value": ""
+                  },
+                  "storeAs": {
+                    "value": "",
+                    "type": "temporary"
+                  },
+                  "replyToInteraction": true,
+                  "options": [
+                    {
+                      "type": "options"
+                    }
+                  ],
+                  "attachments": [],
+                  "files": [],
+                  "poll": [],
+                  "silent": false,
+                  "mentions": false,
+                  "dontSend": false,
+                  "ephemeral": true,
+                  "updateMessage": {
+                    "type": "none",
+                    "value": ""
+                  },
+                  "updateContent": false,
+                  "updateComponents": false,
+                  "updateEmbeds": false,
+                  "updateAttachments": false
+                },
+                "id": 1743236610020
+              },
+              {
+                "name": "Edit Image",
+                "file": "editImage.js",
+                "data": {
+                  "name": "Edit Image",
+                  "image": {
+                    "type": "file",
+                    "value": "mcl.png"
+                  },
+                  "filters": [
+                    {
+                      "type": "writeText",
+                      "data": {
+                        "size": "57",
+                        "color": "#ff0303",
+                        "x": "778",
+                        "y": "150",
+                        "alignment": {
+                          "type": "center",
+                          "value": ""
+                        },
+                        "text": "${tempVars('win')}",
+                        "font": [
+                          {
+                            "type": "font",
+                            "data": {
+                              "weight": "400",
+                              "file": "Montserrat-ExtraBold.ttf",
+                              "family": "Montserrat ExtraBold"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "writeText",
+                      "data": {
+                        "size": "30",
+                        "color": "#FFFFFF",
+                        "x": "840",
+                        "y": "1043",
+                        "alignment": {
+                          "type": "left",
+                          "value": ""
+                        },
+                        "text": "${tempVars('server')}",
+                        "font": [
+                          {
+                            "type": "font",
+                            "data": {
+                              "weight": "400",
+                              "file": "Montserrat-ExtraBold.ttf",
+                              "family": "Montserrat ExtraBold"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "writeText",
+                      "data": {
+                        "size": "30",
+                        "color": "#FFFFFF",
+                        "x": "722",
+                        "y": "1043",
+                        "alignment": {
+                          "type": "right",
+                          "value": ""
+                        },
+                        "text": "${tempVars('date')}",
+                        "font": [
+                          {
+                            "type": "font",
+                            "data": {
+                              "weight": "400",
+                              "file": "Montserrat-ExtraBold.ttf",
+                              "family": "Montserrat ExtraBold"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "writeText",
+                      "data": {
+                        "size": "36",
+                        "color": "#000000",
+                        "x": "316",
+                        "y": "855",
+                        "alignment": {
+                          "type": "left",
+                          "value": ""
+                        },
+                        "text": "${tempVars('member')}",
+                        "font": [
+                          {
+                            "type": "font",
+                            "data": {
+                              "weight": "400",
+                              "file": "Montserrat-ExtraBold.ttf",
+                              "family": "Montserrat ExtraBold"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "store": {
+                    "type": "temporary",
+                    "value": "img"
+                  }
+                },
+                "id": 1743232268082
+              },
+              {
+                "name": "Edit Image",
+                "file": "editImage.js",
+                "data": {
+                  "name": "Edit Image",
+                  "image": {
+                    "type": "url",
+                    "value": "${tempVars('scr')}"
+                  },
+                  "filters": [
+                    {
+                      "type": "resize",
+                      "data": {
+                        "w": "968",
+                        "h": "563"
+                      }
+                    }
+                  ],
+                  "store": {
+                    "type": "temporary",
+                    "value": "screen"
+                  }
+                },
+                "id": 1743233230319
+              },
+              {
+                "name": "Canvas Draw Image on Image",
+                "file": "CanvasDrawImage_MOD.js",
+                "data": {
+                  "name": "Canvas Draw Image on Image",
+                  "image": {
+                    "type": "tempVar",
+                    "value": "img"
+                  },
+                  "imageToDraw": {
+                    "type": "tempVar",
+                    "value": "screen"
+                  },
+                  "x": "294",
+                  "y": "183",
+                  "drawEffect": "Overlay",
+                  "store": {
+                    "type": "temporary",
+                    "value": "lastimg"
+                  }
+                },
+                "id": 1743233859466
+              },
+              {
+                "name": "Send Message",
+                "file": "sendmessage.js",
+                "data": {
+                  "name": "Send Message",
+                  "messageContent": "**Полученная картинка**\nЗапрос от <@${command.author.id}>",
+                  "actionRows": [],
+                  "embeds": [],
+                  "channel": {
+                    "type": "id",
+                    "value": "1355102880595443712"
+                  },
+                  "replyToInteraction": false,
+                  "storeAs": {
+                    "value": "",
+                    "type": "temporary"
+                  },
+                  "options": [
+                    {
+                      "type": "options"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "type": "attachment",
+                      "data": {
+                        "name": "MJTV.png",
+                        "image": {
+                          "type": "tempVar",
+                          "value": "lastimg"
+                        },
+                        "spoiler": false,
+                        "store": {
+                          "type": "temporary",
+                          "value": ""
+                        }
+                      }
+                    }
+                  ],
+                  "files": [],
+                  "poll": [],
+                  "silent": false,
+                  "mentions": true,
+                  "dontSend": false,
+                  "ephemeral": false,
+                  "updateMessage": {
+                    "type": "none",
+                    "value": ""
+                  },
+                  "updateContent": false,
+                  "updateComponents": false,
+                  "updateEmbeds": false,
+                  "updateAttachments": false
+                },
+                "id": 1743238856291
+              }
+            ],
+            "store": {
+              "type": "temporary",
+              "value": ""
+            }
+          },
+          "id": 1743233911979
+        }
+      ],
+      "customId": 1743232247721,
+      "boundary": {
+        "worksIn": "guild",
+        "limits": [
+          "MOVE_MEMBERS"
+        ]
+      },
+      "parameters": [],
+      "description": "Сделать MCL картинку",
+      "folder": [
+        1742889041669
+      ],
+      "goodies": {
+        "actionType": "slash",
+        "variables": {
+          "temporary": [
+            "win",
+            "member",
+            "scr",
+            "date",
+            "server",
+            "",
+            "img",
+            "screen",
+            "lastimg",
+            "",
+            "",
+            ""
+          ],
+          "global": [
+            [],
+            [],
+            []
+          ],
+          "server": [
+            [],
+            [],
+            []
+          ],
+          "commandVars": [],
+          "thisServer": [],
+          "thisGlobal": []
+        }
       }
     },
     {
