@@ -1112,10 +1112,34 @@
       }
     },
     {
-      "name": "capt_attack",
+      "name": "capt",
       "type": "action",
       "trigger": "slashCommand",
       "actions": [
+        {
+          "name": "Check Variable",
+          "file": "checkVariable.js",
+          "data": {
+            "name": "Check Variable",
+            "variable": {
+              "type": "tempVar",
+              "value": "kind"
+            },
+            "comparator": "Equals",
+            "compareValue": "a",
+            "true": {
+              "type": "continue",
+              "value": ""
+            },
+            "trueActions": [],
+            "false": {
+              "type": "jump",
+              "value": "4"
+            },
+            "falseActions": []
+          },
+          "id": 1743275197921
+        },
         {
           "name": "Show Modal",
           "file": "showModal.js",
@@ -1451,116 +1475,15 @@
             }
           },
           "id": 1743152649709
-        }
-      ],
-      "customId": 1742924738766,
-      "boundary": {
-        "worksIn": "guild",
-        "limits": [
-          "MOVE_MEMBERS"
-        ],
-        "botOwnerOnly": true
-      },
-      "parameters": [],
-      "description": "Сделать капт картинку (вин атака)",
-      "folder": [
-        1742889041669
-      ],
-      "goodies": {
-        "actionType": "slash",
-        "variables": {
-          "temporary": [
-            "",
-            ""
-          ],
-          "global": [
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            []
-          ],
-          "server": [
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            [],
-            []
-          ],
-          "commandVars": [
-            "win",
-            "lose",
-            "swin",
-            "slose",
-            "datee",
-            "",
-            "img"
-          ],
-          "thisServer": [],
-          "thisGlobal": []
-        }
-      },
-      "aliases": [],
-      "rejectionScenario": {
-        "name": "Scenario",
-        "notWithin": [],
-        "missingPermissions": [
-          {
-            "name": "Send Message",
-            "file": "sendmessage.js",
-            "data": {
-              "name": "Send Message",
-              "messageContent": "Недостаточно прав для использования команды",
-              "actionRows": [],
-              "embeds": [],
-              "channel": {
-                "type": "command",
-                "value": ""
-              },
-              "storeAs": {
-                "value": "",
-                "type": "temporary"
-              },
-              "replyToInteraction": true,
-              "options": [
-                {
-                  "type": "options"
-                }
-              ],
-              "attachments": [],
-              "files": [],
-              "poll": [],
-              "silent": false,
-              "mentions": true,
-              "dontSend": false,
-              "ephemeral": false,
-              "updateMessage": {
-                "type": "none",
-                "value": ""
-              },
-              "updateContent": false,
-              "updateComponents": false,
-              "updateEmbeds": false,
-              "updateAttachments": false
-            },
-            "id": 1743152571398
-          }
-        ]
-      }
-    },
-    {
-      "name": "capt_def",
-      "type": "action",
-      "trigger": "slashCommand",
-      "actions": [
+        },
+        {
+          "name": "Stop Actions",
+          "file": "stopRunningActions.js",
+          "data": {
+            "name": "Stop Actions"
+          },
+          "id": 1743275257531
+        },
         {
           "name": "Show Modal",
           "file": "showModal.js",
@@ -1898,7 +1821,7 @@
           "id": 1743186131754
         }
       ],
-      "customId": 1743151032592,
+      "customId": 1742924738766,
       "boundary": {
         "worksIn": "guild",
         "limits": [
@@ -1906,8 +1829,28 @@
         ],
         "botOwnerOnly": true
       },
-      "parameters": [],
-      "description": "Сделать капт картинку (вин деф)",
+      "parameters": [
+        {
+          "name": "mp",
+          "type": "string",
+          "description": "Чья победа",
+          "required": true,
+          "choices": [
+            {
+              "name": "Атака",
+              "value": "a"
+            },
+            {
+              "name": "Защита",
+              "value": "d"
+            }
+          ],
+          "storeAs": "kind",
+          "completion": true,
+          "max_value": "6"
+        }
+      ],
+      "description": "Сделать капт картинку",
       "folder": [
         1742889041669
       ],
@@ -1957,7 +1900,48 @@
       "rejectionScenario": {
         "name": "Scenario",
         "notWithin": [],
-        "missingPermissions": []
+        "missingPermissions": [
+          {
+            "name": "Send Message",
+            "file": "sendmessage.js",
+            "data": {
+              "name": "Send Message",
+              "messageContent": "Недостаточно прав для использования команды",
+              "actionRows": [],
+              "embeds": [],
+              "channel": {
+                "type": "command",
+                "value": ""
+              },
+              "storeAs": {
+                "value": "",
+                "type": "temporary"
+              },
+              "replyToInteraction": true,
+              "options": [
+                {
+                  "type": "options"
+                }
+              ],
+              "attachments": [],
+              "files": [],
+              "poll": [],
+              "silent": false,
+              "mentions": true,
+              "dontSend": false,
+              "ephemeral": false,
+              "updateMessage": {
+                "type": "none",
+                "value": ""
+              },
+              "updateContent": false,
+              "updateComponents": false,
+              "updateEmbeds": false,
+              "updateAttachments": false
+            },
+            "id": 1743152571398
+          }
+        ]
       }
     },
     {
@@ -1965,6 +1949,30 @@
       "type": "action",
       "trigger": "slashCommand",
       "actions": [
+        {
+          "name": "Check Variable",
+          "file": "checkVariable.js",
+          "data": {
+            "name": "Check Variable",
+            "variable": {
+              "type": "tempVar",
+              "value": "mp"
+            },
+            "comparator": "Equals",
+            "compareValue": "m",
+            "true": {
+              "type": "continue",
+              "value": ""
+            },
+            "trueActions": [],
+            "false": {
+              "type": "jump",
+              "value": "4"
+            },
+            "falseActions": []
+          },
+          "id": 1743316982177
+        },
         {
           "name": "Show Modal",
           "file": "showModal.js",
@@ -2113,7 +2121,7 @@
                       "type": "writeText",
                       "data": {
                         "size": "57",
-                        "color": "#ff0303",
+                        "color": "#FFFFFF",
                         "x": "778",
                         "y": "150",
                         "alignment": {
@@ -2324,6 +2332,1502 @@
             }
           },
           "id": 1743233911979
+        },
+        {
+          "name": "Stop Actions",
+          "file": "stopRunningActions.js",
+          "data": {
+            "name": "Stop Actions"
+          },
+          "id": 1743276198548
+        },
+        {
+          "name": "Check Variable",
+          "file": "checkVariable.js",
+          "data": {
+            "name": "Check Variable",
+            "variable": {
+              "type": "tempVar",
+              "value": "mp"
+            },
+            "comparator": "Equals",
+            "compareValue": "s",
+            "true": {
+              "type": "continue",
+              "value": ""
+            },
+            "trueActions": [],
+            "false": {
+              "type": "jump",
+              "value": "7"
+            },
+            "falseActions": []
+          },
+          "id": 1743316982178
+        },
+        {
+          "name": "Show Modal",
+          "file": "showModal.js",
+          "data": {
+            "name": "Show Modal",
+            "interaction": {
+              "type": "tempVar",
+              "value": ""
+            },
+            "replyToInteraction": true,
+            "title": "Создать картинку Family Arrows",
+            "modalComponents": [
+              {
+                "type": "input",
+                "data": {
+                  "label": "Победившая семья",
+                  "style": "Input",
+                  "value": "",
+                  "placeholder": "UZI (капсом обязательно)",
+                  "min": "",
+                  "max": "",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "win"
+                  }
+                }
+              },
+              {
+                "type": "input",
+                "data": {
+                  "label": "Участники",
+                  "style": "Paragraph",
+                  "value": "",
+                  "placeholder": "UZI ALLEGRI LORD (Перечисляем через пробел без запятых)",
+                  "min": "",
+                  "max": "",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "member"
+                  }
+                }
+              },
+              {
+                "type": "input",
+                "data": {
+                  "label": "Скриншот",
+                  "style": "Input",
+                  "value": "Пример ссылки - https://i.imgur.com/UARdPee.png",
+                  "placeholder": "Обязательно imgur.png",
+                  "min": "",
+                  "max": "",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "scr"
+                  }
+                }
+              },
+              {
+                "type": "input",
+                "data": {
+                  "label": "Дата",
+                  "style": "Input",
+                  "value": "",
+                  "placeholder": "21.03.2025 (чекни дату)",
+                  "min": "10",
+                  "max": "10",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "date"
+                  }
+                }
+              },
+              {
+                "type": "input",
+                "data": {
+                  "label": "Сервер",
+                  "style": "Input",
+                  "value": "",
+                  "placeholder": "SEATTLE (обязательно капсом)",
+                  "min": "",
+                  "max": "",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "server"
+                  }
+                }
+              }
+            ],
+            "actions": [
+              {
+                "name": "Send Message",
+                "file": "sendmessage.js",
+                "data": {
+                  "name": "Send Message",
+                  "messageContent": "<a:4704loadingicon:1184411024787517451> **Картинка создается**",
+                  "actionRows": [],
+                  "embeds": [],
+                  "channel": {
+                    "type": "command",
+                    "value": ""
+                  },
+                  "storeAs": {
+                    "value": "",
+                    "type": "temporary"
+                  },
+                  "replyToInteraction": true,
+                  "options": [
+                    {
+                      "type": "options"
+                    }
+                  ],
+                  "attachments": [],
+                  "files": [],
+                  "poll": [],
+                  "silent": false,
+                  "mentions": false,
+                  "dontSend": false,
+                  "ephemeral": true,
+                  "updateMessage": {
+                    "type": "none",
+                    "value": ""
+                  },
+                  "updateContent": false,
+                  "updateComponents": false,
+                  "updateEmbeds": false,
+                  "updateAttachments": false
+                },
+                "id": 1743316982180
+              },
+              {
+                "name": "Edit Image",
+                "file": "editImage.js",
+                "data": {
+                  "name": "Edit Image",
+                  "image": {
+                    "type": "file",
+                    "value": "fa.png"
+                  },
+                  "filters": [
+                    {
+                      "type": "writeText",
+                      "data": {
+                        "size": "57",
+                        "color": "#FFFFFF",
+                        "x": "778",
+                        "y": "150",
+                        "alignment": {
+                          "type": "center",
+                          "value": ""
+                        },
+                        "text": "${tempVars('win')}",
+                        "font": [
+                          {
+                            "type": "font",
+                            "data": {
+                              "weight": "400",
+                              "file": "Montserrat-ExtraBold.ttf",
+                              "family": "Montserrat ExtraBold"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "writeText",
+                      "data": {
+                        "size": "30",
+                        "color": "#FFFFFF",
+                        "x": "840",
+                        "y": "1043",
+                        "alignment": {
+                          "type": "left",
+                          "value": ""
+                        },
+                        "text": "${tempVars('server')}",
+                        "font": [
+                          {
+                            "type": "font",
+                            "data": {
+                              "weight": "400",
+                              "file": "Montserrat-ExtraBold.ttf",
+                              "family": "Montserrat ExtraBold"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "writeText",
+                      "data": {
+                        "size": "30",
+                        "color": "#FFFFFF",
+                        "x": "722",
+                        "y": "1043",
+                        "alignment": {
+                          "type": "right",
+                          "value": ""
+                        },
+                        "text": "${tempVars('date')}",
+                        "font": [
+                          {
+                            "type": "font",
+                            "data": {
+                              "weight": "400",
+                              "file": "Montserrat-ExtraBold.ttf",
+                              "family": "Montserrat ExtraBold"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "writeText",
+                      "data": {
+                        "size": "36",
+                        "color": "#FFFFFF",
+                        "x": "312",
+                        "y": "855",
+                        "alignment": {
+                          "type": "left",
+                          "value": ""
+                        },
+                        "text": "${tempVars('member')}",
+                        "font": [
+                          {
+                            "type": "font",
+                            "data": {
+                              "weight": "400",
+                              "file": "Montserrat-ExtraBold.ttf",
+                              "family": "Montserrat ExtraBold"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "store": {
+                    "type": "temporary",
+                    "value": "img"
+                  }
+                },
+                "id": 1743316982181
+              },
+              {
+                "name": "Edit Image",
+                "file": "editImage.js",
+                "data": {
+                  "name": "Edit Image",
+                  "image": {
+                    "type": "url",
+                    "value": "${tempVars('scr')}"
+                  },
+                  "filters": [
+                    {
+                      "type": "resize",
+                      "data": {
+                        "w": "968",
+                        "h": "563"
+                      }
+                    }
+                  ],
+                  "store": {
+                    "type": "temporary",
+                    "value": "screen"
+                  }
+                },
+                "id": 1743316982182
+              },
+              {
+                "name": "Canvas Draw Image on Image",
+                "file": "CanvasDrawImage_MOD.js",
+                "data": {
+                  "name": "Canvas Draw Image on Image",
+                  "image": {
+                    "type": "tempVar",
+                    "value": "img"
+                  },
+                  "imageToDraw": {
+                    "type": "tempVar",
+                    "value": "screen"
+                  },
+                  "x": "294",
+                  "y": "183",
+                  "drawEffect": "Overlay",
+                  "store": {
+                    "type": "temporary",
+                    "value": "lastimg"
+                  }
+                },
+                "id": 1743316982183
+              },
+              {
+                "name": "Send Message",
+                "file": "sendmessage.js",
+                "data": {
+                  "name": "Send Message",
+                  "messageContent": "**Полученная картинка**\nЗапрос от <@${command.author.id}>",
+                  "actionRows": [],
+                  "embeds": [],
+                  "channel": {
+                    "type": "id",
+                    "value": "1355102880595443712"
+                  },
+                  "replyToInteraction": false,
+                  "storeAs": {
+                    "value": "",
+                    "type": "temporary"
+                  },
+                  "options": [
+                    {
+                      "type": "options"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "type": "attachment",
+                      "data": {
+                        "name": "MJTV.png",
+                        "image": {
+                          "type": "tempVar",
+                          "value": "lastimg"
+                        },
+                        "spoiler": false,
+                        "store": {
+                          "type": "temporary",
+                          "value": ""
+                        }
+                      }
+                    }
+                  ],
+                  "files": [],
+                  "poll": [],
+                  "silent": false,
+                  "mentions": true,
+                  "dontSend": false,
+                  "ephemeral": false,
+                  "updateMessage": {
+                    "type": "none",
+                    "value": ""
+                  },
+                  "updateContent": false,
+                  "updateComponents": false,
+                  "updateEmbeds": false,
+                  "updateAttachments": false
+                },
+                "id": 1743316982184
+              }
+            ],
+            "store": {
+              "type": "temporary",
+              "value": ""
+            }
+          },
+          "id": 1743316982179
+        },
+        {
+          "name": "Stop Actions",
+          "file": "stopRunningActions.js",
+          "data": {
+            "name": "Stop Actions"
+          },
+          "id": 1743316982185
+        },
+        {
+          "name": "Check Variable",
+          "file": "checkVariable.js",
+          "data": {
+            "name": "Check Variable",
+            "variable": {
+              "type": "tempVar",
+              "value": "mp"
+            },
+            "comparator": "Equals",
+            "compareValue": "v",
+            "true": {
+              "type": "continue",
+              "value": ""
+            },
+            "trueActions": [],
+            "false": {
+              "type": "jump",
+              "value": "10"
+            },
+            "falseActions": []
+          },
+          "id": 1743316982186
+        },
+        {
+          "name": "Show Modal",
+          "file": "showModal.js",
+          "data": {
+            "name": "Show Modal",
+            "interaction": {
+              "type": "tempVar",
+              "value": ""
+            },
+            "replyToInteraction": true,
+            "title": "Создать картинку ВЗЗ",
+            "modalComponents": [
+              {
+                "type": "input",
+                "data": {
+                  "label": "Победившая семья",
+                  "style": "Input",
+                  "value": "",
+                  "placeholder": "UZI (капсом обязательно)",
+                  "min": "",
+                  "max": "",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "win"
+                  }
+                }
+              },
+              {
+                "type": "input",
+                "data": {
+                  "label": "Участники",
+                  "style": "Paragraph",
+                  "value": "",
+                  "placeholder": "UZI ALLEGRI LORD (Перечисляем через пробел без запятых)",
+                  "min": "",
+                  "max": "",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "member"
+                  }
+                }
+              },
+              {
+                "type": "input",
+                "data": {
+                  "label": "Скриншот",
+                  "style": "Input",
+                  "value": "Пример ссылки - https://i.imgur.com/UARdPee.png",
+                  "placeholder": "Обязательно imgur.png",
+                  "min": "",
+                  "max": "",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "scr"
+                  }
+                }
+              },
+              {
+                "type": "input",
+                "data": {
+                  "label": "Дата",
+                  "style": "Input",
+                  "value": "",
+                  "placeholder": "21.03.2025 (чекни дату)",
+                  "min": "10",
+                  "max": "10",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "date"
+                  }
+                }
+              },
+              {
+                "type": "input",
+                "data": {
+                  "label": "Сервер",
+                  "style": "Input",
+                  "value": "",
+                  "placeholder": "SEATTLE (обязательно капсом)",
+                  "min": "",
+                  "max": "",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "server"
+                  }
+                }
+              }
+            ],
+            "actions": [
+              {
+                "name": "Send Message",
+                "file": "sendmessage.js",
+                "data": {
+                  "name": "Send Message",
+                  "messageContent": "<a:4704loadingicon:1184411024787517451> **Картинка создается**",
+                  "actionRows": [],
+                  "embeds": [],
+                  "channel": {
+                    "type": "command",
+                    "value": ""
+                  },
+                  "storeAs": {
+                    "value": "",
+                    "type": "temporary"
+                  },
+                  "replyToInteraction": true,
+                  "options": [
+                    {
+                      "type": "options"
+                    }
+                  ],
+                  "attachments": [],
+                  "files": [],
+                  "poll": [],
+                  "silent": false,
+                  "mentions": false,
+                  "dontSend": false,
+                  "ephemeral": true,
+                  "updateMessage": {
+                    "type": "none",
+                    "value": ""
+                  },
+                  "updateContent": false,
+                  "updateComponents": false,
+                  "updateEmbeds": false,
+                  "updateAttachments": false
+                },
+                "id": 1743316982188
+              },
+              {
+                "name": "Edit Image",
+                "file": "editImage.js",
+                "data": {
+                  "name": "Edit Image",
+                  "image": {
+                    "type": "file",
+                    "value": "vzz.png"
+                  },
+                  "filters": [
+                    {
+                      "type": "writeText",
+                      "data": {
+                        "size": "57",
+                        "color": "#FFFFFF",
+                        "x": "778",
+                        "y": "150",
+                        "alignment": {
+                          "type": "center",
+                          "value": ""
+                        },
+                        "text": "${tempVars('win')}",
+                        "font": [
+                          {
+                            "type": "font",
+                            "data": {
+                              "weight": "400",
+                              "file": "Montserrat-ExtraBold.ttf",
+                              "family": "Montserrat ExtraBold"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "writeText",
+                      "data": {
+                        "size": "30",
+                        "color": "#FFFFFF",
+                        "x": "840",
+                        "y": "1043",
+                        "alignment": {
+                          "type": "left",
+                          "value": ""
+                        },
+                        "text": "${tempVars('server')}",
+                        "font": [
+                          {
+                            "type": "font",
+                            "data": {
+                              "weight": "400",
+                              "file": "Montserrat-ExtraBold.ttf",
+                              "family": "Montserrat ExtraBold"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "writeText",
+                      "data": {
+                        "size": "30",
+                        "color": "#FFFFFF",
+                        "x": "722",
+                        "y": "1043",
+                        "alignment": {
+                          "type": "right",
+                          "value": ""
+                        },
+                        "text": "${tempVars('date')}",
+                        "font": [
+                          {
+                            "type": "font",
+                            "data": {
+                              "weight": "400",
+                              "file": "Montserrat-ExtraBold.ttf",
+                              "family": "Montserrat ExtraBold"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "writeText",
+                      "data": {
+                        "size": "36",
+                        "color": "#FFFFFF",
+                        "x": "312",
+                        "y": "855",
+                        "alignment": {
+                          "type": "left",
+                          "value": ""
+                        },
+                        "text": "${tempVars('member')}",
+                        "font": [
+                          {
+                            "type": "font",
+                            "data": {
+                              "weight": "400",
+                              "file": "Montserrat-ExtraBold.ttf",
+                              "family": "Montserrat ExtraBold"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "store": {
+                    "type": "temporary",
+                    "value": "img"
+                  }
+                },
+                "id": 1743316982189
+              },
+              {
+                "name": "Edit Image",
+                "file": "editImage.js",
+                "data": {
+                  "name": "Edit Image",
+                  "image": {
+                    "type": "url",
+                    "value": "${tempVars('scr')}"
+                  },
+                  "filters": [
+                    {
+                      "type": "resize",
+                      "data": {
+                        "w": "968",
+                        "h": "563"
+                      }
+                    }
+                  ],
+                  "store": {
+                    "type": "temporary",
+                    "value": "screen"
+                  }
+                },
+                "id": 1743316982190
+              },
+              {
+                "name": "Canvas Draw Image on Image",
+                "file": "CanvasDrawImage_MOD.js",
+                "data": {
+                  "name": "Canvas Draw Image on Image",
+                  "image": {
+                    "type": "tempVar",
+                    "value": "img"
+                  },
+                  "imageToDraw": {
+                    "type": "tempVar",
+                    "value": "screen"
+                  },
+                  "x": "294",
+                  "y": "183",
+                  "drawEffect": "Overlay",
+                  "store": {
+                    "type": "temporary",
+                    "value": "lastimg"
+                  }
+                },
+                "id": 1743316982191
+              },
+              {
+                "name": "Send Message",
+                "file": "sendmessage.js",
+                "data": {
+                  "name": "Send Message",
+                  "messageContent": "**Полученная картинка**\nЗапрос от <@${command.author.id}>",
+                  "actionRows": [],
+                  "embeds": [],
+                  "channel": {
+                    "type": "id",
+                    "value": "1355102880595443712"
+                  },
+                  "replyToInteraction": false,
+                  "storeAs": {
+                    "value": "",
+                    "type": "temporary"
+                  },
+                  "options": [
+                    {
+                      "type": "options"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "type": "attachment",
+                      "data": {
+                        "name": "MJTV.png",
+                        "image": {
+                          "type": "tempVar",
+                          "value": "lastimg"
+                        },
+                        "spoiler": false,
+                        "store": {
+                          "type": "temporary",
+                          "value": ""
+                        }
+                      }
+                    }
+                  ],
+                  "files": [],
+                  "poll": [],
+                  "silent": false,
+                  "mentions": true,
+                  "dontSend": false,
+                  "ephemeral": false,
+                  "updateMessage": {
+                    "type": "none",
+                    "value": ""
+                  },
+                  "updateContent": false,
+                  "updateComponents": false,
+                  "updateEmbeds": false,
+                  "updateAttachments": false
+                },
+                "id": 1743316982192
+              }
+            ],
+            "store": {
+              "type": "temporary",
+              "value": ""
+            }
+          },
+          "id": 1743316982187
+        },
+        {
+          "name": "Stop Actions",
+          "file": "stopRunningActions.js",
+          "data": {
+            "name": "Stop Actions"
+          },
+          "id": 1743316982193
+        },
+        {
+          "name": "Check Variable",
+          "file": "checkVariable.js",
+          "data": {
+            "name": "Check Variable",
+            "variable": {
+              "type": "tempVar",
+              "value": "mp"
+            },
+            "comparator": "Equals",
+            "compareValue": "w",
+            "true": {
+              "type": "continue",
+              "value": ""
+            },
+            "trueActions": [],
+            "false": {
+              "type": "jump",
+              "value": "14"
+            },
+            "falseActions": []
+          },
+          "id": 1743316982194
+        },
+        {
+          "name": "Show Modal",
+          "file": "showModal.js",
+          "data": {
+            "name": "Show Modal",
+            "interaction": {
+              "type": "tempVar",
+              "value": ""
+            },
+            "replyToInteraction": true,
+            "title": "Создать картинку WEEKLY CUP",
+            "modalComponents": [
+              {
+                "type": "input",
+                "data": {
+                  "label": "Победившая команда",
+                  "style": "Input",
+                  "value": "",
+                  "placeholder": "UZI (капсом обязательно)",
+                  "min": "",
+                  "max": "",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "win"
+                  }
+                }
+              },
+              {
+                "type": "input",
+                "data": {
+                  "label": "Скриншот",
+                  "style": "Input",
+                  "value": "Пример ссылки - https://i.imgur.com/UARdPee.png",
+                  "placeholder": "Обязательно imgur.png",
+                  "min": "",
+                  "max": "",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "scr"
+                  }
+                }
+              },
+              {
+                "type": "input",
+                "data": {
+                  "label": "Дата",
+                  "style": "Input",
+                  "value": "",
+                  "placeholder": "21.03.2025 (чекни дату)",
+                  "min": "10",
+                  "max": "10",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "date"
+                  }
+                }
+              },
+              {
+                "type": "input",
+                "data": {
+                  "label": "Сервер",
+                  "style": "Input",
+                  "value": "",
+                  "placeholder": "SEATTLE (обязательно капсом)",
+                  "min": "",
+                  "max": "",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "server"
+                  }
+                }
+              }
+            ],
+            "actions": [
+              {
+                "name": "Send Message",
+                "file": "sendmessage.js",
+                "data": {
+                  "name": "Send Message",
+                  "messageContent": "<a:4704loadingicon:1184411024787517451> **Картинка создается**",
+                  "actionRows": [],
+                  "embeds": [],
+                  "channel": {
+                    "type": "command",
+                    "value": ""
+                  },
+                  "storeAs": {
+                    "value": "",
+                    "type": "temporary"
+                  },
+                  "replyToInteraction": true,
+                  "options": [
+                    {
+                      "type": "options"
+                    }
+                  ],
+                  "attachments": [],
+                  "files": [],
+                  "poll": [],
+                  "silent": false,
+                  "mentions": false,
+                  "dontSend": false,
+                  "ephemeral": true,
+                  "updateMessage": {
+                    "type": "none",
+                    "value": ""
+                  },
+                  "updateContent": false,
+                  "updateComponents": false,
+                  "updateEmbeds": false,
+                  "updateAttachments": false
+                },
+                "id": 1743316982196
+              },
+              {
+                "name": "Edit Image",
+                "file": "editImage.js",
+                "data": {
+                  "name": "Edit Image",
+                  "image": {
+                    "type": "file",
+                    "value": "wc.png"
+                  },
+                  "filters": [
+                    {
+                      "type": "writeText",
+                      "data": {
+                        "size": "57",
+                        "color": "#FFFFFF",
+                        "x": "778",
+                        "y": "210",
+                        "alignment": {
+                          "type": "center",
+                          "value": ""
+                        },
+                        "text": "${tempVars('win')}",
+                        "font": [
+                          {
+                            "type": "font",
+                            "data": {
+                              "weight": "400",
+                              "file": "Montserrat-ExtraBold.ttf",
+                              "family": "Montserrat ExtraBold"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "writeText",
+                      "data": {
+                        "size": "30",
+                        "color": "#FFFFFF",
+                        "x": "840",
+                        "y": "1043",
+                        "alignment": {
+                          "type": "left",
+                          "value": ""
+                        },
+                        "text": "${tempVars('server')}",
+                        "font": [
+                          {
+                            "type": "font",
+                            "data": {
+                              "weight": "400",
+                              "file": "Montserrat-ExtraBold.ttf",
+                              "family": "Montserrat ExtraBold"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "writeText",
+                      "data": {
+                        "size": "30",
+                        "color": "#FFFFFF",
+                        "x": "722",
+                        "y": "1043",
+                        "alignment": {
+                          "type": "right",
+                          "value": ""
+                        },
+                        "text": "${tempVars('date')}",
+                        "font": [
+                          {
+                            "type": "font",
+                            "data": {
+                              "weight": "400",
+                              "file": "Montserrat-ExtraBold.ttf",
+                              "family": "Montserrat ExtraBold"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "store": {
+                    "type": "temporary",
+                    "value": "img"
+                  }
+                },
+                "id": 1743316982197
+              },
+              {
+                "name": "Edit Image",
+                "file": "editImage.js",
+                "data": {
+                  "name": "Edit Image",
+                  "image": {
+                    "type": "url",
+                    "value": "${tempVars('scr')}"
+                  },
+                  "filters": [
+                    {
+                      "type": "resize",
+                      "data": {
+                        "w": "968",
+                        "h": "563"
+                      }
+                    }
+                  ],
+                  "store": {
+                    "type": "temporary",
+                    "value": "screen"
+                  }
+                },
+                "id": 1743316982198
+              },
+              {
+                "name": "Canvas Draw Image on Image",
+                "file": "CanvasDrawImage_MOD.js",
+                "data": {
+                  "name": "Canvas Draw Image on Image",
+                  "image": {
+                    "type": "tempVar",
+                    "value": "img"
+                  },
+                  "imageToDraw": {
+                    "type": "tempVar",
+                    "value": "screen"
+                  },
+                  "x": "294",
+                  "y": "250",
+                  "drawEffect": "Overlay",
+                  "store": {
+                    "type": "temporary",
+                    "value": "lastimg"
+                  }
+                },
+                "id": 1743316982199
+              },
+              {
+                "name": "Send Message",
+                "file": "sendmessage.js",
+                "data": {
+                  "name": "Send Message",
+                  "messageContent": "**Полученная картинка**\nЗапрос от <@${command.author.id}>",
+                  "actionRows": [],
+                  "embeds": [],
+                  "channel": {
+                    "type": "id",
+                    "value": "1355102880595443712"
+                  },
+                  "replyToInteraction": false,
+                  "storeAs": {
+                    "value": "",
+                    "type": "temporary"
+                  },
+                  "options": [
+                    {
+                      "type": "options"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "type": "attachment",
+                      "data": {
+                        "name": "MJTV.png",
+                        "image": {
+                          "type": "tempVar",
+                          "value": "lastimg"
+                        },
+                        "spoiler": false,
+                        "store": {
+                          "type": "temporary",
+                          "value": ""
+                        }
+                      }
+                    }
+                  ],
+                  "files": [],
+                  "poll": [],
+                  "silent": false,
+                  "mentions": true,
+                  "dontSend": false,
+                  "ephemeral": false,
+                  "updateMessage": {
+                    "type": "none",
+                    "value": ""
+                  },
+                  "updateContent": false,
+                  "updateComponents": false,
+                  "updateEmbeds": false,
+                  "updateAttachments": false
+                },
+                "id": 1743316982200
+              }
+            ],
+            "store": {
+              "type": "temporary",
+              "value": ""
+            }
+          },
+          "id": 1743316982195
+        },
+        {
+          "name": "Stop Actions",
+          "file": "stopRunningActions.js",
+          "data": {
+            "name": "Stop Actions"
+          },
+          "id": 1743316982201
+        },
+        {
+          "name": "Check Variable",
+          "file": "checkVariable.js",
+          "data": {
+            "name": "Check Variable",
+            "variable": {
+              "type": "tempVar",
+              "value": "mp"
+            },
+            "comparator": "Equals",
+            "compareValue": "p",
+            "true": {
+              "type": "continue",
+              "value": ""
+            },
+            "trueActions": [],
+            "false": {
+              "type": "stop",
+              "value": "16"
+            },
+            "falseActions": []
+          },
+          "id": 1743316982202
+        },
+        {
+          "name": "Show Modal",
+          "file": "showModal.js",
+          "data": {
+            "name": "Show Modal",
+            "interaction": {
+              "type": "tempVar",
+              "value": ""
+            },
+            "replyToInteraction": true,
+            "title": "Создать картинку PUBG",
+            "modalComponents": [
+              {
+                "type": "input",
+                "data": {
+                  "label": "Победившая команда",
+                  "style": "Input",
+                  "value": "",
+                  "placeholder": "UZI (капсом обязательно)",
+                  "min": "",
+                  "max": "",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "win"
+                  }
+                }
+              },
+              {
+                "type": "input",
+                "data": {
+                  "label": "Скриншот",
+                  "style": "Input",
+                  "value": "Пример ссылки - https://i.imgur.com/UARdPee.png",
+                  "placeholder": "Обязательно imgur.png",
+                  "min": "",
+                  "max": "",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "scr"
+                  }
+                }
+              },
+              {
+                "type": "input",
+                "data": {
+                  "label": "Дата",
+                  "style": "Input",
+                  "value": "",
+                  "placeholder": "21.03.2025 (чекни дату)",
+                  "min": "10",
+                  "max": "10",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "date"
+                  }
+                }
+              },
+              {
+                "type": "input",
+                "data": {
+                  "label": "Сервер",
+                  "style": "Input",
+                  "value": "",
+                  "placeholder": "SEATTLE (обязательно капсом)",
+                  "min": "",
+                  "max": "",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "server"
+                  }
+                }
+              }
+            ],
+            "actions": [
+              {
+                "name": "Send Message",
+                "file": "sendmessage.js",
+                "data": {
+                  "name": "Send Message",
+                  "messageContent": "<a:4704loadingicon:1184411024787517451> **Картинка создается**",
+                  "actionRows": [],
+                  "embeds": [],
+                  "channel": {
+                    "type": "command",
+                    "value": ""
+                  },
+                  "storeAs": {
+                    "value": "",
+                    "type": "temporary"
+                  },
+                  "replyToInteraction": true,
+                  "options": [
+                    {
+                      "type": "options"
+                    }
+                  ],
+                  "attachments": [],
+                  "files": [],
+                  "poll": [],
+                  "silent": false,
+                  "mentions": false,
+                  "dontSend": false,
+                  "ephemeral": true,
+                  "updateMessage": {
+                    "type": "none",
+                    "value": ""
+                  },
+                  "updateContent": false,
+                  "updateComponents": false,
+                  "updateEmbeds": false,
+                  "updateAttachments": false
+                },
+                "id": 1743316982204
+              },
+              {
+                "name": "Edit Image",
+                "file": "editImage.js",
+                "data": {
+                  "name": "Edit Image",
+                  "image": {
+                    "type": "file",
+                    "value": "pubg.png"
+                  },
+                  "filters": [
+                    {
+                      "type": "writeText",
+                      "data": {
+                        "size": "57",
+                        "color": "#FFFFFF",
+                        "x": "778",
+                        "y": "210",
+                        "alignment": {
+                          "type": "center",
+                          "value": ""
+                        },
+                        "text": "${tempVars('win')}",
+                        "font": [
+                          {
+                            "type": "font",
+                            "data": {
+                              "weight": "400",
+                              "file": "Montserrat-ExtraBold.ttf",
+                              "family": "Montserrat ExtraBold"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "writeText",
+                      "data": {
+                        "size": "30",
+                        "color": "#FFFFFF",
+                        "x": "840",
+                        "y": "1043",
+                        "alignment": {
+                          "type": "left",
+                          "value": ""
+                        },
+                        "text": "${tempVars('server')}",
+                        "font": [
+                          {
+                            "type": "font",
+                            "data": {
+                              "weight": "400",
+                              "file": "Montserrat-ExtraBold.ttf",
+                              "family": "Montserrat ExtraBold"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "writeText",
+                      "data": {
+                        "size": "30",
+                        "color": "#FFFFFF",
+                        "x": "722",
+                        "y": "1043",
+                        "alignment": {
+                          "type": "right",
+                          "value": ""
+                        },
+                        "text": "${tempVars('date')}",
+                        "font": [
+                          {
+                            "type": "font",
+                            "data": {
+                              "weight": "400",
+                              "file": "Montserrat-ExtraBold.ttf",
+                              "family": "Montserrat ExtraBold"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "store": {
+                    "type": "temporary",
+                    "value": "img"
+                  }
+                },
+                "id": 1743316982205
+              },
+              {
+                "name": "Edit Image",
+                "file": "editImage.js",
+                "data": {
+                  "name": "Edit Image",
+                  "image": {
+                    "type": "url",
+                    "value": "${tempVars('scr')}"
+                  },
+                  "filters": [
+                    {
+                      "type": "resize",
+                      "data": {
+                        "w": "968",
+                        "h": "563"
+                      }
+                    }
+                  ],
+                  "store": {
+                    "type": "temporary",
+                    "value": "screen"
+                  }
+                },
+                "id": 1743316982206
+              },
+              {
+                "name": "Canvas Draw Image on Image",
+                "file": "CanvasDrawImage_MOD.js",
+                "data": {
+                  "name": "Canvas Draw Image on Image",
+                  "image": {
+                    "type": "tempVar",
+                    "value": "img"
+                  },
+                  "imageToDraw": {
+                    "type": "tempVar",
+                    "value": "screen"
+                  },
+                  "x": "294",
+                  "y": "250",
+                  "drawEffect": "Overlay",
+                  "store": {
+                    "type": "temporary",
+                    "value": "lastimg"
+                  }
+                },
+                "id": 1743316982207
+              },
+              {
+                "name": "Send Message",
+                "file": "sendmessage.js",
+                "data": {
+                  "name": "Send Message",
+                  "messageContent": "**Полученная картинка**\nЗапрос от <@${command.author.id}>",
+                  "actionRows": [],
+                  "embeds": [],
+                  "channel": {
+                    "type": "id",
+                    "value": "1355102880595443712"
+                  },
+                  "replyToInteraction": false,
+                  "storeAs": {
+                    "value": "",
+                    "type": "temporary"
+                  },
+                  "options": [
+                    {
+                      "type": "options"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "type": "attachment",
+                      "data": {
+                        "name": "MJTV.png",
+                        "image": {
+                          "type": "tempVar",
+                          "value": "lastimg"
+                        },
+                        "spoiler": false,
+                        "store": {
+                          "type": "temporary",
+                          "value": ""
+                        }
+                      }
+                    }
+                  ],
+                  "files": [],
+                  "poll": [],
+                  "silent": false,
+                  "mentions": true,
+                  "dontSend": false,
+                  "ephemeral": false,
+                  "updateMessage": {
+                    "type": "none",
+                    "value": ""
+                  },
+                  "updateContent": false,
+                  "updateComponents": false,
+                  "updateEmbeds": false,
+                  "updateAttachments": false
+                },
+                "id": 1743316982208
+              }
+            ],
+            "store": {
+              "type": "temporary",
+              "value": ""
+            }
+          },
+          "id": 1743316982203
+        },
+        {
+          "name": "Stop Actions",
+          "file": "stopRunningActions.js",
+          "data": {
+            "name": "Stop Actions"
+          },
+          "id": 1743316982209
         }
       ],
       "customId": 1743232247721,
@@ -2333,7 +3837,55 @@
           "MOVE_MEMBERS"
         ]
       },
-      "parameters": [],
+      "parameters": [
+        {
+          "name": "mp",
+          "type": "string",
+          "description": "Вид мероприятия",
+          "required": true,
+          "choices": [
+            {
+              "name": "MCL",
+              "value": "m"
+            },
+            {
+              "name": "СТРЕЛЫ",
+              "value": "s"
+            },
+            {
+              "name": "ВЗЗ",
+              "value": "v"
+            },
+            {
+              "name": "WEEKLY CUP",
+              "value": "w"
+            },
+            {
+              "name": "PUBG",
+              "value": "p"
+            }
+          ],
+          "storeAs": "mp",
+          "completion": true,
+          "bound": {
+            "name": "Autocompletion",
+            "storeInputAs": {
+              "type": "temporary",
+              "value": ""
+            },
+            "storeInteractionAs": {
+              "type": "temporary",
+              "value": ""
+            },
+            "actions": [],
+            "result": {
+              "type": "tempVar",
+              "value": ""
+            }
+          },
+          "max_value": "10"
+        }
+      ],
       "description": "Сделать MCL картинку",
       "folder": [
         1742889041669
@@ -2355,6 +3907,482 @@
             "",
             ""
           ],
+          "global": [
+            [],
+            [],
+            []
+          ],
+          "server": [
+            [],
+            [],
+            []
+          ],
+          "commandVars": [],
+          "thisServer": [],
+          "thisGlobal": []
+        }
+      }
+    },
+    {
+      "name": "особняк",
+      "type": "action",
+      "trigger": "slashCommand",
+      "actions": [
+        {
+          "name": "Show Modal",
+          "file": "showModal.js",
+          "data": {
+            "name": "Show Modal",
+            "interaction": {
+              "type": "tempVar",
+              "value": ""
+            },
+            "replyToInteraction": true,
+            "title": "Создать картинку ОСОБНЯК",
+            "modalComponents": [
+              {
+                "type": "input",
+                "data": {
+                  "label": "Отпись",
+                  "style": "Paragraph",
+                  "value": "NEUTRAL ЗАХВАТИЛА ОСОБНЯК IRISH MAFIA У СЕМЬИ SYNTHETIC",
+                  "placeholder": "капсом обязательно",
+                  "min": "",
+                  "max": "",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "win"
+                  }
+                }
+              },
+              {
+                "type": "input",
+                "data": {
+                  "label": "Скриншот",
+                  "style": "Input",
+                  "value": "Пример ссылки - https://i.imgur.com/UARdPee.png",
+                  "placeholder": "Обязательно imgur.png",
+                  "min": "",
+                  "max": "",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "scr"
+                  }
+                }
+              },
+              {
+                "type": "input",
+                "data": {
+                  "label": "Дата",
+                  "style": "Input",
+                  "value": "",
+                  "placeholder": "21.03.2025 (чекни дату)",
+                  "min": "10",
+                  "max": "10",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "date"
+                  }
+                }
+              },
+              {
+                "type": "input",
+                "data": {
+                  "label": "Сервер",
+                  "style": "Input",
+                  "value": "",
+                  "placeholder": "SEATTLE (обязательно капсом)",
+                  "min": "",
+                  "max": "",
+                  "required": true,
+                  "store": {
+                    "type": "temporary",
+                    "value": "server"
+                  }
+                }
+              }
+            ],
+            "actions": [
+              {
+                "name": "Send Message",
+                "file": "sendmessage.js",
+                "data": {
+                  "name": "Send Message",
+                  "messageContent": "<a:4704loadingicon:1184411024787517451> **Картинка создается**",
+                  "actionRows": [],
+                  "embeds": [],
+                  "channel": {
+                    "type": "command",
+                    "value": ""
+                  },
+                  "storeAs": {
+                    "value": "",
+                    "type": "temporary"
+                  },
+                  "replyToInteraction": true,
+                  "options": [
+                    {
+                      "type": "options"
+                    }
+                  ],
+                  "attachments": [],
+                  "files": [],
+                  "poll": [],
+                  "silent": false,
+                  "mentions": false,
+                  "dontSend": false,
+                  "ephemeral": true,
+                  "updateMessage": {
+                    "type": "none",
+                    "value": ""
+                  },
+                  "updateContent": false,
+                  "updateComponents": false,
+                  "updateEmbeds": false,
+                  "updateAttachments": false
+                },
+                "id": 1743323193176
+              },
+              {
+                "name": "Edit Image",
+                "file": "editImage.js",
+                "data": {
+                  "name": "Edit Image",
+                  "image": {
+                    "type": "file",
+                    "value": "osoba.png"
+                  },
+                  "filters": [
+                    {
+                      "type": "writeText",
+                      "data": {
+                        "size": "56",
+                        "color": "#FFFFFF",
+                        "x": "615",
+                        "y": "140",
+                        "alignment": {
+                          "type": "center",
+                          "value": ""
+                        },
+                        "text": "${tempVars('win')}",
+                        "font": [
+                          {
+                            "type": "font",
+                            "data": {
+                              "weight": "400",
+                              "file": "Montserrat-ExtraBold.ttf",
+                              "family": "Montserrat ExtraBold"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "writeText",
+                      "data": {
+                        "size": "30",
+                        "color": "#FFFFFF",
+                        "x": "680",
+                        "y": "970",
+                        "alignment": {
+                          "type": "left",
+                          "value": ""
+                        },
+                        "text": "${tempVars('server')}",
+                        "font": [
+                          {
+                            "type": "font",
+                            "data": {
+                              "weight": "400",
+                              "file": "Montserrat-ExtraBold.ttf",
+                              "family": "Montserrat ExtraBold"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "writeText",
+                      "data": {
+                        "size": "30",
+                        "color": "#FFFFFF",
+                        "x": "565",
+                        "y": "970",
+                        "alignment": {
+                          "type": "right",
+                          "value": ""
+                        },
+                        "text": "${tempVars('date')}",
+                        "font": [
+                          {
+                            "type": "font",
+                            "data": {
+                              "weight": "400",
+                              "file": "Montserrat-ExtraBold.ttf",
+                              "family": "Montserrat ExtraBold"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "store": {
+                    "type": "temporary",
+                    "value": "img"
+                  }
+                },
+                "id": 1743323193177
+              },
+              {
+                "name": "Edit Image",
+                "file": "editImage.js",
+                "data": {
+                  "name": "Edit Image",
+                  "image": {
+                    "type": "url",
+                    "value": "${tempVars('scr')}"
+                  },
+                  "filters": [
+                    {
+                      "type": "resize",
+                      "data": {
+                        "w": "968",
+                        "h": "563"
+                      }
+                    }
+                  ],
+                  "store": {
+                    "type": "temporary",
+                    "value": "screen"
+                  }
+                },
+                "id": 1743323193178
+              },
+              {
+                "name": "Canvas Draw Image on Image",
+                "file": "CanvasDrawImage_MOD.js",
+                "data": {
+                  "name": "Canvas Draw Image on Image",
+                  "image": {
+                    "type": "tempVar",
+                    "value": "img"
+                  },
+                  "imageToDraw": {
+                    "type": "tempVar",
+                    "value": "screen"
+                  },
+                  "x": "125",
+                  "y": "250",
+                  "drawEffect": "Overlay",
+                  "store": {
+                    "type": "temporary",
+                    "value": "lastimg"
+                  }
+                },
+                "id": 1743323193179
+              },
+              {
+                "name": "Send Message",
+                "file": "sendmessage.js",
+                "data": {
+                  "name": "Send Message",
+                  "messageContent": "**Полученная картинка**\nЗапрос от <@${command.author.id}>",
+                  "actionRows": [],
+                  "embeds": [],
+                  "channel": {
+                    "type": "id",
+                    "value": "1355102880595443712"
+                  },
+                  "replyToInteraction": false,
+                  "storeAs": {
+                    "value": "",
+                    "type": "temporary"
+                  },
+                  "options": [
+                    {
+                      "type": "options"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "type": "attachment",
+                      "data": {
+                        "name": "MJTV.png",
+                        "image": {
+                          "type": "tempVar",
+                          "value": "lastimg"
+                        },
+                        "spoiler": false,
+                        "store": {
+                          "type": "temporary",
+                          "value": ""
+                        }
+                      }
+                    }
+                  ],
+                  "files": [],
+                  "poll": [],
+                  "silent": false,
+                  "mentions": true,
+                  "dontSend": false,
+                  "ephemeral": false,
+                  "updateMessage": {
+                    "type": "none",
+                    "value": ""
+                  },
+                  "updateContent": false,
+                  "updateComponents": false,
+                  "updateEmbeds": false,
+                  "updateAttachments": false
+                },
+                "id": 1743323193180
+              }
+            ],
+            "store": {
+              "type": "temporary",
+              "value": ""
+            }
+          },
+          "id": 1743323193175
+        }
+      ],
+      "customId": 1743322002454,
+      "boundary": {
+        "worksIn": "guild",
+        "limits": [
+          "MOVE_MEMBERS"
+        ]
+      },
+      "parameters": [],
+      "description": "Сделать картинку особняк",
+      "folder": [
+        1742889041669
+      ],
+      "goodies": {
+        "actionType": "text",
+        "variables": {
+          "temporary": [],
+          "global": [
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "server": [
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "commandVars": [],
+          "thisServer": [],
+          "thisGlobal": []
+        }
+      }
+    },
+    {
+      "name": "points",
+      "type": "action",
+      "trigger": "slashCommand",
+      "actions": [
+        {
+          "name": "Store Custom Data",
+          "file": "storecustomdata_MOD.js",
+          "data": {
+            "name": "Store Custom Data",
+            "database": "AppData/balls.json",
+            "Store Data": [
+              {
+                "type": "options"
+              }
+            ],
+            "Store list Data": [
+              {
+                "type": "options"
+              }
+            ],
+            "Search through array": [
+              {
+                "type": "options"
+              }
+            ],
+            "cases": [
+              {
+                "type": "data",
+                "data": {
+                  "Path": "${command.author.id}.Баллы",
+                  "store": {
+                    "type": "temporary",
+                    "value": "store member"
+                  }
+                }
+              }
+            ]
+          },
+          "id": 1743298549621
+        },
+        {
+          "name": "Send Message",
+          "file": "sendmessage.js",
+          "data": {
+            "name": "Send Message",
+            "messageContent": "<a:4989heartsblue2:1064479628988797038> **Твое количество баллов - ${tempVars('store member') || '0'}**",
+            "actionRows": [],
+            "embeds": [],
+            "channel": {
+              "type": "command",
+              "value": ""
+            },
+            "replyToInteraction": true,
+            "storeAs": {
+              "value": "",
+              "type": "temporary"
+            },
+            "options": [
+              {
+                "type": "options"
+              }
+            ],
+            "attachments": [],
+            "files": [],
+            "poll": [],
+            "silent": false,
+            "mentions": false,
+            "dontSend": false,
+            "ephemeral": true,
+            "updateMessage": {
+              "type": "none",
+              "value": ""
+            },
+            "updateContent": false,
+            "updateComponents": false,
+            "updateEmbeds": false,
+            "updateAttachments": false
+          },
+          "id": 1743298848440
+        }
+      ],
+      "customId": 1743320402047,
+      "boundary": {
+        "worksIn": "guild",
+        "limits": [
+          "MOVE_MEMBERS"
+        ]
+      },
+      "parameters": [],
+      "description": "Твои баллы",
+      "folder": [
+        1742889041669
+      ],
+      "goodies": {
+        "actionType": "slash",
+        "variables": {
+          "temporary": [],
           "global": [
             [],
             [],
@@ -2523,11 +4551,105 @@
                                                     "id": 1743270643495
                                                   },
                                                   {
+                                                    "name": "Store Custom Data",
+                                                    "file": "storecustomdata_MOD.js",
+                                                    "data": {
+                                                      "name": "Store Custom Data",
+                                                      "database": "AppData/balls.json",
+                                                      "Store Data": [
+                                                        {
+                                                          "type": "options"
+                                                        }
+                                                      ],
+                                                      "Store list Data": [
+                                                        {
+                                                          "type": "options"
+                                                        }
+                                                      ],
+                                                      "Search through array": [
+                                                        {
+                                                          "type": "options"
+                                                        }
+                                                      ],
+                                                      "cases": [
+                                                        {
+                                                          "type": "data",
+                                                          "data": {
+                                                            "Path": "${tempVars('member')}.Баллы",
+                                                            "store": {
+                                                              "type": "temporary",
+                                                              "value": "store member"
+                                                            }
+                                                          }
+                                                        }
+                                                      ],
+                                                      "cases1": []
+                                                    },
+                                                    "id": 1743323193181
+                                                  },
+                                                  {
+                                                    "name": "Calculate",
+                                                    "file": "calculate.js",
+                                                    "data": {
+                                                      "name": "Calculate",
+                                                      "firstNumber": "${tempVars('store member') || '0'}",
+                                                      "operation": "Addition",
+                                                      "secondNumber": "1",
+                                                      "store": {
+                                                        "type": "temporary",
+                                                        "value": "+1 member"
+                                                      }
+                                                    },
+                                                    "id": 1743298718682
+                                                  },
+                                                  {
+                                                    "name": "Control Custom Data",
+                                                    "file": "controlcustomdata_MOD.js",
+                                                    "data": {
+                                                      "name": "Control Custom Data",
+                                                      "database": "AppData/balls.json",
+                                                      "logToConsole": false,
+                                                      "deleteJson": false,
+                                                      "Create Data Value": [
+                                                        {
+                                                          "type": "options"
+                                                        }
+                                                      ],
+                                                      "Create Data Array": [
+                                                        {
+                                                          "type": "options"
+                                                        }
+                                                      ],
+                                                      "Create Data Object": [
+                                                        {
+                                                          "type": "options"
+                                                        }
+                                                      ],
+                                                      "Delete Data": [
+                                                        {
+                                                          "type": "options"
+                                                        }
+                                                      ],
+                                                      "cases": [
+                                                        {
+                                                          "type": "data",
+                                                          "data": {
+                                                            "path": "${tempVars('member')}.Баллы",
+                                                            "value": "${tempVars('+1 member')}",
+                                                            "comparisonlist": []
+                                                          }
+                                                        }
+                                                      ],
+                                                      "cases3": []
+                                                    },
+                                                    "id": 1743298764761
+                                                  },
+                                                  {
                                                     "name": "Send Message",
                                                     "file": "sendmessage.js",
                                                     "data": {
                                                       "name": "Send Message",
-                                                      "messageContent": "Отправил - <@${tempVars('member')}>",
+                                                      "messageContent": "Отправил - <@${tempVars('member')}>\n<@${tempVars('member')}> - ${tempVars('+1 member')} балл",
                                                       "actionRows": [],
                                                       "embeds": [
                                                         {
@@ -11864,152 +13986,6 @@
       }
     },
     {
-      "name": "points",
-      "type": "action",
-      "trigger": "slashCommand",
-      "actions": [
-        {
-          "name": "Get Member Data",
-          "file": "getMemberData.js",
-          "data": {
-            "name": "Get Member Data",
-            "user": {
-              "type": "author",
-              "value": "${tempVars('uid')}"
-            },
-            "dataName": "points",
-            "defaultValue": "0",
-            "store": {
-              "type": "temporary",
-              "value": "points"
-            }
-          },
-          "id": 1743271847817
-        },
-        {
-          "name": "Send Message",
-          "file": "sendmessage.js",
-          "data": {
-            "name": "Send Message",
-            "messageContent": "",
-            "actionRows": [],
-            "embeds": [
-              {
-                "type": "embed",
-                "data": {
-                  "title": "",
-                  "embedColor": "#FFFFFF",
-                  "footerContent": "",
-                  "imageURL": "",
-                  "footerIconURL": "",
-                  "thumbnailURL": "",
-                  "authorName": "",
-                  "authorIcon": "",
-                  "description": "You had ${tempVars('points')} points.",
-                  "fields": [],
-                  "url": "",
-                  "timestamp": "None",
-                  "customTimestamp": ""
-                }
-              }
-            ],
-            "channel": {
-              "type": "command",
-              "value": ""
-            },
-            "replyToInteraction": true,
-            "storeAs": {
-              "value": "",
-              "type": "temporary"
-            },
-            "options": [
-              {
-                "type": "options"
-              }
-            ],
-            "attachments": [],
-            "files": [],
-            "poll": [],
-            "silent": false,
-            "mentions": false,
-            "dontSend": false,
-            "ephemeral": true,
-            "updateMessage": {
-              "type": "none",
-              "value": ""
-            },
-            "updateContent": false,
-            "updateComponents": false,
-            "updateEmbeds": false,
-            "updateAttachments": false
-          },
-          "id": 1743271866872
-        }
-      ],
-      "customId": 1743272993296,
-      "boundary": {
-        "worksIn": "guild",
-        "limits": []
-      },
-      "parameters": [],
-      "description": "Check your points :",
-      "folder": [],
-      "goodies": {
-        "actionType": "slash",
-        "variables": {
-          "temporary": [
-            "points"
-          ],
-          "global": [
-            [],
-            [],
-            [],
-            [],
-            [],
-            []
-          ],
-          "server": [
-            [
-              "logs",
-              "report-channel",
-              "report-mention",
-              "mod-log",
-              "logs-ticket"
-            ],
-            [],
-            [],
-            [],
-            [
-              "logs",
-              "report-channel",
-              "report-mention",
-              "mod-log",
-              "logs-ticket"
-            ],
-            [],
-            [],
-            [],
-            [
-              "logs",
-              "report-channel",
-              "report-mention",
-              "mod-log",
-              "logs-ticket"
-            ],
-            [],
-            [],
-            []
-          ],
-          "commandVars": [
-            "uid",
-            ""
-          ],
-          "thisServer": [],
-          "thisGlobal": []
-        }
-      }
-    },
-    {
       "name": "thread",
       "type": "event",
       "trigger": "event",
@@ -12078,6 +14054,153 @@
         "sms",
         "t2"
       ],
+      "folder": []
+    },
+    {
+      "name": "rat",
+      "type": "action",
+      "trigger": "textCommand",
+      "actions": [
+        {
+          "name": "Store Custom Data",
+          "file": "storecustomdata_MOD.js",
+          "data": {
+            "name": "Store Custom Data",
+            "database": "AppData/balls.json",
+            "Store Data": [
+              {
+                "type": "options"
+              }
+            ],
+            "Store list Data": [
+              {
+                "type": "options"
+              }
+            ],
+            "Search through array": [
+              {
+                "type": "options"
+              }
+            ],
+            "cases": [
+              {
+                "type": "data",
+                "data": {
+                  "Path": "${command.author.id}.баллы",
+                  "store": {
+                    "type": "temporary",
+                    "value": "store member"
+                  }
+                }
+              }
+            ]
+          },
+          "id": 1743323193183
+        },
+        {
+          "name": "Calculate",
+          "file": "calculate.js",
+          "data": {
+            "name": "Calculate",
+            "firstNumber": "${tempVars('store member') || '0'}",
+            "operation": "Addition",
+            "secondNumber": "1",
+            "store": {
+              "type": "temporary",
+              "value": "+1 member"
+            }
+          },
+          "id": 1743323193185
+        },
+        {
+          "name": "Control Custom Data",
+          "file": "controlcustomdata_MOD.js",
+          "data": {
+            "name": "Control Custom Data",
+            "database": "AppData/test.json",
+            "logToConsole": false,
+            "deleteJson": false,
+            "Create Data Value": [
+              {
+                "type": "options"
+              }
+            ],
+            "Create Data Array": [
+              {
+                "type": "options"
+              }
+            ],
+            "Create Data Object": [
+              {
+                "type": "options"
+              }
+            ],
+            "Delete Data": [
+              {
+                "type": "options"
+              }
+            ],
+            "cases": [
+              {
+                "type": "data",
+                "data": {
+                  "path": "${command.author.id}.Магические баллы",
+                  "value": "${tempVars('+1 member')}",
+                  "comparisonlist": []
+                }
+              }
+            ]
+          },
+          "id": 1743323193186
+        },
+        {
+          "name": "Send Message",
+          "file": "sendmessage.js",
+          "data": {
+            "name": "Send Message",
+            "messageContent": "${tempVars('store member') || '0'} - ${tempVars('+1 member')}",
+            "actionRows": [],
+            "embeds": [],
+            "channel": {
+              "type": "command",
+              "value": ""
+            },
+            "replyToInteraction": true,
+            "storeAs": {
+              "value": "",
+              "type": "temporary"
+            },
+            "options": [
+              {
+                "type": "options"
+              }
+            ],
+            "attachments": [],
+            "files": [],
+            "poll": [],
+            "silent": false,
+            "mentions": false,
+            "dontSend": false,
+            "ephemeral": true,
+            "updateMessage": {
+              "type": "none",
+              "value": ""
+            },
+            "updateContent": false,
+            "updateComponents": false,
+            "updateEmbeds": false,
+            "updateAttachments": false
+          },
+          "id": 1743323193187
+        }
+      ],
+      "customId": 1743317073757,
+      "boundary": {
+        "worksIn": "guild",
+        "limits": []
+      },
+      "parameters": [],
+      "description": "No Description",
       "folder": []
     }
   ],
