@@ -265,7 +265,7 @@
                                                       "defaultValue": "",
                                                       "store": {
                                                         "type": "temporary",
-                                                        "value": "mod"
+                                                        "value": "moder"
                                                       }
                                                     },
                                                     "id": 1743102522437
@@ -287,6 +287,23 @@
                                                       }
                                                     },
                                                     "id": 1743102522438
+                                                  },
+                                                  {
+                                                    "name": "Add Role",
+                                                    "file": "addRole.js",
+                                                    "data": {
+                                                      "name": "Add Role",
+                                                      "member": {
+                                                        "type": "id",
+                                                        "value": "${tempVars('sms')}"
+                                                      },
+                                                      "role": {
+                                                        "type": "id",
+                                                        "value": "1342969378517418065"
+                                                      },
+                                                      "reason": "Принят"
+                                                    },
+                                                    "id": 1743360281495
                                                   },
                                                   {
                                                     "name": "Send Message",
@@ -311,7 +328,7 @@
                                                             "thumbnailURL": "",
                                                             "authorName": "",
                                                             "authorIcon": "",
-                                                            "description": "**Имя и возраст:**\n```${tempVars('name')}```\n\n**В какой состоите фамке или фракции:**\n```${tempVars('famq')}```\n\n**Есть ли опыт в модерации:**\n```${tempVars('mod')}```\n\n**Какой сервер хотите модерировать?:**\n```${tempVars('сервер')}```",
+                                                            "description": "**Имя и возраст:**\n```${tempVars('name')}```\n\n**В какой состоите фамке или фракции:**\n```${tempVars('famq')}```\n\n**Есть ли опыт в модерации:**\n```${tempVars('moder')}```\n\n**Какой сервер хотите модерировать?:**\n```${tempVars('сервер')}```",
                                                             "fields": [],
                                                             "url": "",
                                                             "timestamp": "Current",
@@ -352,7 +369,7 @@
                                                     "file": "sendmessage.js",
                                                     "data": {
                                                       "name": "Send Message",
-                                                      "messageContent": "**Новый модератор - <@${tempVars('sms')}>\nНик по форме сервер | nick \nОзнакомиться с шаблонами https://discord.com/channels/982997343064432721/1343008687735701516\n\nНеделя на повышение\n5 постов на модератора**",
+                                                      "messageContent": "**Новый модератор - <@${tempVars('sms')}>\nНик по форме  | nick \nОзнакомиться с https://discord.com/channels/982997343064432721/1355969996915867829\n\nНеделя на повышение\n5 постов на модератора**",
                                                       "actionRows": [],
                                                       "embeds": [],
                                                       "channel": {
@@ -474,7 +491,7 @@
                                                       "defaultValue": "",
                                                       "store": {
                                                         "type": "temporary",
-                                                        "value": "sms"
+                                                        "value": "sms1"
                                                       }
                                                     },
                                                     "id": 1743102522440
@@ -492,7 +509,7 @@
                                                       "defaultValue": "",
                                                       "store": {
                                                         "type": "temporary",
-                                                        "value": "name"
+                                                        "value": "name1"
                                                       }
                                                     },
                                                     "id": 1743102522441
@@ -510,7 +527,7 @@
                                                       "defaultValue": "",
                                                       "store": {
                                                         "type": "temporary",
-                                                        "value": "famq"
+                                                        "value": "famq1"
                                                       }
                                                     },
                                                     "id": 1743102522442
@@ -528,7 +545,7 @@
                                                       "defaultValue": "",
                                                       "store": {
                                                         "type": "temporary",
-                                                        "value": "mod"
+                                                        "value": "mod1"
                                                       }
                                                     },
                                                     "id": 1743102522443
@@ -546,7 +563,7 @@
                                                       "defaultValue": "",
                                                       "store": {
                                                         "type": "temporary",
-                                                        "value": "сервер"
+                                                        "value": "сервер1"
                                                       }
                                                     },
                                                     "id": 1743102522444
@@ -556,7 +573,7 @@
                                                     "file": "sendmessage.js",
                                                     "data": {
                                                       "name": "Send Message",
-                                                      "messageContent": "Подал завяку - <@${tempVars('sms')}>\nОтклонил заявку - ${tempVars('ктопринял')}",
+                                                      "messageContent": "Подал завяку - <@${tempVars('sms1')}>\nОтклонил заявку - ${tempVars('ктопринял')}",
                                                       "channel": {
                                                         "type": "command",
                                                         "value": ""
@@ -574,7 +591,7 @@
                                                             "thumbnailURL": "",
                                                             "authorName": "",
                                                             "authorIcon": "",
-                                                            "description": "**Имя и возраст:**\n```${tempVars('name')}```\n\n**В какой состоите фамке или фракции:**\n```${tempVars('famq')}```\n\n**Есть ли опыт в модерации:**\n```${tempVars('mod')}```\n\n**Какой сервер хотите модерировать?:**\n```${tempVars('сервер')}```",
+                                                            "description": "**Имя и возраст:**\n```${tempVars('name1')}```\n\n**В какой состоите фамке или фракции:**\n```${tempVars('famq1')}```\n\n**Есть ли опыт в модерации:**\n```${tempVars('mod1')}```\n\n**Какой сервер хотите модерировать?:**\n```${tempVars('сервер1')}```",
                                                             "fields": [],
                                                             "url": "",
                                                             "timestamp": "Current",
@@ -4316,7 +4333,7 @@
     {
       "name": "top",
       "type": "action",
-      "trigger": "textCommand",
+      "trigger": "slashCommand",
       "actions": [
         {
           "name": "Custom Data Top",
