@@ -886,6 +886,23 @@
                                     "dataName": "server"
                                   },
                                   "id": 1743102522451
+                                },
+                                {
+                                  "name": "Store Message Data",
+                                  "file": "storeMessageData.js",
+                                  "data": {
+                                    "name": "Store Message Data",
+                                    "source": {
+                                      "type": "tempVar",
+                                      "value": "мод"
+                                    },
+                                    "message": {
+                                      "type": "tempVar",
+                                      "value": "смс"
+                                    },
+                                    "dataName": "mod"
+                                  },
+                                  "id": 1743360866450
                                 }
                               ],
                               "store": {
@@ -922,7 +939,7 @@
                   ],
                   "storeInteractionAs": {
                     "type": "temporary",
-                    "value": "button"
+                    "value": ""
                   },
                   "storeInteractionAuthorAs": {
                     "type": "temporary",
@@ -4389,7 +4406,7 @@
                   "thumbnailURL": "",
                   "authorName": "",
                   "authorIcon": "",
-                  "description": "${tempVars('top')}",
+                  "description": "${tempVars('top') || Список пуст(}",
                   "fields": [],
                   "url": "",
                   "timestamp": "None",
