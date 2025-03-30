@@ -166,22 +166,6 @@
                                 {
                                   "type": "input",
                                   "data": {
-                                    "label": "Есть опыт работы в Photoshop или Figma",
-                                    "style": "Input",
-                                    "value": "",
-                                    "placeholder": "",
-                                    "min": "",
-                                    "max": "",
-                                    "required": true,
-                                    "store": {
-                                      "type": "temporary",
-                                      "value": "фотошоп"
-                                    }
-                                  }
-                                },
-                                {
-                                  "type": "input",
-                                  "data": {
                                     "label": "Какой сервер хотите модерировать?",
                                     "style": "Input",
                                     "value": "",
@@ -305,24 +289,6 @@
                                                     "id": 1743102522438
                                                   },
                                                   {
-                                                    "name": "Get Message Data",
-                                                    "file": "getMessageData.js",
-                                                    "data": {
-                                                      "name": "Get Message Data",
-                                                      "message": {
-                                                        "type": "tempVar",
-                                                        "value": "смс"
-                                                      },
-                                                      "dataName": "photoshop",
-                                                      "defaultValue": "",
-                                                      "store": {
-                                                        "type": "temporary",
-                                                        "value": "photoshop"
-                                                      }
-                                                    },
-                                                    "id": 1743102522439
-                                                  },
-                                                  {
                                                     "name": "Send Message",
                                                     "file": "sendmessage.js",
                                                     "data": {
@@ -345,7 +311,7 @@
                                                             "thumbnailURL": "",
                                                             "authorName": "",
                                                             "authorIcon": "",
-                                                            "description": "**Имя и возраст:**\n```${tempVars('name')}```\n\n**В какой состоите фамке или фракции:**\n```${tempVars('famq')}```\n\n**Есть ли опыт в модерации:**\n```${tempVars('mod')}```\n\n**Есть опыт работы в Photoshop или Figma:**\n```${tempVars('photoshop')}```\n\n**Какой сервер хотите модерировать?:**\n```${tempVars('сервер')}```",
+                                                            "description": "**Имя и возраст:**\n```${tempVars('name')}```\n\n**В какой состоите фамке или фракции:**\n```${tempVars('famq')}```\n\n**Есть ли опыт в модерации:**\n```${tempVars('mod')}```\n\n**Какой сервер хотите модерировать?:**\n```${tempVars('сервер')}```",
                                                             "fields": [],
                                                             "url": "",
                                                             "timestamp": "Current",
@@ -586,24 +552,6 @@
                                                     "id": 1743102522444
                                                   },
                                                   {
-                                                    "name": "Get Message Data",
-                                                    "file": "getMessageData.js",
-                                                    "data": {
-                                                      "name": "Get Message Data",
-                                                      "message": {
-                                                        "type": "tempVar",
-                                                        "value": "смс"
-                                                      },
-                                                      "dataName": "photoshop",
-                                                      "defaultValue": "",
-                                                      "store": {
-                                                        "type": "temporary",
-                                                        "value": "photoshop"
-                                                      }
-                                                    },
-                                                    "id": 1743102522445
-                                                  },
-                                                  {
                                                     "name": "Send Message",
                                                     "file": "sendmessage.js",
                                                     "data": {
@@ -626,7 +574,7 @@
                                                             "thumbnailURL": "",
                                                             "authorName": "",
                                                             "authorIcon": "",
-                                                            "description": "**Имя и возраст:**\n```${tempVars('name')}```\n\n**В какой состоите фамке или фракции:**\n```${tempVars('famq')}```\n\n**Есть ли опыт в модерации:**\n```${tempVars('mod')}```\n\n**Есть опыт работы в Photoshop или Figma:**\n```${tempVars('photoshop')}```\n\n**Какой сервер хотите модерировать?:**\n```${tempVars('сервер')}```",
+                                                            "description": "**Имя и возраст:**\n```${tempVars('name')}```\n\n**В какой состоите фамке или фракции:**\n```${tempVars('famq')}```\n\n**Есть ли опыт в модерации:**\n```${tempVars('mod')}```\n\n**Какой сервер хотите модерировать?:**\n```${tempVars('сервер')}```",
                                                             "fields": [],
                                                             "url": "",
                                                             "timestamp": "Current",
@@ -754,7 +702,7 @@
                                           "thumbnailURL": "",
                                           "authorName": "",
                                           "authorIcon": "",
-                                          "description": "**Имя и возраст:**\n```${tempVars('имя')}```\n\n**В какой состоите фамке или фракции:**\n```${tempVars('фамка')}```\n\n**Есть ли опыт в модерации:**\n```${tempVars('мод')}```\n\n**Есть опыт работы в Photoshop или Figma:**\n```${tempVars('фотошоп')}```\n\n**Какой сервер хотите модерировать?:**\n```${tempVars('server')}```",
+                                          "description": "**Имя и возраст:**\n```${tempVars('имя')}```\n\n**В какой состоите фамке или фракции:**\n```${tempVars('фамка')}```\n\n**Есть ли опыт в модерации:**\n```${tempVars('мод')}```\n\n**Какой сервер хотите модерировать?:**\n```${tempVars('server')}```",
                                           "fields": [],
                                           "url": "",
                                           "timestamp": "Current",
@@ -912,40 +860,6 @@
                                     "name": "Store Message Data",
                                     "source": {
                                       "type": "tempVar",
-                                      "value": "фотошоп"
-                                    },
-                                    "message": {
-                                      "type": "tempVar",
-                                      "value": "смс"
-                                    },
-                                    "dataName": "photoshop"
-                                  },
-                                  "id": 1743102522449
-                                },
-                                {
-                                  "name": "Store Message Data",
-                                  "file": "storeMessageData.js",
-                                  "data": {
-                                    "name": "Store Message Data",
-                                    "source": {
-                                      "type": "tempVar",
-                                      "value": "мод"
-                                    },
-                                    "message": {
-                                      "type": "tempVar",
-                                      "value": "смс"
-                                    },
-                                    "dataName": "mod"
-                                  },
-                                  "id": 1743102522450
-                                },
-                                {
-                                  "name": "Store Message Data",
-                                  "file": "storeMessageData.js",
-                                  "data": {
-                                    "name": "Store Message Data",
-                                    "source": {
-                                      "type": "tempVar",
                                       "value": "server"
                                     },
                                     "message": {
@@ -1012,7 +926,7 @@
                   "thumbnailURL": "",
                   "authorName": "",
                   "authorIcon": "",
-                  "description": "***Модератор - человек, занимающийся публикацией новостей жизни своего сервера***\n\n**Для того, чтобы попасть на эту должность от вас требуется:**\n*Желание и активность.\nАдекватность и грамотность.\nУмение собирать информацию.*\n\n**Что тебя ждёт на данной должности:**\n*Карьерный рост.\nВайбовое общение среди коллектива.\nПочет и уважение от участников сервера.*",
+                  "description": "- Модератор - человек, занимающийся публикацией новостей жизни своего сервера\n\n**Для того, чтобы попасть на эту должность от вас требуется:**\n- Желание и активность.\n- Адекватность и грамотность.\n- Умение собирать информацию.\n\n**Что тебя ждёт на данной должности:**\n- Карьерный рост.\n- Вайбовое общение среди коллектива.\n- Почет и уважение от участников сервера.",
                   "fields": [],
                   "url": "",
                   "timestamp": "None",
@@ -4400,6 +4314,102 @@
       }
     },
     {
+      "name": "top",
+      "type": "action",
+      "trigger": "textCommand",
+      "actions": [
+        {
+          "name": "Custom Data Top",
+          "file": "customdatatop_MOD.js",
+          "data": {
+            "name": "Custom Data Top",
+            "database": "AppData/balls.json",
+            "path": "",
+            "Data Name": [
+              {
+                "type": "options"
+              }
+            ],
+            "resultType": "All Results",
+            "rangeStart": "",
+            "rangeEnd": "",
+            "sortOrder": "Descending",
+            "formatType": "Custom text as a list",
+            "resultFormat": "<@${id}> - ${Баллы}",
+            "store": {
+              "type": "temporary",
+              "value": "top"
+            },
+            "id": "id",
+            "cases1": [
+              {
+                "type": "data",
+                "data": {
+                  "name": "Баллы",
+                  "compile": true
+                }
+              }
+            ]
+          },
+          "id": 1743358556330
+        },
+        {
+          "name": "Send Message",
+          "file": "sendmessage.js",
+          "data": {
+            "name": "Send Message",
+            "messageContent": "",
+            "actionRows": [],
+            "embeds": [
+              {
+                "type": "embed",
+                "data": {
+                  "title": "Топ по баллам в этом месяце",
+                  "embedColor": "#FFFFFF",
+                  "footerContent": "",
+                  "imageURL": "",
+                  "footerIconURL": "",
+                  "thumbnailURL": "",
+                  "authorName": "",
+                  "authorIcon": "",
+                  "description": "${tempVars('top')}",
+                  "fields": [],
+                  "url": "",
+                  "timestamp": "None",
+                  "customTimestamp": ""
+                }
+              }
+            ],
+            "channel": {
+              "type": "command",
+              "value": ""
+            },
+            "replyToInteraction": true,
+            "storeAs": {
+              "value": "",
+              "type": "temporary"
+            },
+            "options": [
+              {
+                "type": "options"
+              }
+            ]
+          },
+          "id": 1743358557244
+        }
+      ],
+      "customId": 1743358541526,
+      "boundary": {
+        "worksIn": "guild",
+        "limits": []
+      },
+      "parameters": [],
+      "description": "Топ по баллам",
+      "folder": [
+        1742889041669
+      ]
+    },
+    {
       "name": "баллы",
       "type": "action",
       "trigger": "textCommand",
@@ -4497,211 +4507,249 @@
                                                 "color": "Success",
                                                 "actions": [
                                                   {
-                                                    "name": "Get Message Data",
-                                                    "file": "getMessageData.js",
+                                                    "name": "Show Modal",
+                                                    "file": "showModal.js",
                                                     "data": {
-                                                      "name": "Get Message Data",
-                                                      "message": {
+                                                      "name": "Show Modal",
+                                                      "interaction": {
                                                         "type": "tempVar",
-                                                        "value": "sms"
+                                                        "value": ""
                                                       },
-                                                      "dataName": "member",
-                                                      "defaultValue": "",
-                                                      "store": {
-                                                        "type": "temporary",
-                                                        "value": "member"
-                                                      }
-                                                    },
-                                                    "id": 1743270334675
-                                                  },
-                                                  {
-                                                    "name": "Get Message Data",
-                                                    "file": "getMessageData.js",
-                                                    "data": {
-                                                      "name": "Get Message Data",
-                                                      "message": {
-                                                        "type": "tempVar",
-                                                        "value": "sms"
-                                                      },
-                                                      "dataName": "mp",
-                                                      "defaultValue": "",
-                                                      "store": {
-                                                        "type": "temporary",
-                                                        "value": "mp"
-                                                      }
-                                                    },
-                                                    "id": 1743270643494
-                                                  },
-                                                  {
-                                                    "name": "Get Message Data",
-                                                    "file": "getMessageData.js",
-                                                    "data": {
-                                                      "name": "Get Message Data",
-                                                      "message": {
-                                                        "type": "tempVar",
-                                                        "value": "sms"
-                                                      },
-                                                      "dataName": "link",
-                                                      "defaultValue": "",
-                                                      "store": {
-                                                        "type": "temporary",
-                                                        "value": "линк"
-                                                      }
-                                                    },
-                                                    "id": 1743270643495
-                                                  },
-                                                  {
-                                                    "name": "Store Custom Data",
-                                                    "file": "storecustomdata_MOD.js",
-                                                    "data": {
-                                                      "name": "Store Custom Data",
-                                                      "database": "AppData/balls.json",
-                                                      "Store Data": [
+                                                      "replyToInteraction": true,
+                                                      "title": "Сколько баллов дать?",
+                                                      "modalComponents": [
                                                         {
-                                                          "type": "options"
-                                                        }
-                                                      ],
-                                                      "Store list Data": [
-                                                        {
-                                                          "type": "options"
-                                                        }
-                                                      ],
-                                                      "Search through array": [
-                                                        {
-                                                          "type": "options"
-                                                        }
-                                                      ],
-                                                      "cases": [
-                                                        {
-                                                          "type": "data",
+                                                          "type": "input",
                                                           "data": {
-                                                            "Path": "${tempVars('member')}.Баллы",
+                                                            "label": "Сколько баллов дать?",
+                                                            "style": "Input",
+                                                            "value": "",
+                                                            "placeholder": "",
+                                                            "min": "",
+                                                            "max": "",
+                                                            "required": true,
                                                             "store": {
                                                               "type": "temporary",
-                                                              "value": "store member"
+                                                              "value": "число"
                                                             }
                                                           }
                                                         }
                                                       ],
-                                                      "cases1": []
-                                                    },
-                                                    "id": 1743323193181
-                                                  },
-                                                  {
-                                                    "name": "Calculate",
-                                                    "file": "calculate.js",
-                                                    "data": {
-                                                      "name": "Calculate",
-                                                      "firstNumber": "${tempVars('store member') || '0'}",
-                                                      "operation": "Addition",
-                                                      "secondNumber": "1",
+                                                      "actions": [
+                                                        {
+                                                          "name": "Get Message Data",
+                                                          "file": "getMessageData.js",
+                                                          "data": {
+                                                            "name": "Get Message Data",
+                                                            "message": {
+                                                              "type": "tempVar",
+                                                              "value": "sms"
+                                                            },
+                                                            "dataName": "member",
+                                                            "defaultValue": "",
+                                                            "store": {
+                                                              "type": "temporary",
+                                                              "value": "member"
+                                                            }
+                                                          },
+                                                          "id": 1743270334675
+                                                        },
+                                                        {
+                                                          "name": "Get Message Data",
+                                                          "file": "getMessageData.js",
+                                                          "data": {
+                                                            "name": "Get Message Data",
+                                                            "message": {
+                                                              "type": "tempVar",
+                                                              "value": "sms"
+                                                            },
+                                                            "dataName": "mp",
+                                                            "defaultValue": "",
+                                                            "store": {
+                                                              "type": "temporary",
+                                                              "value": "mp"
+                                                            }
+                                                          },
+                                                          "id": 1743270643494
+                                                        },
+                                                        {
+                                                          "name": "Get Message Data",
+                                                          "file": "getMessageData.js",
+                                                          "data": {
+                                                            "name": "Get Message Data",
+                                                            "message": {
+                                                              "type": "tempVar",
+                                                              "value": "sms"
+                                                            },
+                                                            "dataName": "link",
+                                                            "defaultValue": "",
+                                                            "store": {
+                                                              "type": "temporary",
+                                                              "value": "линк"
+                                                            }
+                                                          },
+                                                          "id": 1743270643495
+                                                        },
+                                                        {
+                                                          "name": "Store Custom Data",
+                                                          "file": "storecustomdata_MOD.js",
+                                                          "data": {
+                                                            "name": "Store Custom Data",
+                                                            "database": "AppData/balls.json",
+                                                            "Store Data": [
+                                                              {
+                                                                "type": "options"
+                                                              }
+                                                            ],
+                                                            "Store list Data": [
+                                                              {
+                                                                "type": "options"
+                                                              }
+                                                            ],
+                                                            "Search through array": [
+                                                              {
+                                                                "type": "options"
+                                                              }
+                                                            ],
+                                                            "cases": [
+                                                              {
+                                                                "type": "data",
+                                                                "data": {
+                                                                  "Path": "${tempVars('member')}.Баллы",
+                                                                  "store": {
+                                                                    "type": "temporary",
+                                                                    "value": "store member"
+                                                                  }
+                                                                }
+                                                              }
+                                                            ],
+                                                            "cases1": []
+                                                          },
+                                                          "id": 1743323193181
+                                                        },
+                                                        {
+                                                          "name": "Calculate",
+                                                          "file": "calculate.js",
+                                                          "data": {
+                                                            "name": "Calculate",
+                                                            "firstNumber": "${tempVars('store member') || '0'}",
+                                                            "operation": "Addition",
+                                                            "secondNumber": "${tempVars('число')}",
+                                                            "store": {
+                                                              "type": "temporary",
+                                                              "value": "+1 member"
+                                                            }
+                                                          },
+                                                          "id": 1743298718682
+                                                        },
+                                                        {
+                                                          "name": "Control Custom Data",
+                                                          "file": "controlcustomdata_MOD.js",
+                                                          "data": {
+                                                            "name": "Control Custom Data",
+                                                            "database": "AppData/balls.json",
+                                                            "logToConsole": false,
+                                                            "deleteJson": false,
+                                                            "Create Data Value": [
+                                                              {
+                                                                "type": "options"
+                                                              }
+                                                            ],
+                                                            "Create Data Array": [
+                                                              {
+                                                                "type": "options"
+                                                              }
+                                                            ],
+                                                            "Create Data Object": [
+                                                              {
+                                                                "type": "options"
+                                                              }
+                                                            ],
+                                                            "Delete Data": [
+                                                              {
+                                                                "type": "options"
+                                                              }
+                                                            ],
+                                                            "cases": [
+                                                              {
+                                                                "type": "data",
+                                                                "data": {
+                                                                  "path": "${tempVars('member')}.Баллы",
+                                                                  "value": "${tempVars('+1 member')}",
+                                                                  "comparisonlist": []
+                                                                }
+                                                              }
+                                                            ],
+                                                            "cases3": []
+                                                          },
+                                                          "id": 1743298764761
+                                                        },
+                                                        {
+                                                          "name": "Send Message",
+                                                          "file": "sendmessage.js",
+                                                          "data": {
+                                                            "name": "Send Message",
+                                                            "messageContent": "Отправил - <@${tempVars('member')}>\n<@${tempVars('member')}> - ${tempVars('+1 member')} балл",
+                                                            "actionRows": [],
+                                                            "embeds": [
+                                                              {
+                                                                "type": "embed",
+                                                                "data": {
+                                                                  "title": "",
+                                                                  "embedColor": "#77eb34",
+                                                                  "footerContent": "",
+                                                                  "imageURL": "",
+                                                                  "footerIconURL": "",
+                                                                  "thumbnailURL": "",
+                                                                  "authorName": "",
+                                                                  "authorIcon": "",
+                                                                  "description": "**Вид поста:**\n```${tempVars('mp')}```\n\n**Ссылка на сообщение:**\n${tempVars('линк')}",
+                                                                  "fields": [],
+                                                                  "url": "",
+                                                                  "timestamp": "None",
+                                                                  "customTimestamp": ""
+                                                                }
+                                                              }
+                                                            ],
+                                                            "channel": {
+                                                              "type": "command",
+                                                              "value": ""
+                                                            },
+                                                            "storeAs": {
+                                                              "value": "",
+                                                              "type": "temporary"
+                                                            },
+                                                            "replyToInteraction": true,
+                                                            "options": [
+                                                              {
+                                                                "type": "options"
+                                                              }
+                                                            ],
+                                                            "attachments": [],
+                                                            "files": [],
+                                                            "poll": [],
+                                                            "silent": false,
+                                                            "mentions": false,
+                                                            "dontSend": false,
+                                                            "ephemeral": false,
+                                                            "updateMessage": {
+                                                              "type": "tempVar",
+                                                              "value": "sms"
+                                                            },
+                                                            "updateContent": false,
+                                                            "updateComponents": false,
+                                                            "updateEmbeds": false,
+                                                            "updateAttachments": false
+                                                          },
+                                                          "id": 1743270378339
+                                                        }
+                                                      ],
                                                       "store": {
                                                         "type": "temporary",
-                                                        "value": "+1 member"
+                                                        "value": ""
                                                       }
                                                     },
-                                                    "id": 1743298718682
-                                                  },
-                                                  {
-                                                    "name": "Control Custom Data",
-                                                    "file": "controlcustomdata_MOD.js",
-                                                    "data": {
-                                                      "name": "Control Custom Data",
-                                                      "database": "AppData/balls.json",
-                                                      "logToConsole": false,
-                                                      "deleteJson": false,
-                                                      "Create Data Value": [
-                                                        {
-                                                          "type": "options"
-                                                        }
-                                                      ],
-                                                      "Create Data Array": [
-                                                        {
-                                                          "type": "options"
-                                                        }
-                                                      ],
-                                                      "Create Data Object": [
-                                                        {
-                                                          "type": "options"
-                                                        }
-                                                      ],
-                                                      "Delete Data": [
-                                                        {
-                                                          "type": "options"
-                                                        }
-                                                      ],
-                                                      "cases": [
-                                                        {
-                                                          "type": "data",
-                                                          "data": {
-                                                            "path": "${tempVars('member')}.Баллы",
-                                                            "value": "${tempVars('+1 member')}",
-                                                            "comparisonlist": []
-                                                          }
-                                                        }
-                                                      ],
-                                                      "cases3": []
-                                                    },
-                                                    "id": 1743298764761
-                                                  },
-                                                  {
-                                                    "name": "Send Message",
-                                                    "file": "sendmessage.js",
-                                                    "data": {
-                                                      "name": "Send Message",
-                                                      "messageContent": "Отправил - <@${tempVars('member')}>\n<@${tempVars('member')}> - ${tempVars('+1 member')} балл",
-                                                      "actionRows": [],
-                                                      "embeds": [
-                                                        {
-                                                          "type": "embed",
-                                                          "data": {
-                                                            "title": "",
-                                                            "embedColor": "#77eb34",
-                                                            "footerContent": "",
-                                                            "imageURL": "",
-                                                            "footerIconURL": "",
-                                                            "thumbnailURL": "",
-                                                            "authorName": "",
-                                                            "authorIcon": "",
-                                                            "description": "**Вид поста:**\n```${tempVars('mp')}```\n\n**Ссылка на сообщение:**\n${tempVars('линк')}",
-                                                            "fields": [],
-                                                            "url": "",
-                                                            "timestamp": "None",
-                                                            "customTimestamp": ""
-                                                          }
-                                                        }
-                                                      ],
-                                                      "channel": {
-                                                        "type": "command",
-                                                        "value": ""
-                                                      },
-                                                      "storeAs": {
-                                                        "value": "",
-                                                        "type": "temporary"
-                                                      },
-                                                      "replyToInteraction": true,
-                                                      "options": [
-                                                        {
-                                                          "type": "options"
-                                                        }
-                                                      ],
-                                                      "attachments": [],
-                                                      "files": [],
-                                                      "poll": [],
-                                                      "silent": false,
-                                                      "mentions": false,
-                                                      "dontSend": false,
-                                                      "ephemeral": false,
-                                                      "updateMessage": {
-                                                        "type": "tempVar",
-                                                        "value": "sms"
-                                                      },
-                                                      "updateContent": false,
-                                                      "updateComponents": false,
-                                                      "updateEmbeds": false,
-                                                      "updateAttachments": false
-                                                    },
-                                                    "id": 1743270378339
+                                                    "id": 1743324809685
                                                   }
                                                 ],
                                                 "disabled": false,
@@ -4939,7 +4987,7 @@
                                   "file": "sendmessage.js",
                                   "data": {
                                     "name": "Send Message",
-                                    "messageContent": "✅ Заявка успешно отправлена!",
+                                    "messageContent": "✅ Отчет успешно отправлен!",
                                     "actionRows": [],
                                     "embeds": [],
                                     "channel": {
@@ -14054,153 +14102,6 @@
         "sms",
         "t2"
       ],
-      "folder": []
-    },
-    {
-      "name": "rat",
-      "type": "action",
-      "trigger": "textCommand",
-      "actions": [
-        {
-          "name": "Store Custom Data",
-          "file": "storecustomdata_MOD.js",
-          "data": {
-            "name": "Store Custom Data",
-            "database": "AppData/balls.json",
-            "Store Data": [
-              {
-                "type": "options"
-              }
-            ],
-            "Store list Data": [
-              {
-                "type": "options"
-              }
-            ],
-            "Search through array": [
-              {
-                "type": "options"
-              }
-            ],
-            "cases": [
-              {
-                "type": "data",
-                "data": {
-                  "Path": "${command.author.id}.баллы",
-                  "store": {
-                    "type": "temporary",
-                    "value": "store member"
-                  }
-                }
-              }
-            ]
-          },
-          "id": 1743323193183
-        },
-        {
-          "name": "Calculate",
-          "file": "calculate.js",
-          "data": {
-            "name": "Calculate",
-            "firstNumber": "${tempVars('store member') || '0'}",
-            "operation": "Addition",
-            "secondNumber": "1",
-            "store": {
-              "type": "temporary",
-              "value": "+1 member"
-            }
-          },
-          "id": 1743323193185
-        },
-        {
-          "name": "Control Custom Data",
-          "file": "controlcustomdata_MOD.js",
-          "data": {
-            "name": "Control Custom Data",
-            "database": "AppData/test.json",
-            "logToConsole": false,
-            "deleteJson": false,
-            "Create Data Value": [
-              {
-                "type": "options"
-              }
-            ],
-            "Create Data Array": [
-              {
-                "type": "options"
-              }
-            ],
-            "Create Data Object": [
-              {
-                "type": "options"
-              }
-            ],
-            "Delete Data": [
-              {
-                "type": "options"
-              }
-            ],
-            "cases": [
-              {
-                "type": "data",
-                "data": {
-                  "path": "${command.author.id}.Магические баллы",
-                  "value": "${tempVars('+1 member')}",
-                  "comparisonlist": []
-                }
-              }
-            ]
-          },
-          "id": 1743323193186
-        },
-        {
-          "name": "Send Message",
-          "file": "sendmessage.js",
-          "data": {
-            "name": "Send Message",
-            "messageContent": "${tempVars('store member') || '0'} - ${tempVars('+1 member')}",
-            "actionRows": [],
-            "embeds": [],
-            "channel": {
-              "type": "command",
-              "value": ""
-            },
-            "replyToInteraction": true,
-            "storeAs": {
-              "value": "",
-              "type": "temporary"
-            },
-            "options": [
-              {
-                "type": "options"
-              }
-            ],
-            "attachments": [],
-            "files": [],
-            "poll": [],
-            "silent": false,
-            "mentions": false,
-            "dontSend": false,
-            "ephemeral": true,
-            "updateMessage": {
-              "type": "none",
-              "value": ""
-            },
-            "updateContent": false,
-            "updateComponents": false,
-            "updateEmbeds": false,
-            "updateAttachments": false
-          },
-          "id": 1743323193187
-        }
-      ],
-      "customId": 1743317073757,
-      "boundary": {
-        "worksIn": "guild",
-        "limits": []
-      },
-      "parameters": [],
-      "description": "No Description",
       "folder": []
     }
   ],
