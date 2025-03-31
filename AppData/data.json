@@ -14400,7 +14400,7 @@
                                 "type": "tempVar",
                                 "value": ""
                               },
-                              "replyToInteraction": false,
+                              "replyToInteraction": true,
                               "title": "Отправить откат",
                               "modalComponents": [
                                 {
