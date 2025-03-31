@@ -5043,21 +5043,91 @@
           "id": 1743358556330
         },
         {
-          "name": "Convert List To Text",
-          "file": "convertListToText.js",
+          "name": "Convert List To Text PLUS",
+          "file": "convertListToText_MOD.js",
           "data": {
-            "name": "Convert List To Text",
+            "name": "Convert List To Text PLUS",
+            "Conversion": [
+              {
+                "type": "options"
+              }
+            ],
+            "All the elements": [
+              {
+                "type": "options"
+              }
+            ],
+            "Elements": [
+              {
+                "type": "options"
+              }
+            ],
+            "Change the elements": [
+              {
+                "type": "options"
+              }
+            ],
+            "Pages": [
+              {
+                "type": "options"
+              }
+            ],
             "list": {
               "type": "tempVar",
               "value": "top"
             },
-            "separator": "\\n",
             "store": {
               "type": "temporary",
-              "value": "top2"
+              "value": "text"
+            },
+            "istart": "",
+            "numero": true,
+            "start": ". ",
+            "endeval": "\\n",
+            "multi": "",
+            "istart2": "",
+            "start2": "",
+            "end2": "",
+            "cases": [
+              {
+                "type": "data",
+                "data": {
+                  "patch": "",
+                  "comparisonlist": [],
+                  "posicao": "0",
+                  "start3": "🥇",
+                  "end3": ""
+                }
+              },
+              {
+                "type": "data",
+                "data": {
+                  "patch": "",
+                  "comparisonlist": [],
+                  "posicao": "1",
+                  "start3": "🥈",
+                  "end3": ""
+                }
+              },
+              {
+                "type": "data",
+                "data": {
+                  "patch": "",
+                  "comparisonlist": [],
+                  "posicao": "2",
+                  "start3": "🥉",
+                  "end3": ""
+                }
+              }
+            ],
+            "limite": "",
+            "pagina": "",
+            "storagept": {
+              "type": "temporary",
+              "value": ""
             }
           },
-          "id": 1743425330856
+          "id": 1743424533090
         },
         {
           "name": "Send Message",
@@ -5078,7 +5148,7 @@
                   "thumbnailURL": "",
                   "authorName": "",
                   "authorIcon": "",
-                  "description": "${tempVars('top2') || 'Список пуст'}",
+                  "description": "${tempVars('text') || 'Список пуст'}",
                   "fields": [],
                   "url": "",
                   "timestamp": "None",
@@ -5106,7 +5176,7 @@
             "silent": false,
             "mentions": false,
             "dontSend": false,
-            "ephemeral": true,
+            "ephemeral": false,
             "updateMessage": {
               "type": "none",
               "value": ""
@@ -5117,40 +5187,37 @@
             "updateAttachments": false
           },
           "id": 1743358557244
-        },
-        {
-          "name": "Wait",
-          "file": "wait.js",
-          "data": {
-            "name": "Wait",
-            "timeUnit": "Seconds",
-            "time": "20"
-          },
-          "id": 1743428028911
-        },
-        {
-          "name": "Delete Message",
-          "file": "deleteMessage.js",
-          "data": {
-            "name": "Delete Message",
-            "message": {
-              "type": "tempVar",
-              "value": "mees"
-            }
-          },
-          "id": 1743428028912
         }
       ],
       "customId": 1743358541526,
       "boundary": {
         "worksIn": "guild",
-        "limits": []
+        "limits": [
+          "MOVE_MEMBERS"
+        ]
       },
       "parameters": [],
       "description": "Топ по баллам",
       "folder": [
         1742889041669
-      ]
+      ],
+      "goodies": {
+        "actionType": "slash",
+        "variables": {
+          "temporary": [
+            "top"
+          ],
+          "global": [],
+          "server": [],
+          "commandVars": [
+            "text",
+            "",
+            "mees"
+          ],
+          "thisServer": [],
+          "thisGlobal": []
+        }
+      }
     },
     {
       "name": "баллы",
