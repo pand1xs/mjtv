@@ -14400,7 +14400,7 @@
                                 "type": "tempVar",
                                 "value": ""
                               },
-                              "replyToInteraction": true,
+                              "replyToInteraction": false,
                               "title": "Отправить откат",
                               "modalComponents": [
                                 {
@@ -14499,8 +14499,8 @@
                                     "comparator": "Exists",
                                     "compareValue": "",
                                     "true": {
-                                      "type": "continue",
-                                      "value": ""
+                                      "type": "jump",
+                                      "value": "9"
                                     },
                                     "trueActions": [
                                       {
@@ -14604,119 +14604,12 @@
                                       }
                                     ],
                                     "false": {
-                                      "type": "jump",
+                                      "type": "continue",
                                       "value": "7"
                                     },
                                     "falseActions": []
                                   },
                                   "id": 1743060865742
-                                },
-                                {
-                                  "name": "Send Message",
-                                  "file": "sendmessage.js",
-                                  "data": {
-                                    "name": "Send Message",
-                                    "messageContent": "",
-                                    "actionRows": [],
-                                    "embeds": [
-                                      {
-                                        "type": "embed",
-                                        "data": {
-                                          "title": "",
-                                          "embedColor": "#FFFFFF",
-                                          "footerContent": "",
-                                          "imageURL": "",
-                                          "footerIconURL": "",
-                                          "thumbnailURL": "",
-                                          "authorName": "",
-                                          "authorIcon": "",
-                                          "description": "**Вид МП:**\n```${tempVars('мп')}```\n\n**Дата:**\n```${tempVars('дата')}```\n\n**Откат:**\n```${tempVars('откат')}```",
-                                          "fields": [],
-                                          "url": "",
-                                          "timestamp": "None",
-                                          "customTimestamp": ""
-                                        }
-                                      }
-                                    ],
-                                    "channel": {
-                                      "type": "tempVar",
-                                      "value": "channel"
-                                    },
-                                    "storeAs": {
-                                      "value": "",
-                                      "type": "temporary"
-                                    },
-                                    "replyToInteraction": false,
-                                    "options": [
-                                      {
-                                        "type": "options"
-                                      }
-                                    ],
-                                    "attachments": [],
-                                    "files": [],
-                                    "poll": [],
-                                    "silent": false,
-                                    "mentions": true,
-                                    "dontSend": false,
-                                    "ephemeral": false,
-                                    "updateMessage": {
-                                      "type": "none",
-                                      "value": ""
-                                    },
-                                    "updateContent": false,
-                                    "updateComponents": false,
-                                    "updateEmbeds": false,
-                                    "updateAttachments": false
-                                  },
-                                  "id": 1743061157011
-                                },
-                                {
-                                  "name": "Send Message",
-                                  "file": "sendmessage.js",
-                                  "data": {
-                                    "name": "Send Message",
-                                    "messageContent": "✅ Откат отправлен успешно",
-                                    "actionRows": [],
-                                    "embeds": [],
-                                    "channel": {
-                                      "type": "command",
-                                      "value": ""
-                                    },
-                                    "storeAs": {
-                                      "value": "",
-                                      "type": "temporary"
-                                    },
-                                    "replyToInteraction": true,
-                                    "options": [
-                                      {
-                                        "type": "options"
-                                      }
-                                    ],
-                                    "attachments": [],
-                                    "files": [],
-                                    "poll": [],
-                                    "silent": false,
-                                    "mentions": false,
-                                    "dontSend": false,
-                                    "ephemeral": true,
-                                    "updateMessage": {
-                                      "type": "none",
-                                      "value": ""
-                                    },
-                                    "updateContent": false,
-                                    "updateComponents": false,
-                                    "updateEmbeds": false,
-                                    "updateAttachments": false
-                                  },
-                                  "id": 1743427776642
-                                },
-                                {
-                                  "name": "Stop Actions",
-                                  "file": "stopRunningActions.js",
-                                  "data": {
-                                    "name": "Stop Actions"
-                                  },
-                                  "id": 1743061816621
                                 },
                                 {
                                   "name": "Create Text Channel",
@@ -14866,6 +14759,113 @@
                                     "updateAttachments": false
                                   },
                                   "id": 1743427814490
+                                },
+                                {
+                                  "name": "Stop Actions",
+                                  "file": "stopRunningActions.js",
+                                  "data": {
+                                    "name": "Stop Actions"
+                                  },
+                                  "id": 1743061816621
+                                },
+                                {
+                                  "name": "Send Message",
+                                  "file": "sendmessage.js",
+                                  "data": {
+                                    "name": "Send Message",
+                                    "messageContent": "",
+                                    "actionRows": [],
+                                    "embeds": [
+                                      {
+                                        "type": "embed",
+                                        "data": {
+                                          "title": "",
+                                          "embedColor": "#FFFFFF",
+                                          "footerContent": "",
+                                          "imageURL": "",
+                                          "footerIconURL": "",
+                                          "thumbnailURL": "",
+                                          "authorName": "",
+                                          "authorIcon": "",
+                                          "description": "**Вид МП:**\n```${tempVars('мп')}```\n\n**Дата:**\n```${tempVars('дата')}```\n\n**Откат:**\n```${tempVars('откат')}```",
+                                          "fields": [],
+                                          "url": "",
+                                          "timestamp": "None",
+                                          "customTimestamp": ""
+                                        }
+                                      }
+                                    ],
+                                    "channel": {
+                                      "type": "tempVar",
+                                      "value": "channel"
+                                    },
+                                    "storeAs": {
+                                      "value": "",
+                                      "type": "temporary"
+                                    },
+                                    "replyToInteraction": false,
+                                    "options": [
+                                      {
+                                        "type": "options"
+                                      }
+                                    ],
+                                    "attachments": [],
+                                    "files": [],
+                                    "poll": [],
+                                    "silent": false,
+                                    "mentions": true,
+                                    "dontSend": false,
+                                    "ephemeral": false,
+                                    "updateMessage": {
+                                      "type": "none",
+                                      "value": ""
+                                    },
+                                    "updateContent": false,
+                                    "updateComponents": false,
+                                    "updateEmbeds": false,
+                                    "updateAttachments": false
+                                  },
+                                  "id": 1743061157011
+                                },
+                                {
+                                  "name": "Send Message",
+                                  "file": "sendmessage.js",
+                                  "data": {
+                                    "name": "Send Message",
+                                    "messageContent": "✅ Откат отправлен успешно",
+                                    "actionRows": [],
+                                    "embeds": [],
+                                    "channel": {
+                                      "type": "command",
+                                      "value": ""
+                                    },
+                                    "storeAs": {
+                                      "value": "",
+                                      "type": "temporary"
+                                    },
+                                    "replyToInteraction": true,
+                                    "options": [
+                                      {
+                                        "type": "options"
+                                      }
+                                    ],
+                                    "attachments": [],
+                                    "files": [],
+                                    "poll": [],
+                                    "silent": false,
+                                    "mentions": false,
+                                    "dontSend": false,
+                                    "ephemeral": true,
+                                    "updateMessage": {
+                                      "type": "none",
+                                      "value": ""
+                                    },
+                                    "updateContent": false,
+                                    "updateComponents": false,
+                                    "updateEmbeds": false,
+                                    "updateAttachments": false
+                                  },
+                                  "id": 1743427776642
                                 }
                               ],
                               "store": {
