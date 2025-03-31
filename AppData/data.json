@@ -14988,7 +14988,7 @@
               "value": "ping"
             }
           },
-          "id": 1743426344546
+          "id": 1743445110332
         },
         {
           "name": "Send Message",
@@ -15080,10 +15080,52 @@
       "parameters": [],
       "description": "Проверить скорость бота",
       "folder": []
+    },
+    {
+      "name": "restart",
+      "type": "action",
+      "trigger": "textCommand",
+      "actions": [
+        {
+          "name": "Restart Bot",
+          "file": "restartBot.js",
+          "data": {
+            "name": "Restart Bot"
+          },
+          "id": 1743445078590
+        }
+      ],
+      "customId": 1743445075078,
+      "boundary": {
+        "worksIn": "dms",
+        "limits": []
+      },
+      "parameters": [],
+      "description": "No Description",
+      "folder": [],
+      "goodies": {
+        "actionType": "text",
+        "variables": {
+          "temporary": [],
+          "global": [
+            [],
+            [],
+            []
+          ],
+          "server": [
+            [],
+            [],
+            []
+          ],
+          "commandVars": [],
+          "thisServer": [],
+          "thisGlobal": []
+        }
+      }
     }
   ],
   "prjSrc": "C:\\Users\\RR\\Desktop\\bot",
-  "btk": "MTExNzczMDQyMjQ5NTkwMzc2NA.G6OUhR.WAFoNpD6ayWpwuF7BlwTLZWN9UoXvMby3DcD94",
+  "btk": "MTM0NTMxNjQxODUwNTQwODU3NA.GMVutT.42EaoidQtAi2KS6ah1o8AjEp7lqp_DdEOtKw1A",
   "prefix": "!",
   "name": "MJTV",
   "color": "rgb(0,0,0)",
