@@ -6,6 +6,19 @@
       "trigger": "event",
       "actions": [
         {
+          "name": "Get Bot Info",
+          "file": "getBotInfo.js",
+          "data": {
+            "name": "Get Bot Info",
+            "get": "Gateway Ping",
+            "store": {
+              "type": "temporary",
+              "value": "ping"
+            }
+          },
+          "id": 1743426344546
+        },
+        {
           "name": "Send Message",
           "file": "sendmessage.js",
           "data": {
@@ -24,7 +37,7 @@
                   "thumbnailURL": "",
                   "authorName": "",
                   "authorIcon": "",
-                  "description": "",
+                  "description": "**Пинг - ${tempVars('ping')}ms**",
                   "fields": [],
                   "url": "",
                   "timestamp": "Current",
@@ -15067,40 +15080,6 @@
       "parameters": [],
       "description": "Проверить скорость бота",
       "folder": []
-    },
-    {
-      "name": "restart",
-      "type": "action",
-      "trigger": "textCommand",
-      "actions": [
-        {
-          "name": "Restart Bot",
-          "file": "restartBot.js",
-          "data": {
-            "name": "Restart Bot"
-          },
-          "id": 1743444647824
-        }
-      ],
-      "customId": 1743444637153,
-      "boundary": {
-        "worksIn": "dms",
-        "limits": []
-      },
-      "parameters": [],
-      "description": "No Description",
-      "folder": [],
-      "goodies": {
-        "actionType": "text",
-        "variables": {
-          "temporary": [],
-          "global": [],
-          "server": [],
-          "commandVars": [],
-          "thisServer": [],
-          "thisGlobal": []
-        }
-      }
     }
   ],
   "prjSrc": "C:\\Users\\RR\\Desktop\\bot",
