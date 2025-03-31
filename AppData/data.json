@@ -1499,7 +1499,7 @@
                   "dontSend": false,
                   "ephemeral": true,
                   "updateMessage": {
-                    "type": "tempVar",
+                    "type": "none",
                     "value": "mees"
                   },
                   "updateContent": false,
@@ -1917,7 +1917,7 @@
                   "dontSend": false,
                   "ephemeral": true,
                   "updateMessage": {
-                    "type": "tempVar",
+                    "type": "none",
                     "value": "mees"
                   },
                   "updateContent": false,
@@ -1956,28 +1956,6 @@
             }
           },
           "id": 1743186131754
-        },
-        {
-          "name": "Wait",
-          "file": "wait.js",
-          "data": {
-            "name": "Wait",
-            "timeUnit": "Seconds",
-            "time": "10"
-          },
-          "id": 1743428028883
-        },
-        {
-          "name": "Delete Message",
-          "file": "deleteMessage.js",
-          "data": {
-            "name": "Delete Message",
-            "message": {
-              "type": "tempVar",
-              "value": "mees"
-            }
-          },
-          "id": 1743428028884
         }
       ],
       "customId": 1742924738766,
@@ -2526,7 +2504,7 @@
                   "dontSend": false,
                   "ephemeral": true,
                   "updateMessage": {
-                    "type": "tempVar",
+                    "type": "none",
                     "value": "mees"
                   },
                   "updateContent": false,
@@ -2992,7 +2970,7 @@
                   "dontSend": false,
                   "ephemeral": true,
                   "updateMessage": {
-                    "type": "tempVar",
+                    "type": "none",
                     "value": "mees"
                   },
                   "updateContent": false,
@@ -3458,7 +3436,7 @@
                   "dontSend": false,
                   "ephemeral": true,
                   "updateMessage": {
-                    "type": "tempVar",
+                    "type": "none",
                     "value": "mees"
                   },
                   "updateContent": false,
@@ -3884,7 +3862,7 @@
                   "dontSend": false,
                   "ephemeral": true,
                   "updateMessage": {
-                    "type": "tempVar",
+                    "type": "none",
                     "value": "mees"
                   },
                   "updateContent": false,
@@ -4310,7 +4288,7 @@
                   "dontSend": false,
                   "ephemeral": true,
                   "updateMessage": {
-                    "type": "tempVar",
+                    "type": "none",
                     "value": "mees"
                   },
                   "updateContent": false,
@@ -4811,7 +4789,7 @@
                   "dontSend": false,
                   "ephemeral": true,
                   "updateMessage": {
-                    "type": "tempVar",
+                    "type": "none",
                     "value": "mees"
                   },
                   "updateContent": false,
@@ -5121,7 +5099,22 @@
               {
                 "type": "options"
               }
-            ]
+            ],
+            "attachments": [],
+            "files": [],
+            "poll": [],
+            "silent": false,
+            "mentions": false,
+            "dontSend": false,
+            "ephemeral": true,
+            "updateMessage": {
+              "type": "none",
+              "value": ""
+            },
+            "updateContent": false,
+            "updateComponents": false,
+            "updateEmbeds": false,
+            "updateAttachments": false
           },
           "id": 1743358557244
         },
