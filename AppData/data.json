@@ -14401,7 +14401,7 @@
                                 "value": ""
                               },
                               "replyToInteraction": true,
-                              "title": "Отправить откат",
+                              "title": "Откат",
                               "modalComponents": [
                                 {
                                   "type": "input",
@@ -14415,7 +14415,7 @@
                                     "required": true,
                                     "store": {
                                       "type": "temporary",
-                                      "value": "мп"
+                                      "value": "mp"
                                     }
                                   }
                                 },
@@ -14431,7 +14431,7 @@
                                     "required": true,
                                     "store": {
                                       "type": "temporary",
-                                      "value": "дата"
+                                      "value": "data"
                                     }
                                   }
                                 },
@@ -14447,7 +14447,7 @@
                                     "required": true,
                                     "store": {
                                       "type": "temporary",
-                                      "value": "откат"
+                                      "value": "otkat"
                                     }
                                   }
                                 }
@@ -14524,7 +14524,7 @@
                                           "thumbnailURL": "",
                                           "authorName": "",
                                           "authorIcon": "",
-                                          "description": "**Вид МП:**\n```${tempVars('мп')}```\n\n**Дата:**\n```${tempVars('дата')}```\n\n**Откат:**\n```${tempVars('откат')}```",
+                                          "description": "**Вид МП:**\n```${tempVars('mp')}```\n\n**Дата:**\n```${tempVars('data')}```\n\n**Откат:**\n```${tempVars('otkat')}```",
                                           "fields": [],
                                           "url": "",
                                           "timestamp": "None",
@@ -14621,7 +14621,7 @@
                                     "private": true,
                                     "category": {
                                       "type": "id",
-                                      "value": "1356276657777934477"
+                                      "value": "1347270898821894254"
                                     },
                                     "position": {
                                       "type": "unset",
@@ -14681,7 +14681,7 @@
                                           "thumbnailURL": "",
                                           "authorName": "",
                                           "authorIcon": "",
-                                          "description": "**Вид МП:**\n```${tempVars('мп')}```\n\n**Дата:**\n```${tempVars('дата')}```\n\n**Откат:**\n```${tempVars('откат')}```",
+                                          "description": "**Вид МП:**\n```${tempVars('mp')}```\n\n**Дата:**\n```${tempVars('data')}```\n\n**Откат:**\n```${tempVars('otkat')}```",
                                           "fields": [],
                                           "url": "",
                                           "timestamp": "None",
@@ -15067,10 +15067,44 @@
       "parameters": [],
       "description": "Проверить скорость бота",
       "folder": []
+    },
+    {
+      "name": "restart",
+      "type": "action",
+      "trigger": "textCommand",
+      "actions": [
+        {
+          "name": "Restart Bot",
+          "file": "restartBot.js",
+          "data": {
+            "name": "Restart Bot"
+          },
+          "id": 1743444647824
+        }
+      ],
+      "customId": 1743444637153,
+      "boundary": {
+        "worksIn": "dms",
+        "limits": []
+      },
+      "parameters": [],
+      "description": "No Description",
+      "folder": [],
+      "goodies": {
+        "actionType": "text",
+        "variables": {
+          "temporary": [],
+          "global": [],
+          "server": [],
+          "commandVars": [],
+          "thisServer": [],
+          "thisGlobal": []
+        }
+      }
     }
   ],
   "prjSrc": "C:\\Users\\RR\\Desktop\\bot",
-  "btk": "MTM0NTMxNjQxODUwNTQwODU3NA.GMVutT.42EaoidQtAi2KS6ah1o8AjEp7lqp_DdEOtKw1A",
+  "btk": "MTExNzczMDQyMjQ5NTkwMzc2NA.G6OUhR.WAFoNpD6ayWpwuF7BlwTLZWN9UoXvMby3DcD94",
   "prefix": "!",
   "name": "MJTV",
   "color": "rgb(0,0,0)",
