@@ -369,9 +369,28 @@
                                                     "file": "sendmessage.js",
                                                     "data": {
                                                       "name": "Send Message",
-                                                      "messageContent": "**Новый модератор - <@${tempVars('sms')}>\nНик по форме  | nick \nОзнакомиться с https://discord.com/channels/982997343064432721/1355969996915867829\n\nНеделя на повышение\n5 постов на модератора**",
+                                                      "messageContent": "**Новый модератор - <@${tempVars('sms')}>**\n",
                                                       "actionRows": [],
-                                                      "embeds": [],
+                                                      "embeds": [
+                                                        {
+                                                          "type": "embed",
+                                                          "data": {
+                                                            "title": "",
+                                                            "embedColor": "#FFFFFF",
+                                                            "footerContent": "",
+                                                            "imageURL": "",
+                                                            "footerIconURL": "",
+                                                            "thumbnailURL": "",
+                                                            "authorName": "",
+                                                            "authorIcon": "",
+                                                            "description": "Ник по форме **server | nick **\n**Ознакомиться с https://discord.com/channels/982997343064432721/1355969996915867829**\n\n**Неделя** на повышение\n**5 постов** на модератора",
+                                                            "fields": [],
+                                                            "url": "",
+                                                            "timestamp": "None",
+                                                            "customTimestamp": ""
+                                                          }
+                                                        }
+                                                      ],
                                                       "channel": {
                                                         "type": "id",
                                                         "value": "1343844304757723219"
@@ -772,7 +791,7 @@
                                       "value": ""
                                     },
                                     "storeAs": {
-                                      "value": "",
+                                      "value": "mees",
                                       "type": "temporary"
                                     },
                                     "replyToInteraction": true,
@@ -798,6 +817,28 @@
                                     "updateAttachments": false
                                   },
                                   "id": 1742896357342
+                                },
+                                {
+                                  "name": "Wait",
+                                  "file": "wait.js",
+                                  "data": {
+                                    "name": "Wait",
+                                    "timeUnit": "Seconds",
+                                    "time": "10"
+                                  },
+                                  "id": 1743426788532
+                                },
+                                {
+                                  "name": "Delete Message",
+                                  "file": "deleteMessage.js",
+                                  "data": {
+                                    "name": "Delete Message",
+                                    "message": {
+                                      "type": "tempVar",
+                                      "value": "mees"
+                                    }
+                                  },
+                                  "id": 1743427163105
                                 },
                                 {
                                   "name": "Get Member Info",
@@ -1415,6 +1456,80 @@
                   "updateAttachments": false
                 },
                 "id": 1743099121033
+              },
+              {
+                "name": "Delete Message",
+                "file": "deleteMessage.js",
+                "data": {
+                  "name": "Delete Message",
+                  "message": {
+                    "type": "tempVar",
+                    "value": "mees"
+                  }
+                },
+                "id": 1743426800432
+              },
+              {
+                "name": "Send Message",
+                "file": "sendmessage.js",
+                "data": {
+                  "name": "Send Message",
+                  "messageContent": "<:2003on:1181132265405829140> **Картинка создалась и находится в канале https://discord.com/channels/982997343064432721/1355102880595443712**",
+                  "actionRows": [],
+                  "embeds": [],
+                  "channel": {
+                    "type": "command",
+                    "value": ""
+                  },
+                  "replyToInteraction": true,
+                  "storeAs": {
+                    "value": "mees2",
+                    "type": "temporary"
+                  },
+                  "options": [
+                    {
+                      "type": "options"
+                    }
+                  ],
+                  "attachments": [],
+                  "files": [],
+                  "poll": [],
+                  "silent": false,
+                  "mentions": false,
+                  "dontSend": false,
+                  "ephemeral": true,
+                  "updateMessage": {
+                    "type": "tempVar",
+                    "value": "mees"
+                  },
+                  "updateContent": false,
+                  "updateComponents": false,
+                  "updateEmbeds": false,
+                  "updateAttachments": false
+                },
+                "id": 1743427028350
+              },
+              {
+                "name": "Wait",
+                "file": "wait.js",
+                "data": {
+                  "name": "Wait",
+                  "timeUnit": "Seconds",
+                  "time": "10"
+                },
+                "id": 1743428028878
+              },
+              {
+                "name": "Delete Message",
+                "file": "deleteMessage.js",
+                "data": {
+                  "name": "Delete Message",
+                  "message": {
+                    "type": "tempVar",
+                    "value": "mees2"
+                  }
+                },
+                "id": 1743427093582
               }
             ],
             "store": {
@@ -1540,7 +1655,7 @@
                   },
                   "replyToInteraction": true,
                   "storeAs": {
-                    "value": "",
+                    "value": "mees",
                     "type": "temporary"
                   },
                   "options": [
@@ -1759,6 +1874,80 @@
                   "updateAttachments": false
                 },
                 "id": 1743186131756
+              },
+              {
+                "name": "Delete Message",
+                "file": "deleteMessage.js",
+                "data": {
+                  "name": "Delete Message",
+                  "message": {
+                    "type": "tempVar",
+                    "value": "mees"
+                  }
+                },
+                "id": 1743428028879
+              },
+              {
+                "name": "Send Message",
+                "file": "sendmessage.js",
+                "data": {
+                  "name": "Send Message",
+                  "messageContent": "<:2003on:1181132265405829140> **Картинка создалась и находится в канале https://discord.com/channels/982997343064432721/1355102880595443712**",
+                  "actionRows": [],
+                  "embeds": [],
+                  "channel": {
+                    "type": "command",
+                    "value": ""
+                  },
+                  "replyToInteraction": true,
+                  "storeAs": {
+                    "value": "mees2",
+                    "type": "temporary"
+                  },
+                  "options": [
+                    {
+                      "type": "options"
+                    }
+                  ],
+                  "attachments": [],
+                  "files": [],
+                  "poll": [],
+                  "silent": false,
+                  "mentions": false,
+                  "dontSend": false,
+                  "ephemeral": true,
+                  "updateMessage": {
+                    "type": "tempVar",
+                    "value": "mees"
+                  },
+                  "updateContent": false,
+                  "updateComponents": false,
+                  "updateEmbeds": false,
+                  "updateAttachments": false
+                },
+                "id": 1743428028880
+              },
+              {
+                "name": "Wait",
+                "file": "wait.js",
+                "data": {
+                  "name": "Wait",
+                  "timeUnit": "Seconds",
+                  "time": "10"
+                },
+                "id": 1743428028881
+              },
+              {
+                "name": "Delete Message",
+                "file": "deleteMessage.js",
+                "data": {
+                  "name": "Delete Message",
+                  "message": {
+                    "type": "tempVar",
+                    "value": "mees2"
+                  }
+                },
+                "id": 1743428028882
               }
             ],
             "store": {
@@ -1767,6 +1956,28 @@
             }
           },
           "id": 1743186131754
+        },
+        {
+          "name": "Wait",
+          "file": "wait.js",
+          "data": {
+            "name": "Wait",
+            "timeUnit": "Seconds",
+            "time": "10"
+          },
+          "id": 1743428028883
+        },
+        {
+          "name": "Delete Message",
+          "file": "deleteMessage.js",
+          "data": {
+            "name": "Delete Message",
+            "message": {
+              "type": "tempVar",
+              "value": "mees"
+            }
+          },
+          "id": 1743428028884
         }
       ],
       "customId": 1742924738766,
@@ -2028,7 +2239,7 @@
                     "value": ""
                   },
                   "storeAs": {
-                    "value": "",
+                    "value": "mees",
                     "type": "temporary"
                   },
                   "replyToInteraction": true,
@@ -2272,6 +2483,80 @@
                   "updateAttachments": false
                 },
                 "id": 1743238856291
+              },
+              {
+                "name": "Delete Message",
+                "file": "deleteMessage.js",
+                "data": {
+                  "name": "Delete Message",
+                  "message": {
+                    "type": "tempVar",
+                    "value": "mees"
+                  }
+                },
+                "id": 1743428028885
+              },
+              {
+                "name": "Send Message",
+                "file": "sendmessage.js",
+                "data": {
+                  "name": "Send Message",
+                  "messageContent": "<:2003on:1181132265405829140> **Картинка создалась и находится в канале https://discord.com/channels/982997343064432721/1355102880595443712**",
+                  "actionRows": [],
+                  "embeds": [],
+                  "channel": {
+                    "type": "command",
+                    "value": ""
+                  },
+                  "replyToInteraction": true,
+                  "storeAs": {
+                    "value": "mees2",
+                    "type": "temporary"
+                  },
+                  "options": [
+                    {
+                      "type": "options"
+                    }
+                  ],
+                  "attachments": [],
+                  "files": [],
+                  "poll": [],
+                  "silent": false,
+                  "mentions": false,
+                  "dontSend": false,
+                  "ephemeral": true,
+                  "updateMessage": {
+                    "type": "tempVar",
+                    "value": "mees"
+                  },
+                  "updateContent": false,
+                  "updateComponents": false,
+                  "updateEmbeds": false,
+                  "updateAttachments": false
+                },
+                "id": 1743428028886
+              },
+              {
+                "name": "Wait",
+                "file": "wait.js",
+                "data": {
+                  "name": "Wait",
+                  "timeUnit": "Seconds",
+                  "time": "10"
+                },
+                "id": 1743428028887
+              },
+              {
+                "name": "Delete Message",
+                "file": "deleteMessage.js",
+                "data": {
+                  "name": "Delete Message",
+                  "message": {
+                    "type": "tempVar",
+                    "value": "mees2"
+                  }
+                },
+                "id": 1743428028888
               }
             ],
             "store": {
@@ -2420,7 +2705,7 @@
                     "value": ""
                   },
                   "storeAs": {
-                    "value": "",
+                    "value": "mees",
                     "type": "temporary"
                   },
                   "replyToInteraction": true,
@@ -2664,6 +2949,80 @@
                   "updateAttachments": false
                 },
                 "id": 1743316982184
+              },
+              {
+                "name": "Delete Message",
+                "file": "deleteMessage.js",
+                "data": {
+                  "name": "Delete Message",
+                  "message": {
+                    "type": "tempVar",
+                    "value": "mees"
+                  }
+                },
+                "id": 1743428028889
+              },
+              {
+                "name": "Send Message",
+                "file": "sendmessage.js",
+                "data": {
+                  "name": "Send Message",
+                  "messageContent": "<:2003on:1181132265405829140> **Картинка создалась и находится в канале https://discord.com/channels/982997343064432721/1355102880595443712**",
+                  "actionRows": [],
+                  "embeds": [],
+                  "channel": {
+                    "type": "command",
+                    "value": ""
+                  },
+                  "replyToInteraction": true,
+                  "storeAs": {
+                    "value": "mees2",
+                    "type": "temporary"
+                  },
+                  "options": [
+                    {
+                      "type": "options"
+                    }
+                  ],
+                  "attachments": [],
+                  "files": [],
+                  "poll": [],
+                  "silent": false,
+                  "mentions": false,
+                  "dontSend": false,
+                  "ephemeral": true,
+                  "updateMessage": {
+                    "type": "tempVar",
+                    "value": "mees"
+                  },
+                  "updateContent": false,
+                  "updateComponents": false,
+                  "updateEmbeds": false,
+                  "updateAttachments": false
+                },
+                "id": 1743428028890
+              },
+              {
+                "name": "Wait",
+                "file": "wait.js",
+                "data": {
+                  "name": "Wait",
+                  "timeUnit": "Seconds",
+                  "time": "10"
+                },
+                "id": 1743428028891
+              },
+              {
+                "name": "Delete Message",
+                "file": "deleteMessage.js",
+                "data": {
+                  "name": "Delete Message",
+                  "message": {
+                    "type": "tempVar",
+                    "value": "mees2"
+                  }
+                },
+                "id": 1743428028892
               }
             ],
             "store": {
@@ -2812,7 +3171,7 @@
                     "value": ""
                   },
                   "storeAs": {
-                    "value": "",
+                    "value": "mees",
                     "type": "temporary"
                   },
                   "replyToInteraction": true,
@@ -3056,6 +3415,80 @@
                   "updateAttachments": false
                 },
                 "id": 1743316982192
+              },
+              {
+                "name": "Delete Message",
+                "file": "deleteMessage.js",
+                "data": {
+                  "name": "Delete Message",
+                  "message": {
+                    "type": "tempVar",
+                    "value": "mees"
+                  }
+                },
+                "id": 1743428028893
+              },
+              {
+                "name": "Send Message",
+                "file": "sendmessage.js",
+                "data": {
+                  "name": "Send Message",
+                  "messageContent": "<:2003on:1181132265405829140> **Картинка создалась и находится в канале https://discord.com/channels/982997343064432721/1355102880595443712**",
+                  "actionRows": [],
+                  "embeds": [],
+                  "channel": {
+                    "type": "command",
+                    "value": ""
+                  },
+                  "replyToInteraction": true,
+                  "storeAs": {
+                    "value": "mees2",
+                    "type": "temporary"
+                  },
+                  "options": [
+                    {
+                      "type": "options"
+                    }
+                  ],
+                  "attachments": [],
+                  "files": [],
+                  "poll": [],
+                  "silent": false,
+                  "mentions": false,
+                  "dontSend": false,
+                  "ephemeral": true,
+                  "updateMessage": {
+                    "type": "tempVar",
+                    "value": "mees"
+                  },
+                  "updateContent": false,
+                  "updateComponents": false,
+                  "updateEmbeds": false,
+                  "updateAttachments": false
+                },
+                "id": 1743428028894
+              },
+              {
+                "name": "Wait",
+                "file": "wait.js",
+                "data": {
+                  "name": "Wait",
+                  "timeUnit": "Seconds",
+                  "time": "10"
+                },
+                "id": 1743428028895
+              },
+              {
+                "name": "Delete Message",
+                "file": "deleteMessage.js",
+                "data": {
+                  "name": "Delete Message",
+                  "message": {
+                    "type": "tempVar",
+                    "value": "mees2"
+                  }
+                },
+                "id": 1743428028896
               }
             ],
             "store": {
@@ -3188,7 +3621,7 @@
                     "value": ""
                   },
                   "storeAs": {
-                    "value": "",
+                    "value": "mees",
                     "type": "temporary"
                   },
                   "replyToInteraction": true,
@@ -3408,6 +3841,80 @@
                   "updateAttachments": false
                 },
                 "id": 1743316982200
+              },
+              {
+                "name": "Delete Message",
+                "file": "deleteMessage.js",
+                "data": {
+                  "name": "Delete Message",
+                  "message": {
+                    "type": "tempVar",
+                    "value": "mees"
+                  }
+                },
+                "id": 1743428028897
+              },
+              {
+                "name": "Send Message",
+                "file": "sendmessage.js",
+                "data": {
+                  "name": "Send Message",
+                  "messageContent": "<:2003on:1181132265405829140> **Картинка создалась и находится в канале https://discord.com/channels/982997343064432721/1355102880595443712**",
+                  "actionRows": [],
+                  "embeds": [],
+                  "channel": {
+                    "type": "command",
+                    "value": ""
+                  },
+                  "replyToInteraction": true,
+                  "storeAs": {
+                    "value": "mees2",
+                    "type": "temporary"
+                  },
+                  "options": [
+                    {
+                      "type": "options"
+                    }
+                  ],
+                  "attachments": [],
+                  "files": [],
+                  "poll": [],
+                  "silent": false,
+                  "mentions": false,
+                  "dontSend": false,
+                  "ephemeral": true,
+                  "updateMessage": {
+                    "type": "tempVar",
+                    "value": "mees"
+                  },
+                  "updateContent": false,
+                  "updateComponents": false,
+                  "updateEmbeds": false,
+                  "updateAttachments": false
+                },
+                "id": 1743428028898
+              },
+              {
+                "name": "Wait",
+                "file": "wait.js",
+                "data": {
+                  "name": "Wait",
+                  "timeUnit": "Seconds",
+                  "time": "10"
+                },
+                "id": 1743428028899
+              },
+              {
+                "name": "Delete Message",
+                "file": "deleteMessage.js",
+                "data": {
+                  "name": "Delete Message",
+                  "message": {
+                    "type": "tempVar",
+                    "value": "mees2"
+                  }
+                },
+                "id": 1743428028900
               }
             ],
             "store": {
@@ -3540,7 +4047,7 @@
                     "value": ""
                   },
                   "storeAs": {
-                    "value": "",
+                    "value": "mees",
                     "type": "temporary"
                   },
                   "replyToInteraction": true,
@@ -3760,6 +4267,80 @@
                   "updateAttachments": false
                 },
                 "id": 1743316982208
+              },
+              {
+                "name": "Delete Message",
+                "file": "deleteMessage.js",
+                "data": {
+                  "name": "Delete Message",
+                  "message": {
+                    "type": "tempVar",
+                    "value": "mees"
+                  }
+                },
+                "id": 1743428028901
+              },
+              {
+                "name": "Send Message",
+                "file": "sendmessage.js",
+                "data": {
+                  "name": "Send Message",
+                  "messageContent": "<:2003on:1181132265405829140> **Картинка создалась и находится в канале https://discord.com/channels/982997343064432721/1355102880595443712**",
+                  "actionRows": [],
+                  "embeds": [],
+                  "channel": {
+                    "type": "command",
+                    "value": ""
+                  },
+                  "replyToInteraction": true,
+                  "storeAs": {
+                    "value": "mees2",
+                    "type": "temporary"
+                  },
+                  "options": [
+                    {
+                      "type": "options"
+                    }
+                  ],
+                  "attachments": [],
+                  "files": [],
+                  "poll": [],
+                  "silent": false,
+                  "mentions": false,
+                  "dontSend": false,
+                  "ephemeral": true,
+                  "updateMessage": {
+                    "type": "tempVar",
+                    "value": "mees"
+                  },
+                  "updateContent": false,
+                  "updateComponents": false,
+                  "updateEmbeds": false,
+                  "updateAttachments": false
+                },
+                "id": 1743428028902
+              },
+              {
+                "name": "Wait",
+                "file": "wait.js",
+                "data": {
+                  "name": "Wait",
+                  "timeUnit": "Seconds",
+                  "time": "10"
+                },
+                "id": 1743428028903
+              },
+              {
+                "name": "Delete Message",
+                "file": "deleteMessage.js",
+                "data": {
+                  "name": "Delete Message",
+                  "message": {
+                    "type": "tempVar",
+                    "value": "mees2"
+                  }
+                },
+                "id": 1743428028904
               }
             ],
             "store": {
@@ -3967,7 +4548,7 @@
                     "value": ""
                   },
                   "storeAs": {
-                    "value": "",
+                    "value": "mees",
                     "type": "temporary"
                   },
                   "replyToInteraction": true,
@@ -4187,6 +4768,80 @@
                   "updateAttachments": false
                 },
                 "id": 1743323193180
+              },
+              {
+                "name": "Delete Message",
+                "file": "deleteMessage.js",
+                "data": {
+                  "name": "Delete Message",
+                  "message": {
+                    "type": "tempVar",
+                    "value": "mees"
+                  }
+                },
+                "id": 1743428028905
+              },
+              {
+                "name": "Send Message",
+                "file": "sendmessage.js",
+                "data": {
+                  "name": "Send Message",
+                  "messageContent": "<:2003on:1181132265405829140> **Картинка создалась и находится в канале https://discord.com/channels/982997343064432721/1355102880595443712**",
+                  "actionRows": [],
+                  "embeds": [],
+                  "channel": {
+                    "type": "command",
+                    "value": ""
+                  },
+                  "replyToInteraction": true,
+                  "storeAs": {
+                    "value": "mees2",
+                    "type": "temporary"
+                  },
+                  "options": [
+                    {
+                      "type": "options"
+                    }
+                  ],
+                  "attachments": [],
+                  "files": [],
+                  "poll": [],
+                  "silent": false,
+                  "mentions": false,
+                  "dontSend": false,
+                  "ephemeral": true,
+                  "updateMessage": {
+                    "type": "tempVar",
+                    "value": "mees"
+                  },
+                  "updateContent": false,
+                  "updateComponents": false,
+                  "updateEmbeds": false,
+                  "updateAttachments": false
+                },
+                "id": 1743428028906
+              },
+              {
+                "name": "Wait",
+                "file": "wait.js",
+                "data": {
+                  "name": "Wait",
+                  "timeUnit": "Seconds",
+                  "time": "10"
+                },
+                "id": 1743428028907
+              },
+              {
+                "name": "Delete Message",
+                "file": "deleteMessage.js",
+                "data": {
+                  "name": "Delete Message",
+                  "message": {
+                    "type": "tempVar",
+                    "value": "mees2"
+                  }
+                },
+                "id": 1743428028908
               }
             ],
             "store": {
@@ -4288,7 +4943,7 @@
             },
             "replyToInteraction": true,
             "storeAs": {
-              "value": "",
+              "value": "mees",
               "type": "temporary"
             },
             "options": [
@@ -4313,6 +4968,28 @@
             "updateAttachments": false
           },
           "id": 1743298848440
+        },
+        {
+          "name": "Wait",
+          "file": "wait.js",
+          "data": {
+            "name": "Wait",
+            "timeUnit": "Seconds",
+            "time": "10"
+          },
+          "id": 1743428028909
+        },
+        {
+          "name": "Delete Message",
+          "file": "deleteMessage.js",
+          "data": {
+            "name": "Delete Message",
+            "message": {
+              "type": "tempVar",
+              "value": "mees"
+            }
+          },
+          "id": 1743428028910
         }
       ],
       "customId": 1743320402047,
@@ -4388,6 +5065,23 @@
           "id": 1743358556330
         },
         {
+          "name": "Convert List To Text",
+          "file": "convertListToText.js",
+          "data": {
+            "name": "Convert List To Text",
+            "list": {
+              "type": "tempVar",
+              "value": "top"
+            },
+            "separator": "\\n",
+            "store": {
+              "type": "temporary",
+              "value": "top2"
+            }
+          },
+          "id": 1743425330856
+        },
+        {
           "name": "Send Message",
           "file": "sendmessage.js",
           "data": {
@@ -4406,7 +5100,7 @@
                   "thumbnailURL": "",
                   "authorName": "",
                   "authorIcon": "",
-                  "description": "${tempVars('top') || Список пуст(}",
+                  "description": "${tempVars('top2') || 'Список пуст'}",
                   "fields": [],
                   "url": "",
                   "timestamp": "None",
@@ -4420,7 +5114,7 @@
             },
             "replyToInteraction": true,
             "storeAs": {
-              "value": "",
+              "value": "mees",
               "type": "temporary"
             },
             "options": [
@@ -4430,6 +5124,28 @@
             ]
           },
           "id": 1743358557244
+        },
+        {
+          "name": "Wait",
+          "file": "wait.js",
+          "data": {
+            "name": "Wait",
+            "timeUnit": "Seconds",
+            "time": "20"
+          },
+          "id": 1743428028911
+        },
+        {
+          "name": "Delete Message",
+          "file": "deleteMessage.js",
+          "data": {
+            "name": "Delete Message",
+            "message": {
+              "type": "tempVar",
+              "value": "mees"
+            }
+          },
+          "id": 1743428028912
         }
       ],
       "customId": 1743358541526,
@@ -13678,46 +14394,6 @@
                               ],
                               "actions": [
                                 {
-                                  "name": "Send Message",
-                                  "file": "sendmessage.js",
-                                  "data": {
-                                    "name": "Send Message",
-                                    "messageContent": "✅ Откат отправлен успешно",
-                                    "actionRows": [],
-                                    "embeds": [],
-                                    "channel": {
-                                      "type": "command",
-                                      "value": ""
-                                    },
-                                    "storeAs": {
-                                      "value": "",
-                                      "type": "temporary"
-                                    },
-                                    "replyToInteraction": true,
-                                    "options": [
-                                      {
-                                        "type": "options"
-                                      }
-                                    ],
-                                    "attachments": [],
-                                    "files": [],
-                                    "poll": [],
-                                    "silent": false,
-                                    "mentions": false,
-                                    "dontSend": false,
-                                    "ephemeral": true,
-                                    "updateMessage": {
-                                      "type": "none",
-                                      "value": ""
-                                    },
-                                    "updateContent": false,
-                                    "updateComponents": false,
-                                    "updateEmbeds": false,
-                                    "updateAttachments": false
-                                  },
-                                  "id": 1743061526144
-                                },
-                                {
                                   "name": "Get Member Info",
                                   "file": "getMemberInfo.js",
                                   "data": {
@@ -13763,7 +14439,7 @@
                                     "comparator": "Exists",
                                     "compareValue": "",
                                     "true": {
-                                      "type": "runActions",
+                                      "type": "continue",
                                       "value": ""
                                     },
                                     "trueActions": [
@@ -13825,15 +14501,154 @@
                                           "updateAttachments": false
                                         },
                                         "id": 1743061157011
+                                      },
+                                      {
+                                        "name": "Send Message",
+                                        "file": "sendmessage.js",
+                                        "data": {
+                                          "name": "Send Message",
+                                          "messageContent": "✅ Откат отправлен успешно",
+                                          "actionRows": [],
+                                          "embeds": [],
+                                          "channel": {
+                                            "type": "command",
+                                            "value": ""
+                                          },
+                                          "storeAs": {
+                                            "value": "",
+                                            "type": "temporary"
+                                          },
+                                          "replyToInteraction": true,
+                                          "options": [
+                                            {
+                                              "type": "options"
+                                            }
+                                          ],
+                                          "attachments": [],
+                                          "files": [],
+                                          "poll": [],
+                                          "silent": false,
+                                          "mentions": false,
+                                          "dontSend": false,
+                                          "ephemeral": true,
+                                          "updateMessage": {
+                                            "type": "none",
+                                            "value": ""
+                                          },
+                                          "updateContent": false,
+                                          "updateComponents": false,
+                                          "updateEmbeds": false,
+                                          "updateAttachments": false
+                                        },
+                                        "id": 1743061526144
                                       }
                                     ],
                                     "false": {
                                       "type": "jump",
-                                      "value": "6"
+                                      "value": "5"
                                     },
                                     "falseActions": []
                                   },
                                   "id": 1743060865742
+                                },
+                                {
+                                  "name": "Send Message",
+                                  "file": "sendmessage.js",
+                                  "data": {
+                                    "name": "Send Message",
+                                    "messageContent": "",
+                                    "actionRows": [],
+                                    "embeds": [
+                                      {
+                                        "type": "embed",
+                                        "data": {
+                                          "title": "",
+                                          "embedColor": "#FFFFFF",
+                                          "footerContent": "",
+                                          "imageURL": "",
+                                          "footerIconURL": "",
+                                          "thumbnailURL": "",
+                                          "authorName": "",
+                                          "authorIcon": "",
+                                          "description": "**Вид МП:**\n```${tempVars('мп')}```\n\n**Дата:**\n```${tempVars('дата')}```\n\n**Откат:**\n```${tempVars('откат')}```",
+                                          "fields": [],
+                                          "url": "",
+                                          "timestamp": "None",
+                                          "customTimestamp": ""
+                                        }
+                                      }
+                                    ],
+                                    "channel": {
+                                      "type": "tempVar",
+                                      "value": "channel"
+                                    },
+                                    "storeAs": {
+                                      "value": "",
+                                      "type": "temporary"
+                                    },
+                                    "replyToInteraction": false,
+                                    "options": [
+                                      {
+                                        "type": "options"
+                                      }
+                                    ],
+                                    "attachments": [],
+                                    "files": [],
+                                    "poll": [],
+                                    "silent": false,
+                                    "mentions": true,
+                                    "dontSend": false,
+                                    "ephemeral": false,
+                                    "updateMessage": {
+                                      "type": "none",
+                                      "value": ""
+                                    },
+                                    "updateContent": false,
+                                    "updateComponents": false,
+                                    "updateEmbeds": false,
+                                    "updateAttachments": false
+                                  },
+                                  "id": 1743061157011
+                                },
+                                {
+                                  "name": "Send Message",
+                                  "file": "sendmessage.js",
+                                  "data": {
+                                    "name": "Send Message",
+                                    "messageContent": "✅ Откат отправлен успешно",
+                                    "actionRows": [],
+                                    "embeds": [],
+                                    "channel": {
+                                      "type": "command",
+                                      "value": ""
+                                    },
+                                    "storeAs": {
+                                      "value": "",
+                                      "type": "temporary"
+                                    },
+                                    "replyToInteraction": true,
+                                    "options": [
+                                      {
+                                        "type": "options"
+                                      }
+                                    ],
+                                    "attachments": [],
+                                    "files": [],
+                                    "poll": [],
+                                    "silent": false,
+                                    "mentions": false,
+                                    "dontSend": false,
+                                    "ephemeral": true,
+                                    "updateMessage": {
+                                      "type": "none",
+                                      "value": ""
+                                    },
+                                    "updateContent": false,
+                                    "updateComponents": false,
+                                    "updateEmbeds": false,
+                                    "updateAttachments": false
+                                  },
+                                  "id": 1743427776642
                                 },
                                 {
                                   "name": "Stop Actions",
@@ -13951,6 +14766,46 @@
                                     "updateAttachments": false
                                   },
                                   "id": 1743061376131
+                                },
+                                {
+                                  "name": "Send Message",
+                                  "file": "sendmessage.js",
+                                  "data": {
+                                    "name": "Send Message",
+                                    "messageContent": "✅ Откат отправлен успешно",
+                                    "actionRows": [],
+                                    "embeds": [],
+                                    "channel": {
+                                      "type": "command",
+                                      "value": ""
+                                    },
+                                    "storeAs": {
+                                      "value": "",
+                                      "type": "temporary"
+                                    },
+                                    "replyToInteraction": true,
+                                    "options": [
+                                      {
+                                        "type": "options"
+                                      }
+                                    ],
+                                    "attachments": [],
+                                    "files": [],
+                                    "poll": [],
+                                    "silent": false,
+                                    "mentions": false,
+                                    "dontSend": false,
+                                    "ephemeral": true,
+                                    "updateMessage": {
+                                      "type": "none",
+                                      "value": ""
+                                    },
+                                    "updateContent": false,
+                                    "updateComponents": false,
+                                    "updateEmbeds": false,
+                                    "updateAttachments": false
+                                  },
+                                  "id": 1743427814490
                                 }
                               ],
                               "store": {
@@ -14136,6 +14991,115 @@
         "sms",
         "t2"
       ],
+      "folder": []
+    },
+    {
+      "name": "ping",
+      "type": "action",
+      "trigger": "slashCommand",
+      "actions": [
+        {
+          "name": "Get Bot Info",
+          "file": "getBotInfo.js",
+          "data": {
+            "name": "Get Bot Info",
+            "get": "Gateway Ping",
+            "store": {
+              "type": "temporary",
+              "value": "ping"
+            }
+          },
+          "id": 1743426344546
+        },
+        {
+          "name": "Send Message",
+          "file": "sendmessage.js",
+          "data": {
+            "name": "Send Message",
+            "messageContent": "",
+            "actionRows": [],
+            "embeds": [
+              {
+                "type": "embed",
+                "data": {
+                  "title": "🏓 Pong!",
+                  "embedColor": "#fc0303",
+                  "footerContent": "",
+                  "imageURL": "",
+                  "footerIconURL": "",
+                  "thumbnailURL": "",
+                  "authorName": "",
+                  "authorIcon": "",
+                  "description": "${tempVars('ping')}ms",
+                  "fields": [],
+                  "url": "",
+                  "timestamp": "None",
+                  "customTimestamp": ""
+                }
+              }
+            ],
+            "channel": {
+              "type": "command",
+              "value": ""
+            },
+            "replyToInteraction": true,
+            "storeAs": {
+              "value": "sms",
+              "type": "temporary"
+            },
+            "options": [
+              {
+                "type": "options"
+              }
+            ],
+            "attachments": [],
+            "files": [],
+            "poll": [],
+            "silent": false,
+            "mentions": false,
+            "dontSend": false,
+            "ephemeral": true,
+            "updateMessage": {
+              "type": "none",
+              "value": ""
+            },
+            "updateContent": false,
+            "updateComponents": false,
+            "updateEmbeds": false,
+            "updateAttachments": false
+          },
+          "id": 1743426359674
+        },
+        {
+          "name": "Wait",
+          "file": "wait.js",
+          "data": {
+            "name": "Wait",
+            "timeUnit": "Seconds",
+            "time": "10"
+          },
+          "id": 1743428028914
+        },
+        {
+          "name": "Delete Message",
+          "file": "deleteMessage.js",
+          "data": {
+            "name": "Delete Message",
+            "message": {
+              "type": "tempVar",
+              "value": "sms"
+            }
+          },
+          "id": 1743428028915
+        }
+      ],
+      "customId": 1743426329337,
+      "boundary": {
+        "worksIn": "guild",
+        "limits": []
+      },
+      "parameters": [],
+      "description": "Проверить скорость бота",
       "folder": []
     }
   ],
