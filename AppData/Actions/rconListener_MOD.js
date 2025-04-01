@@ -1,4 +1,4 @@
-modVersion = "s.v1.1"
+modVersion = "s.v1.2"
 module.exports = {
   data: {
     name: "RCON Listener",
@@ -74,7 +74,8 @@ module.exports = {
   compatibility: ["Any"],
 
   async run(values, interaction, client, bridge){
-    const Rcon = client.getMods().require("rcon")
+    await client.getMods().require("rcon")
+    const Rcon = require("rcon")
 
     const config = {
       tcp: bridge.transf(values.tcpudp),
