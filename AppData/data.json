@@ -5173,7 +5173,7 @@
               "type": "command",
               "value": ""
             },
-            "replyToInteraction": false,
+            "replyToInteraction": true,
             "storeAs": {
               "value": "mees",
               "type": "temporary"
