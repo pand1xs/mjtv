@@ -5091,7 +5091,7 @@
             },
             "store": {
               "type": "temporary",
-              "value": "text"
+              "value": "toplist"
             },
             "istart": "",
             "numero": true,
@@ -5133,11 +5133,11 @@
                 }
               }
             ],
-            "limite": "",
-            "pagina": "",
+            "limite": "100",
+            "pagina": "2",
             "storagept": {
               "type": "temporary",
-              "value": ""
+              "value": "3"
             }
           },
           "id": 1743424533090
@@ -5161,7 +5161,7 @@
                   "thumbnailURL": "",
                   "authorName": "",
                   "authorIcon": "",
-                  "description": "${tempVars('text') || 'Список пуст'}",
+                  "description": "${tempVars('toplist')}",
                   "fields": [],
                   "url": "",
                   "timestamp": "None",
