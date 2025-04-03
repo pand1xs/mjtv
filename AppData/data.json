@@ -10,7 +10,7 @@
           "file": "getBotInfo.js",
           "data": {
             "name": "Get Bot Info",
-            "get": "REST Ping",
+            "get": "Gateway Ping",
             "store": {
               "type": "temporary",
               "value": "ping"
