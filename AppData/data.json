@@ -15058,6 +15058,186 @@
       "parameters": [],
       "description": "Проверить скорость бота",
       "folder": []
+    },
+    {
+      "name": "twitch steam1",
+      "type": "event",
+      "trigger": "event",
+      "actions": [
+        {
+          "name": "Get Twitch Stream Info",
+          "file": "getTwitchStreamInfo_MOD.js",
+          "data": {
+            "name": "Get Twitch Stream Info",
+            "username": "radik735",
+            "erorrstore": {
+              "type": "temporary",
+              "value": ""
+            },
+            "cases": [
+              {
+                "type": "informations",
+                "data": {
+                  "twitchstreaminformations": "Status live",
+                  "store": {
+                    "type": "temporary",
+                    "value": "live"
+                  }
+                }
+              },
+              {
+                "type": "informations",
+                "data": {
+                  "twitchstreaminformations": "The start time of the stream (timestamp)",
+                  "store": {
+                    "type": "temporary",
+                    "value": "stream"
+                  }
+                }
+              }
+            ]
+          },
+          "id": 1743695986990
+        },
+        {
+          "name": "Check Variable",
+          "file": "checkVariable.js",
+          "data": {
+            "name": "Check Variable",
+            "variable": {
+              "type": "tempVar",
+              "value": "live"
+            },
+            "comparator": "Equals",
+            "compareValue": "true",
+            "true": {
+              "type": "continue",
+              "value": ""
+            },
+            "trueActions": [],
+            "false": {
+              "type": "stop",
+              "value": ""
+            },
+            "falseActions": []
+          },
+          "id": 1743698918667
+        },
+        {
+          "name": "Add Role",
+          "file": "addRole.js",
+          "data": {
+            "name": "Add Role",
+            "member": {
+              "type": "id",
+              "value": "1051902154836824084"
+            },
+            "role": {
+              "type": "id",
+              "value": "1357378645357887649"
+            },
+            "reason": ""
+          },
+          "id": 1743698943430
+        }
+      ],
+      "customId": 1743695929579,
+      "eventFile": "setInterval.js",
+      "eventData": [
+        "180",
+        ""
+      ],
+      "folder": []
+    },
+    {
+      "name": "twitch steam",
+      "type": "event",
+      "trigger": "event",
+      "actions": [
+        {
+          "name": "Get Twitch Stream Info",
+          "file": "getTwitchStreamInfo_MOD.js",
+          "data": {
+            "name": "Get Twitch Stream Info",
+            "username": "radik735",
+            "erorrstore": {
+              "type": "temporary",
+              "value": ""
+            },
+            "cases": [
+              {
+                "type": "informations",
+                "data": {
+                  "twitchstreaminformations": "Status live",
+                  "store": {
+                    "type": "temporary",
+                    "value": "live"
+                  }
+                }
+              },
+              {
+                "type": "informations",
+                "data": {
+                  "twitchstreaminformations": "The start time of the stream (timestamp)",
+                  "store": {
+                    "type": "temporary",
+                    "value": "stream"
+                  }
+                }
+              }
+            ]
+          },
+          "id": 1743699469715
+        },
+        {
+          "name": "Check Variable",
+          "file": "checkVariable.js",
+          "data": {
+            "name": "Check Variable",
+            "variable": {
+              "type": "tempVar",
+              "value": "live"
+            },
+            "comparator": "Equals",
+            "compareValue": "false",
+            "true": {
+              "type": "continue",
+              "value": ""
+            },
+            "trueActions": [],
+            "false": {
+              "type": "stop",
+              "value": ""
+            },
+            "falseActions": []
+          },
+          "id": 1743699469716
+        },
+        {
+          "name": "Remove Role",
+          "file": "removeRole.js",
+          "data": {
+            "name": "Remove Role",
+            "member": {
+              "type": "id",
+              "value": "1051902154836824084"
+            },
+            "role": {
+              "type": "id",
+              "value": "1357378645357887649"
+            },
+            "undefined": ""
+          },
+          "id": 1743699469717
+        }
+      ],
+      "customId": 1743699401209,
+      "eventFile": "setInterval.js",
+      "eventData": [
+        "180",
+        ""
+      ],
+      "folder": []
     }
   ],
   "prjSrc": "C:\\Users\\RR\\Desktop\\bot",
