@@ -10,13 +10,24 @@
           "file": "getBotInfo.js",
           "data": {
             "name": "Get Bot Info",
-            "get": "Gateway Ping",
+            "get": "REST Ping",
             "store": {
               "type": "temporary",
               "value": "ping"
             }
           },
-          "id": 1743426344546
+          "id": 1743694974649
+        },
+        {
+          "name": "Set Bot Activity",
+          "file": "setClientActivity.js",
+          "data": {
+            "name": "Set Bot Activity",
+            "status": "Online",
+            "activity": "Watching",
+            "activityName": "discord.gg/MJTV"
+          },
+          "id": 1742892491867
         },
         {
           "name": "Send Message",
@@ -61,17 +72,6 @@
             ]
           },
           "id": 1742888899339
-        },
-        {
-          "name": "Set Bot Activity",
-          "file": "setClientActivity.js",
-          "data": {
-            "name": "Set Bot Activity",
-            "status": "Online",
-            "activity": "Watching",
-            "activityName": "discord.gg/MJTV"
-          },
-          "id": 1742892491867
         }
       ],
       "customId": 1742888876344,
@@ -3933,7 +3933,7 @@
               "value": "mp"
             },
             "comparator": "Equals",
-            "compareValue": "p",
+            "compareValue": "w",
             "true": {
               "type": "continue",
               "value": ""
@@ -3957,7 +3957,7 @@
               "value": ""
             },
             "replyToInteraction": true,
-            "title": "Создать картинку PUBG",
+            "title": "Создать картинку WARZONE",
             "modalComponents": [
               {
                 "type": "input",
@@ -4105,7 +4105,7 @@
                         "size": "30",
                         "color": "#FFFFFF",
                         "x": "840",
-                        "y": "1043",
+                        "y": "1038",
                         "alignment": {
                           "type": "left",
                           "value": ""
@@ -4128,8 +4128,8 @@
                       "data": {
                         "size": "30",
                         "color": "#FFFFFF",
-                        "x": "722",
-                        "y": "1043",
+                        "x": "730",
+                        "y": "1038",
                         "alignment": {
                           "type": "right",
                           "value": ""
@@ -4193,7 +4193,7 @@
                     "type": "tempVar",
                     "value": "screen"
                   },
-                  "x": "294",
+                  "x": "305",
                   "y": "250",
                   "drawEffect": "Overlay",
                   "store": {
@@ -4310,28 +4310,6 @@
                   "updateAttachments": false
                 },
                 "id": 1743428028902
-              },
-              {
-                "name": "Wait",
-                "file": "wait.js",
-                "data": {
-                  "name": "Wait",
-                  "timeUnit": "Seconds",
-                  "time": "10"
-                },
-                "id": 1743428028903
-              },
-              {
-                "name": "Delete Message",
-                "file": "deleteMessage.js",
-                "data": {
-                  "name": "Delete Message",
-                  "message": {
-                    "type": "tempVar",
-                    "value": "mees2"
-                  }
-                },
-                "id": 1743428028904
               }
             ],
             "store": {
@@ -4381,8 +4359,8 @@
               "value": "w"
             },
             {
-              "name": "PUBG",
-              "value": "p"
+              "name": "WARZONE",
+              "value": "w"
             }
           ],
           "storeAs": "mp",
@@ -15079,225 +15057,6 @@
       },
       "parameters": [],
       "description": "Проверить скорость бота",
-      "folder": []
-    },
-    {
-      "name": "restart",
-      "type": "action",
-      "trigger": "textCommand",
-      "actions": [
-        {
-          "name": "Restart Bot",
-          "file": "restartBot.js",
-          "data": {
-            "name": "Restart Bot"
-          },
-          "id": 1743445078590
-        }
-      ],
-      "customId": 1743445075078,
-      "boundary": {
-        "worksIn": "dms",
-        "limits": []
-      },
-      "parameters": [],
-      "description": "No Description",
-      "folder": [],
-      "goodies": {
-        "actionType": "text",
-        "variables": {
-          "temporary": [],
-          "global": [
-            [],
-            [],
-            []
-          ],
-          "server": [
-            [],
-            [],
-            []
-          ],
-          "commandVars": [],
-          "thisServer": [],
-          "thisGlobal": []
-        }
-      }
-    },
-    {
-      "name": "rat",
-      "type": "action",
-      "trigger": "slashCommand",
-      "actions": [
-        {
-          "name": "Custom Data Top",
-          "file": "customdatatop_MOD.js",
-          "data": {
-            "name": "Custom Data Top",
-            "database": "AppData/test.json",
-            "path": "",
-            "Data Name": [
-              {
-                "type": "options"
-              }
-            ],
-            "resultType": "All Results",
-            "rangeStart": "",
-            "rangeEnd": "",
-            "sortOrder": "Descending",
-            "formatType": "Custom text as a list",
-            "resultFormat": "<@${Id}> - ${Магические баллы}",
-            "store": {
-              "type": "temporary",
-              "value": "list"
-            },
-            "id": "Id",
-            "cases1": [
-              {
-                "type": "data",
-                "data": {
-                  "name": "Магические баллы",
-                  "compile": true
-                }
-              }
-            ]
-          },
-          "id": 1743500066361
-        },
-        {
-          "name": "Convert List To Text PLUS",
-          "file": "convertListToText_MOD.js",
-          "data": {
-            "name": "Convert List To Text PLUS",
-            "Conversion": [
-              {
-                "type": "options"
-              }
-            ],
-            "All the elements": [
-              {
-                "type": "options"
-              }
-            ],
-            "Elements": [
-              {
-                "type": "options"
-              }
-            ],
-            "Change the elements": [
-              {
-                "type": "options"
-              }
-            ],
-            "Pages": [
-              {
-                "type": "options"
-              }
-            ],
-            "list": {
-              "type": "tempVar",
-              "value": "list"
-            },
-            "store": {
-              "type": "temporary",
-              "value": "text"
-            },
-            "istart": "",
-            "numero": true,
-            "start": ". ",
-            "endeval": "\\n",
-            "multi": "",
-            "istart2": "",
-            "start2": "",
-            "end2": "",
-            "cases": [
-              {
-                "type": "data",
-                "data": {
-                  "patch": "",
-                  "comparisonlist": [],
-                  "posicao": "0",
-                  "start3": "🥇",
-                  "end3": ""
-                }
-              },
-              {
-                "type": "data",
-                "data": {
-                  "patch": "",
-                  "comparisonlist": [],
-                  "posicao": "1",
-                  "start3": "🥈",
-                  "end3": ""
-                }
-              },
-              {
-                "type": "data",
-                "data": {
-                  "patch": "",
-                  "comparisonlist": [],
-                  "posicao": "2",
-                  "start3": "🥉",
-                  "end3": ""
-                }
-              }
-            ],
-            "limite": "1",
-            "pagina": "2",
-            "storagept": {
-              "type": "temporary",
-              "value": "3"
-            }
-          },
-          "id": 1743500066362
-        },
-        {
-          "name": "Send Message",
-          "file": "sendmessage.js",
-          "data": {
-            "name": "Send Message",
-            "messageContent": "${tempVars('text')}\n\n${tempVars('3')}",
-            "actionRows": [],
-            "embeds": [],
-            "channel": {
-              "type": "command",
-              "value": ""
-            },
-            "replyToInteraction": true,
-            "storeAs": {
-              "value": "",
-              "type": "temporary"
-            },
-            "options": [
-              {
-                "type": "options"
-              }
-            ],
-            "attachments": [],
-            "files": [],
-            "poll": [],
-            "silent": false,
-            "mentions": false,
-            "dontSend": false,
-            "ephemeral": true,
-            "updateMessage": {
-              "type": "none",
-              "value": ""
-            },
-            "updateContent": false,
-            "updateComponents": false,
-            "updateEmbeds": false,
-            "updateAttachments": false
-          },
-          "id": 1743500066363
-        }
-      ],
-      "customId": 1743500065693,
-      "boundary": {
-        "worksIn": "guild",
-        "limits": []
-      },
-      "parameters": [],
-      "description": "No Description",
       "folder": []
     }
   ],
