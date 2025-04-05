@@ -6051,7 +6051,7 @@
                   "actionRows": [],
                   "embeds": [],
                   "channel": {
-                    "type": "command",
+                    "type": "id",
                     "value": "1355102880595443712"
                   },
                   "replyToInteraction": false,
