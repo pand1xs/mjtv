@@ -6517,7 +6517,7 @@
                         "name": "MJTV.png",
                         "image": {
                           "type": "tempVar",
-                          "value": "lastimg2"
+                          "value": "lastimg"
                         },
                         "spoiler": false,
                         "store": {
