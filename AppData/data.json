@@ -6422,6 +6422,17 @@
                         "w": "968",
                         "h": "563"
                       }
+                    },
+                    {
+                      "type": "mask",
+                      "data": {
+                        "x": "125",
+                        "y": "250",
+                        "image": {
+                          "type": "file",
+                          "value": "mask.png"
+                        }
+                      }
                     }
                   ],
                   "store": {
@@ -6432,29 +6443,27 @@
                 "id": 1743842364397
               },
               {
-                "name": "Edit Image",
-                "file": "editImage.js",
+                "name": "Canvas Draw Image on Image",
+                "file": "CanvasDrawImage_MOD.js",
                 "data": {
-                  "name": "Edit Image",
+                  "name": "Canvas Draw Image on Image",
                   "image": {
-                    "type": "file",
-                    "value": "mask.png"
+                    "type": "tempVar",
+                    "value": "img"
                   },
-                  "filters": [
-                    {
-                      "type": "resize",
-                      "data": {
-                        "w": "968",
-                        "h": "563"
-                      }
-                    }
-                  ],
+                  "imageToDraw": {
+                    "type": "tempVar",
+                    "value": "mask"
+                  },
+                  "x": "125",
+                  "y": "250",
+                  "drawEffect": "Overlay",
                   "store": {
                     "type": "temporary",
-                    "value": "mask"
+                    "value": "lastimg2"
                   }
                 },
-                "id": 1743842276435
+                "id": 1743842276436
               },
               {
                 "name": "Canvas Draw Image on Image",
@@ -6478,29 +6487,6 @@
                   }
                 },
                 "id": 1743842364398
-              },
-              {
-                "name": "Canvas Draw Image on Image",
-                "file": "CanvasDrawImage_MOD.js",
-                "data": {
-                  "name": "Canvas Draw Image on Image",
-                  "image": {
-                    "type": "tempVar",
-                    "value": "lastimg"
-                  },
-                  "imageToDraw": {
-                    "type": "tempVar",
-                    "value": "mask"
-                  },
-                  "x": "125",
-                  "y": "250",
-                  "drawEffect": "Mask",
-                  "store": {
-                    "type": "temporary",
-                    "value": "lastimg2"
-                  }
-                },
-                "id": 1743842276436
               },
               {
                 "name": "Send Message",
