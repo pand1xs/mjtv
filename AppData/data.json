@@ -6443,7 +6443,7 @@
                   "thumbnailURL": "",
                   "authorName": "",
                   "authorIcon": "",
-                  "description": "<@&1342967238222811187> \n- <@294780193401339904>   - Ответственный за Пиар компанию.\n- <@562574001743069195>  - Ответственный за Дизайн Проекта.\n\n<@&1353801995894653099> \n- <@1051902154836824084>  - Ответственный за всю модерацию Discord'a.\n- <@310472438439870464>  - Ответственный за Медиа проекта.\n\n<@&1351647407644999790> \n- <@707998397583327273>  - Ответственный за Техническую составляющую сервера.\n\n<@&1342968470043754517> \n- <@220241210424557569>  - Server New York\n- <@683389261407322169> - Server Detroit\n- <@361144839762477056> - Server Chicago\n- <@772489328567779370> - Server San Francisco\n- <@310349742456438784> - Server Atlanta\n- <@358565904851795969> - Server San Diego\n- <@853705538252570635> - Server Los Angeles\n- свободно - Server Miami\n- свободно - Server Las Vegas\n- свободно - Server Washington\n- <@1040259346560450581>  - Server Dallas\n- <@989105816202256385> - Server Boston\n- <@724291004022390908>  - Server Houston\n- <@513369926023643138>  - Server Seatle\n\n<@&1355213612129456181> \n- <@&1342968584963358852> - Server New York\n- <@&1342968634678575144> - Server Detroit\n- <@&1342968681394737223> - Server Chicago\n- <@&1342968724122112002> - Server San Francisco\n- <@&1342968764513255454> - Server Atlanta\n- <@&1342968801498763386> - Server San Diego\n- <@&1342968840216379412> - Server Los Angeles\n- <@&1342968884998701129> - Server Miami\n- <@&1342968953676501085>- Server Las Vegas\n- <@&1342969003857150113> - Server Washington\n- <@&1342979303608029204> - Server Dallas\n- <@&1342969080704925798> - Server Boston\n- <@&1342969149617606838> - Server Houston\n- <@&1342969190566330550> - Server Seatle\n\n<@&1342969378517418065> \n- <@&1342969378517418065>  - Новый человек в составе модерации.",
+                  "description": "<@&1342967238222811187> \n- <@294780193401339904>   - Ответственный за Пиар компанию.\n- <@562574001743069195>  - Ответственный за Дизайн Проекта.\n\n<@&1353801995894653099> \n- <@1051902154836824084>  - Ответственный за всю модерацию Discord'a.\n- <@310472438439870464>  - Ответственный за Медиа проекта.\n\n<@&1351647407644999790> \n- <@707998397583327273>  - Ответственный за Техническую составляющую сервера.\n\n<@&1342968470043754517> \n- <@220241210424557569>  - Server New York\n- <@314029198689697793> - Server Detroit\n- <@361144839762477056> - Server Chicago\n- <@772489328567779370> - Server San Francisco\n- <@310349742456438784> - Server Atlanta\n- <@358565904851795969> - Server San Diego\n- <@853705538252570635> - Server Los Angeles\n- <@724291004022390908> - Server Miami\n- <@459031719455096844> - Server Las Vegas\n- <@810609126664699924> - Server Washington\n- <@853687987043696642>  - Server Dallas\n- <@989105816202256385> - Server Boston\n- <@556510178506440724>  - Server Houston\n- <@513369926023643138>  - Server Seatle\n\n<@&1355213612129456181> \n- <@&1342968584963358852> - Server New York\n- <@&1342968634678575144> - Server Detroit\n- <@&1342968681394737223> - Server Chicago\n- <@&1342968724122112002> - Server San Francisco\n- <@&1342968764513255454> - Server Atlanta\n- <@&1342968801498763386> - Server San Diego\n- <@&1342968840216379412> - Server Los Angeles\n- <@&1342968884998701129> - Server Miami\n- <@&1342968953676501085>- Server Las Vegas\n- <@&1342969003857150113> - Server Washington\n- <@&1342979303608029204> - Server Dallas\n- <@&1342969080704925798> - Server Boston\n- <@&1342969149617606838> - Server Houston\n- <@&1342969190566330550> - Server Seatle\n\n<@&1342969378517418065> \n- <@&1342969378517418065>  - Новый человек в составе модерации.",
                   "fields": [],
                   "url": "",
                   "timestamp": "None",
@@ -7057,10 +7057,10 @@
                           }
                         ],
                         "label": "New York",
-                        "description": "SERVER 01",
+                        "description": "",
                         "pushAs": "",
-                        "emojiName": "1_",
-                        "emojiID": "1342977657318674442",
+                        "emojiName": "NY",
+                        "emojiID": "1357782931342622850",
                         "isEmojiAnimated": false,
                         "default": false,
                         "styles_emoji": [
@@ -7603,10 +7603,10 @@
                           }
                         ],
                         "label": "Detroit",
-                        "description": "SERVER 02",
+                        "description": "",
                         "pushAs": "",
-                        "emojiName": "2_",
-                        "emojiID": "1342978673808248882",
+                        "emojiName": "DT",
+                        "emojiID": "1357782797472890890",
                         "isEmojiAnimated": false,
                         "default": false,
                         "styles_emoji": [
@@ -8149,10 +8149,10 @@
                           }
                         ],
                         "label": "Chicago",
-                        "description": "SERVER 03",
+                        "description": "",
                         "pushAs": "",
-                        "emojiName": "3_",
-                        "emojiID": "1342978675448090674",
+                        "emojiName": "CH",
+                        "emojiID": "1357782755647295629",
                         "isEmojiAnimated": false,
                         "default": false,
                         "styles_emoji": [
@@ -8695,10 +8695,10 @@
                           }
                         ],
                         "label": "San Francisco",
-                        "description": "SERVER 04",
+                        "description": "",
                         "pushAs": "",
-                        "emojiName": "5_",
-                        "emojiID": "1342978676752650280",
+                        "emojiName": "SF",
+                        "emojiID": "1357782961759453354",
                         "isEmojiAnimated": false,
                         "default": false,
                         "styles_emoji": [
@@ -9241,10 +9241,10 @@
                           }
                         ],
                         "label": "Atlanta",
-                        "description": "SERVER 05",
+                        "description": "",
                         "pushAs": "",
-                        "emojiName": "5_",
-                        "emojiID": "1342978679059382435",
+                        "emojiName": "AT",
+                        "emojiID": "1357782720838635631",
                         "isEmojiAnimated": false,
                         "default": false,
                         "styles_emoji": [
@@ -9787,10 +9787,10 @@
                           }
                         ],
                         "label": "San Diego",
-                        "description": "SERVER 06",
+                        "description": "",
                         "pushAs": "",
-                        "emojiName": "6_",
-                        "emojiID": "1342978686504144947",
+                        "emojiName": "SD",
+                        "emojiID": "1357782946416824661",
                         "isEmojiAnimated": false,
                         "default": false,
                         "styles_emoji": [
@@ -10333,10 +10333,10 @@
                           }
                         ],
                         "label": "Los Angeles",
-                        "description": "SERVER 07",
+                        "description": "",
                         "pushAs": "",
-                        "emojiName": "7_",
-                        "emojiID": "1342978687913427055",
+                        "emojiName": "LA",
+                        "emojiID": "1357782875352863052",
                         "isEmojiAnimated": false,
                         "default": false,
                         "styles_emoji": [
@@ -10879,10 +10879,10 @@
                           }
                         ],
                         "label": "Miami",
-                        "description": "SERVER 08",
+                        "description": "",
                         "pushAs": "",
-                        "emojiName": "8_",
-                        "emojiID": "1342978689079705662",
+                        "emojiName": "MI",
+                        "emojiID": "1357782910522097715",
                         "isEmojiAnimated": false,
                         "default": false,
                         "styles_emoji": [
@@ -11425,10 +11425,10 @@
                           }
                         ],
                         "label": "Las Vegas",
-                        "description": "SERVER 09",
+                        "description": "",
                         "pushAs": "",
-                        "emojiName": "9_",
-                        "emojiID": "1342978691021541517",
+                        "emojiName": "LV",
+                        "emojiID": "1357782893543559178",
                         "isEmojiAnimated": false,
                         "default": false,
                         "styles_emoji": [
@@ -11971,10 +11971,10 @@
                           }
                         ],
                         "label": "Washington",
-                        "description": "SERVER 10",
+                        "description": "",
                         "pushAs": "",
-                        "emojiName": "10",
-                        "emojiID": "1342978699158622238",
+                        "emojiName": "WA",
+                        "emojiID": "1357782990666862743",
                         "isEmojiAnimated": false,
                         "default": false,
                         "styles_emoji": [
@@ -12517,10 +12517,10 @@
                           }
                         ],
                         "label": "Dallas",
-                        "description": "SERVER 11",
+                        "description": "",
                         "pushAs": "",
-                        "emojiName": "11",
-                        "emojiID": "1342978700622434436",
+                        "emojiName": "DL",
+                        "emojiID": "1357782773775077496",
                         "isEmojiAnimated": false,
                         "default": false,
                         "styles_emoji": [
@@ -13063,10 +13063,10 @@
                           }
                         ],
                         "label": "Boston",
-                        "description": "SERVER 12",
+                        "description": "",
                         "pushAs": "",
-                        "emojiName": "12",
-                        "emojiID": "1342978702052425779",
+                        "emojiName": "BT",
+                        "emojiID": "1357782739205619878",
                         "isEmojiAnimated": false,
                         "default": false,
                         "styles_emoji": [
@@ -13609,10 +13609,10 @@
                           }
                         ],
                         "label": "Houston",
-                        "description": "SERVER 13",
+                        "description": "",
                         "pushAs": "",
-                        "emojiName": "13",
-                        "emojiID": "1342978703277166653",
+                        "emojiName": "HS",
+                        "emojiID": "1357782834386960636",
                         "isEmojiAnimated": false,
                         "default": false,
                         "styles_emoji": [
@@ -14155,10 +14155,10 @@
                           }
                         ],
                         "label": "Seattle",
-                        "description": "SERVER 14",
+                        "description": "",
                         "pushAs": "",
-                        "emojiName": "14",
-                        "emojiID": "1342978704606887977",
+                        "emojiName": "ST",
+                        "emojiID": "1357782976246841344",
                         "isEmojiAnimated": false,
                         "default": false,
                         "styles_emoji": [
@@ -15057,186 +15057,6 @@
       },
       "parameters": [],
       "description": "Проверить скорость бота",
-      "folder": []
-    },
-    {
-      "name": "twitch steam1",
-      "type": "event",
-      "trigger": "event",
-      "actions": [
-        {
-          "name": "Get Twitch Stream Info",
-          "file": "getTwitchStreamInfo_MOD.js",
-          "data": {
-            "name": "Get Twitch Stream Info",
-            "username": "radik735",
-            "erorrstore": {
-              "type": "temporary",
-              "value": ""
-            },
-            "cases": [
-              {
-                "type": "informations",
-                "data": {
-                  "twitchstreaminformations": "Status live",
-                  "store": {
-                    "type": "temporary",
-                    "value": "live"
-                  }
-                }
-              },
-              {
-                "type": "informations",
-                "data": {
-                  "twitchstreaminformations": "The start time of the stream (timestamp)",
-                  "store": {
-                    "type": "temporary",
-                    "value": "stream"
-                  }
-                }
-              }
-            ]
-          },
-          "id": 1743695986990
-        },
-        {
-          "name": "Check Variable",
-          "file": "checkVariable.js",
-          "data": {
-            "name": "Check Variable",
-            "variable": {
-              "type": "tempVar",
-              "value": "live"
-            },
-            "comparator": "Equals",
-            "compareValue": "true",
-            "true": {
-              "type": "continue",
-              "value": ""
-            },
-            "trueActions": [],
-            "false": {
-              "type": "stop",
-              "value": ""
-            },
-            "falseActions": []
-          },
-          "id": 1743698918667
-        },
-        {
-          "name": "Add Role",
-          "file": "addRole.js",
-          "data": {
-            "name": "Add Role",
-            "member": {
-              "type": "id",
-              "value": "1051902154836824084"
-            },
-            "role": {
-              "type": "id",
-              "value": "1357378645357887649"
-            },
-            "reason": ""
-          },
-          "id": 1743698943430
-        }
-      ],
-      "customId": 1743695929579,
-      "eventFile": "setInterval.js",
-      "eventData": [
-        "10",
-        ""
-      ],
-      "folder": []
-    },
-    {
-      "name": "twitch steam",
-      "type": "event",
-      "trigger": "event",
-      "actions": [
-        {
-          "name": "Get Twitch Stream Info",
-          "file": "getTwitchStreamInfo_MOD.js",
-          "data": {
-            "name": "Get Twitch Stream Info",
-            "username": "radik735",
-            "erorrstore": {
-              "type": "temporary",
-              "value": ""
-            },
-            "cases": [
-              {
-                "type": "informations",
-                "data": {
-                  "twitchstreaminformations": "Status live",
-                  "store": {
-                    "type": "temporary",
-                    "value": "live"
-                  }
-                }
-              },
-              {
-                "type": "informations",
-                "data": {
-                  "twitchstreaminformations": "The start time of the stream (timestamp)",
-                  "store": {
-                    "type": "temporary",
-                    "value": "stream"
-                  }
-                }
-              }
-            ]
-          },
-          "id": 1743699469715
-        },
-        {
-          "name": "Check Variable",
-          "file": "checkVariable.js",
-          "data": {
-            "name": "Check Variable",
-            "variable": {
-              "type": "tempVar",
-              "value": "live"
-            },
-            "comparator": "Equals",
-            "compareValue": "false",
-            "true": {
-              "type": "continue",
-              "value": ""
-            },
-            "trueActions": [],
-            "false": {
-              "type": "stop",
-              "value": ""
-            },
-            "falseActions": []
-          },
-          "id": 1743699469716
-        },
-        {
-          "name": "Remove Role",
-          "file": "removeRole.js",
-          "data": {
-            "name": "Remove Role",
-            "member": {
-              "type": "id",
-              "value": "1051902154836824084"
-            },
-            "role": {
-              "type": "id",
-              "value": "1357378645357887649"
-            },
-            "undefined": ""
-          },
-          "id": 1743699469717
-        }
-      ],
-      "customId": 1743699401209,
-      "eventFile": "setInterval.js",
-      "eventData": [
-        "10",
-        ""
-      ],
       "folder": []
     }
   ],
