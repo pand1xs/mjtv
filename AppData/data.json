@@ -15926,6 +15926,31 @@
                                   "id": 1743060995993
                                 },
                                 {
+                                  "name": "Set Role Channel Permissions",
+                                  "file": "setRoleChannelPermissions.js",
+                                  "data": {
+                                    "name": "Set Role Channel Permissions",
+                                    "role": {
+                                      "type": "id",
+                                      "value": "1327012395771625624"
+                                    },
+                                    "channel": {
+                                      "type": "tempVar",
+                                      "value": "channel2"
+                                    },
+                                    "permissions": [
+                                      {
+                                        "type": "rolePermission",
+                                        "data": {
+                                          "action": "Allow",
+                                          "permission": "View Channel"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "id": 1744049491777
+                                },
+                                {
                                   "name": "Set Member Channel Permissions",
                                   "file": "setMemberChannelPermissions.js",
                                   "data": {
